@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="CPS.cpp" path="/home/louart/Bureau/these/code_pour_jcll/CPS.cpp"/>
+    <originFiles name="FPGA_simulator.cpp" path="/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator.cpp"/>
+    <originFiles name="FPGA_simulator.h" path="/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator.h"/>
+    <originFiles name="channel.cpp" path="/home/louart/Bureau/these/code_pour_jcll/channel.cpp"/>
+    <originFiles name="emitter.cpp" path="/home/louart/Bureau/these/code_pour_jcll/emitter.cpp"/>
+    <originFiles name="piloting.cpp" path="/home/louart/Bureau/these/code_pour_jcll/piloting.cpp"/>
+    <originFiles name="receiver.cpp" path="/home/louart/Bureau/these/code_pour_jcll/receiver.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="FPGA_simulator_tb.cpp" path="/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_tb.cpp"/>
+    <originFiles name="data" path="/home/louart/Bureau/these/code_pour_jcll/data"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

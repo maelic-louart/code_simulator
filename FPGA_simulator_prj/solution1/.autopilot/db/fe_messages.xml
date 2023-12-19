@@ -1,0 +1,234 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="CPS.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="CPS" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/csynth.tcl:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=FPGA_simulator" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=dynamic_information_init_strm" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=falsification_information_strm" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=static_information_strm" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=start_e" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=data_obs_strm" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=snr_strm" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=f_shift_strm" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=I_obs_strm_e" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=Q_obs_strm_e" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=I_obs_strm_c" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=Q_obs_strm_c" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=longitude_strm_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=latitude_strm_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=data_out_strm" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="FPGA_simulator.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FPGA_simulator" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="channel.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Shift_frequency" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="channel.cpp:270:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="channel" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="channel.cpp:275:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="channel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=I_1 depth=3" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="channel.cpp:277:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="channel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=Q_1 depth=3" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="emitter.cpp:475:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="emitter" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="piloting.cpp:352:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="piloting" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="receiver.cpp:361:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="GMSK_demodulation" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="receiver.cpp:456:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Bits_unstuffing" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=256 min=0" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="receiver.cpp:477:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Bits_unstuffing" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=184 min=0" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="receiver.cpp:723:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="receiver" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="receiver.cpp:445:0" msg_body="Updating loop lower bound from 0 to 184 for loop 'VITIS_LOOP_475_2' (receiver.cpp:475:20) in function 'Bits_unstuffing'.">
+        <args LoopLoc="receiver.cpp:475:20" LoopName="VITIS_LOOP_475_2" NewBound="184" OldBound="0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="piloting.cpp:79:0" msg_body="Inlining function 'sin_lookup(int)' into 'dynamic_data_generation_e_p_c(bool, hls::stream&lt;dynamic_information, 0&gt;&amp;, hls::stream&lt;dynamic_information_init, 0&gt;&amp;, hls::stream&lt;falsification_information, 0&gt;&amp;)'">
+        <args Callee="sin_lookup(int)" Callee-DebugLoc="File piloting.cpp Line 4 Column 0" Caller="dynamic_data_generation_e_p_c(bool, hls::stream&lt;dynamic_information, 0&gt;&amp;, hls::stream&lt;dynamic_information_init, 0&gt;&amp;, hls::stream&lt;falsification_information, 0&gt;&amp;)" Caller-DebugLoc="File piloting.cpp Line 79 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="piloting.cpp:342:0" msg_body="Inlining function 'read_data_e_p_c(hls::stream&lt;static_information, 0&gt;&amp;, hls::stream&lt;dynamic_information, 0&gt;&amp;, int*)' into 'frame_building_e_p_c(hls::stream&lt;static_information, 0&gt;&amp;, hls::stream&lt;dynamic_information, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;)'">
+        <args Callee="read_data_e_p_c(hls::stream&lt;static_information, 0&gt;&amp;, hls::stream&lt;dynamic_information, 0&gt;&amp;, int*)" Callee-DebugLoc="File piloting.cpp Line 266 Column 0" Caller="frame_building_e_p_c(hls::stream&lt;static_information, 0&gt;&amp;, hls::stream&lt;dynamic_information, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;)" Caller-DebugLoc="File piloting.cpp Line 342 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="piloting.cpp:342:0" msg_body="Inlining function 'NMEA_frame_building(int*, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;)' into 'frame_building_e_p_c(hls::stream&lt;static_information, 0&gt;&amp;, hls::stream&lt;dynamic_information, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;)'">
+        <args Callee="NMEA_frame_building(int*, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;)" Callee-DebugLoc="File piloting.cpp Line 321 Column 0" Caller="frame_building_e_p_c(hls::stream&lt;static_information, 0&gt;&amp;, hls::stream&lt;dynamic_information, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;)" Caller-DebugLoc="File piloting.cpp Line 342 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="./FPGA_simulator.h:318:0" msg_body="Inlining function 'message_data::message_data() (.165)' into 'message_data_crc::message_data_crc()'">
+        <args Callee="message_data::message_data() (.165)" Callee-DebugLoc="File ./FPGA_simulator.h Line 303 Column 0" Caller="message_data_crc::message_data_crc()" Caller-DebugLoc="File ./FPGA_simulator.h Line 318 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="./FPGA_simulator.h:318:0" msg_body="Inlining function 'message_crc::message_crc() (.191.197.203)' into 'message_data_crc::message_data_crc()'">
+        <args Callee="message_crc::message_crc() (.191.197.203)" Callee-DebugLoc="File ./FPGA_simulator.h Line 312 Column 0" Caller="message_data_crc::message_data_crc()" Caller-DebugLoc="File ./FPGA_simulator.h Line 318 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="./FPGA_simulator.h:324:0" msg_body="Inlining function 'message_data::message_data() (.165)' into 'message_hdlc::message_hdlc() (.224)'">
+        <args Callee="message_data::message_data() (.165)" Callee-DebugLoc="File ./FPGA_simulator.h Line 303 Column 0" Caller="message_hdlc::message_hdlc() (.224)" Caller-DebugLoc="File ./FPGA_simulator.h Line 324 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="./FPGA_simulator.h:324:0" msg_body="Inlining function 'message_crc::message_crc() (.191.197.203)' into 'message_hdlc::message_hdlc() (.224)'">
+        <args Callee="message_crc::message_crc() (.191.197.203)" Callee-DebugLoc="File ./FPGA_simulator.h Line 312 Column 0" Caller="message_hdlc::message_hdlc() (.224)" Caller-DebugLoc="File ./FPGA_simulator.h Line 324 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="./FPGA_simulator.h:333:0" msg_body="Inlining function 'message_hdlc::message_hdlc() (.224)' into 'message_trame::message_trame()'">
+        <args Callee="message_hdlc::message_hdlc() (.224)" Callee-DebugLoc="File ./FPGA_simulator.h Line 324 Column 0" Caller="message_trame::message_trame()" Caller-DebugLoc="File ./FPGA_simulator.h Line 333 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="./FPGA_simulator.h:339:0" msg_body="Inlining function 'message_data::message_data() (.165)' into 'message_nrzi::message_nrzi()'">
+        <args Callee="message_data::message_data() (.165)" Callee-DebugLoc="File ./FPGA_simulator.h Line 303 Column 0" Caller="message_nrzi::message_nrzi()" Caller-DebugLoc="File ./FPGA_simulator.h Line 339 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="./FPGA_simulator.h:339:0" msg_body="Inlining function 'message_crc::message_crc() (.191.197.203)' into 'message_nrzi::message_nrzi()'">
+        <args Callee="message_crc::message_crc() (.191.197.203)" Callee-DebugLoc="File ./FPGA_simulator.h Line 312 Column 0" Caller="message_nrzi::message_nrzi()" Caller-DebugLoc="File ./FPGA_simulator.h Line 339 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="emitter.cpp:71:0" msg_body="Inlining function 'GetCrc16(ap_uint&lt;8&gt;*)' into 'Compute_CRC(ap_uint&lt;168&gt;, ap_uint&lt;16&gt;*)'">
+        <args Callee="GetCrc16(ap_uint&lt;8&gt;*)" Callee-DebugLoc="File emitter.cpp Line 60 Column 0" Caller="Compute_CRC(ap_uint&lt;168&gt;, ap_uint&lt;16&gt;*)" Caller-DebugLoc="File emitter.cpp Line 71 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="emitter.cpp:101:0" msg_body="Inlining function 'message_data_crc::message_data_crc()' into 'Bits_stuffing(ap_uint&lt;168&gt;, ap_uint&lt;16&gt;, message_data_crc*)'">
+        <args Callee="message_data_crc::message_data_crc()" Callee-DebugLoc="File ./FPGA_simulator.h Line 318 Column 0" Caller="Bits_stuffing(ap_uint&lt;168&gt;, ap_uint&lt;16&gt;, message_data_crc*)" Caller-DebugLoc="File emitter.cpp Line 101 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="emitter.cpp:177:0" msg_body="Inlining function 'message_hdlc::message_hdlc() (.224)' into 'HDLC_trame_construction(message_data_crc, message_hdlc*)'">
+        <args Callee="message_hdlc::message_hdlc() (.224)" Callee-DebugLoc="File ./FPGA_simulator.h Line 324 Column 0" Caller="HDLC_trame_construction(message_data_crc, message_hdlc*)" Caller-DebugLoc="File emitter.cpp Line 177 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="emitter.cpp:186:0" msg_body="Inlining function 'message_trame::message_trame()' into 'Trainning_sequence_adding(message_hdlc, message_trame*)'">
+        <args Callee="message_trame::message_trame()" Callee-DebugLoc="File ./FPGA_simulator.h Line 333 Column 0" Caller="Trainning_sequence_adding(message_hdlc, message_trame*)" Caller-DebugLoc="File emitter.cpp Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="emitter.cpp:194:0" msg_body="Inlining function 'message_nrzi::message_nrzi()' into 'NRZI_coding(message_trame, message_nrzi*)'">
+        <args Callee="message_nrzi::message_nrzi()" Callee-DebugLoc="File ./FPGA_simulator.h Line 339 Column 0" Caller="NRZI_coding(message_trame, message_nrzi*)" Caller-DebugLoc="File emitter.cpp Line 194 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="emitter.cpp:397:0" msg_body="Inlining function 'modulation_gmsk_body(ap_uint&lt;232&gt;, ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;8&gt;)' into 'GMSK_modulation(message_nrzi, ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="modulation_gmsk_body(ap_uint&lt;232&gt;, ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;8&gt;)" Callee-DebugLoc="File emitter.cpp Line 346 Column 0" Caller="GMSK_modulation(message_nrzi, ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File emitter.cpp Line 397 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="emitter.cpp:425:0" msg_body="Inlining function 'cos_lookup(int)' into 'I_Q_coding(ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="cos_lookup(int)" Callee-DebugLoc="File piloting.cpp Line 42 Column 0" Caller="I_Q_coding(ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File emitter.cpp Line 425 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="emitter.cpp:425:0" msg_body="Inlining function 'sin_lookup(int)' into 'I_Q_coding(ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="sin_lookup(int)" Callee-DebugLoc="File piloting.cpp Line 4 Column 0" Caller="I_Q_coding(ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File emitter.cpp Line 425 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="emitter.cpp:474:0" msg_body="Inlining function 'message_data::message_data() (.165)' into 'emitter(hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_uint&lt;27&gt;*, ap_uint&lt;28&gt;*)'">
+        <args Callee="message_data::message_data() (.165)" Callee-DebugLoc="File ./FPGA_simulator.h Line 303 Column 0" Caller="emitter(hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_uint&lt;27&gt;*, ap_uint&lt;28&gt;*)" Caller-DebugLoc="File emitter.cpp Line 474 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="emitter.cpp:474:0" msg_body="Inlining function 'message_data_crc::message_data_crc()' into 'emitter(hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_uint&lt;27&gt;*, ap_uint&lt;28&gt;*)'">
+        <args Callee="message_data_crc::message_data_crc()" Callee-DebugLoc="File ./FPGA_simulator.h Line 318 Column 0" Caller="emitter(hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_uint&lt;27&gt;*, ap_uint&lt;28&gt;*)" Caller-DebugLoc="File emitter.cpp Line 474 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="emitter.cpp:474:0" msg_body="Inlining function 'message_hdlc::message_hdlc() (.224)' into 'emitter(hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_uint&lt;27&gt;*, ap_uint&lt;28&gt;*)'">
+        <args Callee="message_hdlc::message_hdlc() (.224)" Callee-DebugLoc="File ./FPGA_simulator.h Line 324 Column 0" Caller="emitter(hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_uint&lt;27&gt;*, ap_uint&lt;28&gt;*)" Caller-DebugLoc="File emitter.cpp Line 474 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="emitter.cpp:474:0" msg_body="Inlining function 'message_trame::message_trame()' into 'emitter(hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_uint&lt;27&gt;*, ap_uint&lt;28&gt;*)'">
+        <args Callee="message_trame::message_trame()" Callee-DebugLoc="File ./FPGA_simulator.h Line 333 Column 0" Caller="emitter(hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_uint&lt;27&gt;*, ap_uint&lt;28&gt;*)" Caller-DebugLoc="File emitter.cpp Line 474 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="emitter.cpp:474:0" msg_body="Inlining function 'message_nrzi::message_nrzi()' into 'emitter(hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_uint&lt;27&gt;*, ap_uint&lt;28&gt;*)'">
+        <args Callee="message_nrzi::message_nrzi()" Callee-DebugLoc="File ./FPGA_simulator.h Line 339 Column 0" Caller="emitter(hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_uint&lt;27&gt;*, ap_uint&lt;28&gt;*)" Caller-DebugLoc="File emitter.cpp Line 474 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="channel.cpp:4:0" msg_body="Inlining function 'cos_lookup(int)' into 'Shift_frequency(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;int, 0&gt;&amp;)'">
+        <args Callee="cos_lookup(int)" Callee-DebugLoc="File piloting.cpp Line 42 Column 0" Caller="Shift_frequency(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;int, 0&gt;&amp;)" Caller-DebugLoc="File channel.cpp Line 4 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="channel.cpp:4:0" msg_body="Inlining function 'sin_lookup(int)' into 'Shift_frequency(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;int, 0&gt;&amp;)'">
+        <args Callee="sin_lookup(int)" Callee-DebugLoc="File piloting.cpp Line 4 Column 0" Caller="Shift_frequency(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;int, 0&gt;&amp;)" Caller-DebugLoc="File channel.cpp Line 4 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="channel.cpp:119:0" msg_body="Inlining function 'cos_lookup(int)' into 'compute_distance(ap_uint&lt;27&gt;, ap_uint&lt;28&gt;)'">
+        <args Callee="cos_lookup(int)" Callee-DebugLoc="File piloting.cpp Line 42 Column 0" Caller="compute_distance(ap_uint&lt;27&gt;, ap_uint&lt;28&gt;)" Caller-DebugLoc="File channel.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="channel.cpp:119:0" msg_body="Inlining function 'isqrt(int)' into 'compute_distance(ap_uint&lt;27&gt;, ap_uint&lt;28&gt;)'">
+        <args Callee="isqrt(int)" Callee-DebugLoc="File channel.cpp Line 92 Column 0" Caller="compute_distance(ap_uint&lt;27&gt;, ap_uint&lt;28&gt;)" Caller-DebugLoc="File channel.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="channel.cpp:57:0" msg_body="Inlining function 'isqrt(int)' into 'Noise_adding(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_ufixed&lt;32, 24, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)'">
+        <args Callee="isqrt(int)" Callee-DebugLoc="File channel.cpp Line 92 Column 0" Caller="Noise_adding(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_ufixed&lt;32, 24, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Caller-DebugLoc="File channel.cpp Line 57 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="receiver.cpp:218:0" msg_body="Inlining function 'atan2_maelic(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'angle_computation(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="atan2_maelic(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File receiver.cpp Line 164 Column 0" Caller="angle_computation(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File receiver.cpp Line 218 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="receiver.cpp:359:0" msg_body="Inlining function 'filtered_list_p(ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'GMSK_demodulation(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;256&gt;*)'">
+        <args Callee="filtered_list_p(ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File receiver.cpp Line 136 Column 0" Caller="GMSK_demodulation(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;256&gt;*)" Caller-DebugLoc="File receiver.cpp Line 359 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="receiver.cpp:359:0" msg_body="Inlining function 'correlation_computation(ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;13&gt;*)' into 'GMSK_demodulation(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;256&gt;*)'">
+        <args Callee="correlation_computation(ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;13&gt;*)" Callee-DebugLoc="File receiver.cpp Line 260 Column 0" Caller="GMSK_demodulation(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;256&gt;*)" Caller-DebugLoc="File receiver.cpp Line 359 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="receiver.cpp:359:0" msg_body="Inlining function 'bits_decoding(ap_uint&lt;13&gt;, ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;256&gt;*)' into 'GMSK_demodulation(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;256&gt;*)'">
+        <args Callee="bits_decoding(ap_uint&lt;13&gt;, ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;256&gt;*)" Callee-DebugLoc="File receiver.cpp Line 301 Column 0" Caller="GMSK_demodulation(ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;256&gt;*)" Caller-DebugLoc="File receiver.cpp Line 359 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="receiver.cpp:445:0" msg_body="Inlining function 'find_start(ap_uint&lt;256&gt;, ap_uint&lt;9&gt;*)' into 'Bits_unstuffing(ap_uint&lt;256&gt;, ap_uint&lt;184&gt;*)'">
+        <args Callee="find_start(ap_uint&lt;256&gt;, ap_uint&lt;9&gt;*)" Callee-DebugLoc="File receiver.cpp Line 420 Column 0" Caller="Bits_unstuffing(ap_uint&lt;256&gt;, ap_uint&lt;184&gt;*)" Caller-DebugLoc="File receiver.cpp Line 445 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="receiver.cpp:514:0" msg_body="Inlining function 'IsCrc16Good(ap_uint&lt;8&gt;*)' into 'CRC_check(ap_uint&lt;184&gt;, bool*)'">
+        <args Callee="IsCrc16Good(ap_uint&lt;8&gt;*)" Callee-DebugLoc="File receiver.cpp Line 95 Column 0" Caller="CRC_check(ap_uint&lt;184&gt;, bool*)" Caller-DebugLoc="File receiver.cpp Line 514 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="receiver.cpp:537:0" msg_body="Inlining function 'data_separated::data_separated()' into 'Information_extraction(ap_uint&lt;168&gt;, bool, hls::stream&lt;ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;32, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;168&gt;, 0&gt;&amp;, ap_uint&lt;30&gt;*, bool)'">
+        <args Callee="data_separated::data_separated()" Callee-DebugLoc="File ./FPGA_simulator.h Line 354 Column 0" Caller="Information_extraction(ap_uint&lt;168&gt;, bool, hls::stream&lt;ap_fixed&lt;32, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;32, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;168&gt;, 0&gt;&amp;, ap_uint&lt;30&gt;*, bool)" Caller-DebugLoc="File receiver.cpp Line 537 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="piloting.cpp:353:35" msg_body="Aggregating fifo (hls::stream) variable 'dynamic_information_strm' with compact=bit mode in 77-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="77" HwTyName="fifo (hls::stream)" Name="dynamic_information_strm"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="receiver.cpp:153:21" msg_body="Loop 'VITIS_LOOP_153_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_153_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="receiver.cpp:125:21" msg_body="Loop 'VITIS_LOOP_125_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_125_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="receiver.cpp:359:0" msg_body="Unrolling loop 'VITIS_LOOP_153_3' (receiver.cpp:153:21) in function 'GMSK_demodulation' completely with a factor of 61">
+        <args Factor="61" LoopLoc="receiver.cpp:153:21" LoopName="VITIS_LOOP_153_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="receiver.cpp:108:0" msg_body="Unrolling loop 'VITIS_LOOP_125_3' (receiver.cpp:125:21) in function 'filtered_list' completely with a factor of 61">
+        <args Factor="61" LoopLoc="receiver.cpp:125:21" LoopName="VITIS_LOOP_125_3"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="receiver.cpp:111:12" msg_body="array_partition dim=1 type=complete  variable=hcorr 1 filtered_list receiver.cpp:111:12 hcorr">
+        <args PragmaFunction="filtered_list" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=hcorr" PragmaType="array_partition" VarName="hcorr" varLoc="receiver.cpp:111:12"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="receiver.cpp:111:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'hcorr' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="hcorr" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="receiver.cpp:139:10" msg_body="array_partition dim=1 type=complete  variable=hcorr.i 1 GMSK_demodulation receiver.cpp:139:10 hcorr.i">
+        <args PragmaFunction="GMSK_demodulation" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=hcorr.i" PragmaType="array_partition" VarName="hcorr.i" varLoc="receiver.cpp:139:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="receiver.cpp:139:10" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'hcorr.i' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="hcorr.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="receiver.cpp:262:10" msg_body="array_partition dim=1 type=cyclic factor=2 variable=hcorr.i3 1 GMSK_demodulation receiver.cpp:262:10 hcorr.i3">
+        <args PragmaFunction="GMSK_demodulation" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=hcorr.i3" PragmaType="array_partition" VarName="hcorr.i3" varLoc="receiver.cpp:262:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="receiver.cpp:262:10" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'hcorr.i3' due to pipeline pragma">
+        <args Dim="1" Factor="2" Mode="cyclic" Name="hcorr.i3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="receiver.cpp:111:12" msg_body="Applying array_partition to 'hcorr': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="hcorr"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="receiver.cpp:262:10" msg_body="Applying array_partition to 'hcorr.i3': Cyclic partitioning with factor 2 on dimension 1.">
+        <args Dim="1" Factor="2" Mode="Cyclic" UOName="hcorr.i3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="receiver.cpp:139:10" msg_body="Applying array_partition to 'hcorr.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="hcorr.i"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

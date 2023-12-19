@@ -1,0 +1,1417 @@
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: receiver.cpp, Line: 445, Column: 0 }
+Function:        _Z15Bits_unstuffing7ap_uintILi256EEPS_ILi184EE
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '0'
+  - String:          ' to '
+  - NewBound:        '184'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_475_2
+  - String:          ''' ('
+  - LoopLoc:         'receiver.cpp:475:20'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          Bits_unstuffing
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: piloting.cpp, Line: 79, Column: 0 }
+Function:        _Z29dynamic_data_generation_e_p_cbRN3hls6streamI19dynamic_informationLi0EEERNS0_I24dynamic_information_initLi0EEERNS0_I25falsification_informationLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sin_lookup(int)'
+    DebugLoc:        { File: piloting.cpp, Line: 4, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'dynamic_data_generation_e_p_c(bool, hls::stream<dynamic_information, 0>&, hls::stream<dynamic_information_init, 0>&, hls::stream<falsification_information, 0>&)'
+    DebugLoc:        { File: piloting.cpp, Line: 79, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: piloting.cpp, Line: 342, Column: 0 }
+Function:        _Z20frame_building_e_p_cRN3hls6streamI18static_informationLi0EEERNS0_I19dynamic_informationLi0EEERNS0_I7ap_uintILi178EELi0EEESA_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'read_data_e_p_c(hls::stream<static_information, 0>&, hls::stream<dynamic_information, 0>&, int*)'
+    DebugLoc:        { File: piloting.cpp, Line: 266, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'frame_building_e_p_c(hls::stream<static_information, 0>&, hls::stream<dynamic_information, 0>&, hls::stream<ap_uint<178>, 0>&, hls::stream<ap_uint<178>, 0>&)'
+    DebugLoc:        { File: piloting.cpp, Line: 342, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: piloting.cpp, Line: 342, Column: 0 }
+Function:        _Z20frame_building_e_p_cRN3hls6streamI18static_informationLi0EEERNS0_I19dynamic_informationLi0EEERNS0_I7ap_uintILi178EELi0EEESA_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'NMEA_frame_building(int*, hls::stream<ap_uint<178>, 0>&, hls::stream<ap_uint<178>, 0>&)'
+    DebugLoc:        { File: piloting.cpp, Line: 321, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'frame_building_e_p_c(hls::stream<static_information, 0>&, hls::stream<dynamic_information, 0>&, hls::stream<ap_uint<178>, 0>&, hls::stream<ap_uint<178>, 0>&)'
+    DebugLoc:        { File: piloting.cpp, Line: 342, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ./FPGA_simulator.h, Line: 318, Column: 0 }
+Function:        _ZN16message_data_crcC2Ev
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_data::message_data() (.165)'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 303, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'message_data_crc::message_data_crc()'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 318, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ./FPGA_simulator.h, Line: 318, Column: 0 }
+Function:        _ZN16message_data_crcC2Ev
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_crc::message_crc() (.191.197.203)'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 312, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'message_data_crc::message_data_crc()'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 318, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ./FPGA_simulator.h, Line: 324, Column: 0 }
+Function:        _ZN12message_hdlcC2Ev.224
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_data::message_data() (.165)'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 303, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'message_hdlc::message_hdlc() (.224)'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 324, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ./FPGA_simulator.h, Line: 324, Column: 0 }
+Function:        _ZN12message_hdlcC2Ev.224
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_crc::message_crc() (.191.197.203)'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 312, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'message_hdlc::message_hdlc() (.224)'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 324, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ./FPGA_simulator.h, Line: 333, Column: 0 }
+Function:        _ZN13message_trameC2Ev
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_hdlc::message_hdlc() (.224)'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 324, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'message_trame::message_trame()'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 333, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ./FPGA_simulator.h, Line: 339, Column: 0 }
+Function:        _ZN12message_nrziC2Ev
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_data::message_data() (.165)'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 303, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'message_nrzi::message_nrzi()'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 339, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ./FPGA_simulator.h, Line: 339, Column: 0 }
+Function:        _ZN12message_nrziC2Ev
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_crc::message_crc() (.191.197.203)'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 312, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'message_nrzi::message_nrzi()'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 339, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: emitter.cpp, Line: 71, Column: 0 }
+Function:        _Z11Compute_CRC7ap_uintILi168EEPS_ILi16EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'GetCrc16(ap_uint<8>*)'
+    DebugLoc:        { File: emitter.cpp, Line: 60, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'Compute_CRC(ap_uint<168>, ap_uint<16>*)'
+    DebugLoc:        { File: emitter.cpp, Line: 71, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: emitter.cpp, Line: 101, Column: 0 }
+Function:        _Z13Bits_stuffing7ap_uintILi168EES_ILi16EEP16message_data_crc
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_data_crc::message_data_crc()'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 318, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'Bits_stuffing(ap_uint<168>, ap_uint<16>, message_data_crc*)'
+    DebugLoc:        { File: emitter.cpp, Line: 101, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: emitter.cpp, Line: 177, Column: 0 }
+Function:        _Z23HDLC_trame_construction16message_data_crcP12message_hdlc
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_hdlc::message_hdlc() (.224)'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 324, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'HDLC_trame_construction(message_data_crc, message_hdlc*)'
+    DebugLoc:        { File: emitter.cpp, Line: 177, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: emitter.cpp, Line: 186, Column: 0 }
+Function:        _Z25Trainning_sequence_adding12message_hdlcP13message_trame
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_trame::message_trame()'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 333, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'Trainning_sequence_adding(message_hdlc, message_trame*)'
+    DebugLoc:        { File: emitter.cpp, Line: 186, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: emitter.cpp, Line: 194, Column: 0 }
+Function:        _Z11NRZI_coding13message_trameP12message_nrzi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_nrzi::message_nrzi()'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 339, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'NRZI_coding(message_trame, message_nrzi*)'
+    DebugLoc:        { File: emitter.cpp, Line: 194, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: emitter.cpp, Line: 397, Column: 0 }
+Function:        _Z15GMSK_modulation12message_nrziP8ap_fixedILi32ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'modulation_gmsk_body(ap_uint<232>, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_uint<8>)'
+    DebugLoc:        { File: emitter.cpp, Line: 346, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'GMSK_modulation(message_nrzi, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: emitter.cpp, Line: 397, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: emitter.cpp, Line: 425, Column: 0 }
+Function:        _Z10I_Q_codingP8ap_fixedILi32ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi32ELi5ELS0_5ELS1_3ELi0EES5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'cos_lookup(int)'
+    DebugLoc:        { File: piloting.cpp, Line: 42, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'I_Q_coding(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: emitter.cpp, Line: 425, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: emitter.cpp, Line: 425, Column: 0 }
+Function:        _Z10I_Q_codingP8ap_fixedILi32ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi32ELi5ELS0_5ELS1_3ELi0EES5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sin_lookup(int)'
+    DebugLoc:        { File: piloting.cpp, Line: 4, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'I_Q_coding(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: emitter.cpp, Line: 425, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: emitter.cpp, Line: 474, Column: 0 }
+Function:        _Z7emitterRN3hls6streamIbLi0EEERNS0_I7ap_uintILi178EELi0EEEP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EESB_RNS0_ISA_Li0EEESD_PS3_ILi27EEPS3_ILi28EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_data::message_data() (.165)'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 303, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'emitter(hls::stream<bool, 0>&, hls::stream<ap_uint<178>, 0>&, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_uint<27>*, ap_uint<28>*)'
+    DebugLoc:        { File: emitter.cpp, Line: 474, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: emitter.cpp, Line: 474, Column: 0 }
+Function:        _Z7emitterRN3hls6streamIbLi0EEERNS0_I7ap_uintILi178EELi0EEEP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EESB_RNS0_ISA_Li0EEESD_PS3_ILi27EEPS3_ILi28EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_data_crc::message_data_crc()'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 318, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'emitter(hls::stream<bool, 0>&, hls::stream<ap_uint<178>, 0>&, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_uint<27>*, ap_uint<28>*)'
+    DebugLoc:        { File: emitter.cpp, Line: 474, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: emitter.cpp, Line: 474, Column: 0 }
+Function:        _Z7emitterRN3hls6streamIbLi0EEERNS0_I7ap_uintILi178EELi0EEEP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EESB_RNS0_ISA_Li0EEESD_PS3_ILi27EEPS3_ILi28EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_hdlc::message_hdlc() (.224)'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 324, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'emitter(hls::stream<bool, 0>&, hls::stream<ap_uint<178>, 0>&, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_uint<27>*, ap_uint<28>*)'
+    DebugLoc:        { File: emitter.cpp, Line: 474, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: emitter.cpp, Line: 474, Column: 0 }
+Function:        _Z7emitterRN3hls6streamIbLi0EEERNS0_I7ap_uintILi178EELi0EEEP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EESB_RNS0_ISA_Li0EEESD_PS3_ILi27EEPS3_ILi28EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_trame::message_trame()'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 333, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'emitter(hls::stream<bool, 0>&, hls::stream<ap_uint<178>, 0>&, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_uint<27>*, ap_uint<28>*)'
+    DebugLoc:        { File: emitter.cpp, Line: 474, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: emitter.cpp, Line: 474, Column: 0 }
+Function:        _Z7emitterRN3hls6streamIbLi0EEERNS0_I7ap_uintILi178EELi0EEEP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EESB_RNS0_ISA_Li0EEESD_PS3_ILi27EEPS3_ILi28EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'message_nrzi::message_nrzi()'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 339, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'emitter(hls::stream<bool, 0>&, hls::stream<ap_uint<178>, 0>&, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_uint<27>*, ap_uint<28>*)'
+    DebugLoc:        { File: emitter.cpp, Line: 474, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: channel.cpp, Line: 4, Column: 0 }
+Function:        _Z15Shift_frequencyP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_S3_RN3hls6streamIiLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'cos_lookup(int)'
+    DebugLoc:        { File: piloting.cpp, Line: 42, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'Shift_frequency(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<int, 0>&)'
+    DebugLoc:        { File: channel.cpp, Line: 4, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: channel.cpp, Line: 4, Column: 0 }
+Function:        _Z15Shift_frequencyP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_S3_RN3hls6streamIiLi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sin_lookup(int)'
+    DebugLoc:        { File: piloting.cpp, Line: 4, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'Shift_frequency(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<int, 0>&)'
+    DebugLoc:        { File: channel.cpp, Line: 4, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: channel.cpp, Line: 119, Column: 0 }
+Function:        _Z16compute_distance7ap_uintILi27EES_ILi28EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'cos_lookup(int)'
+    DebugLoc:        { File: piloting.cpp, Line: 42, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_distance(ap_uint<27>, ap_uint<28>)'
+    DebugLoc:        { File: channel.cpp, Line: 119, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: channel.cpp, Line: 119, Column: 0 }
+Function:        _Z16compute_distance7ap_uintILi27EES_ILi28EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'isqrt(int)'
+    DebugLoc:        { File: channel.cpp, Line: 92, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_distance(ap_uint<27>, ap_uint<28>)'
+    DebugLoc:        { File: channel.cpp, Line: 119, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: channel.cpp, Line: 57, Column: 0 }
+Function:        _Z12Noise_addingP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_S3_RN3hls6streamIS2_Li0EEES7_RNS5_I9ap_ufixedILi32ELi24ELS0_5ELS1_3ELi0EELi0EEES2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'isqrt(int)'
+    DebugLoc:        { File: channel.cpp, Line: 92, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'Noise_adding(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_ufixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: channel.cpp, Line: 57, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: receiver.cpp, Line: 218, Column: 0 }
+Function:        _Z17angle_computationP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi9ELS0_5ELS1_3ELi0EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'atan2_maelic(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: receiver.cpp, Line: 164, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'angle_computation(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: receiver.cpp, Line: 218, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: receiver.cpp, Line: 359, Column: 0 }
+Function:        _Z17GMSK_demodulationP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_P7ap_uintILi256EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'filtered_list_p(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: receiver.cpp, Line: 136, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'GMSK_demodulation(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_uint<256>*)'
+    DebugLoc:        { File: receiver.cpp, Line: 359, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: receiver.cpp, Line: 359, Column: 0 }
+Function:        _Z17GMSK_demodulationP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_P7ap_uintILi256EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'correlation_computation(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_uint<13>*)'
+    DebugLoc:        { File: receiver.cpp, Line: 260, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'GMSK_demodulation(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_uint<256>*)'
+    DebugLoc:        { File: receiver.cpp, Line: 359, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: receiver.cpp, Line: 359, Column: 0 }
+Function:        _Z17GMSK_demodulationP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_P7ap_uintILi256EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'bits_decoding(ap_uint<13>, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_uint<256>*)'
+    DebugLoc:        { File: receiver.cpp, Line: 301, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'GMSK_demodulation(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_uint<256>*)'
+    DebugLoc:        { File: receiver.cpp, Line: 359, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: receiver.cpp, Line: 445, Column: 0 }
+Function:        _Z15Bits_unstuffing7ap_uintILi256EEPS_ILi184EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'find_start(ap_uint<256>, ap_uint<9>*)'
+    DebugLoc:        { File: receiver.cpp, Line: 420, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'Bits_unstuffing(ap_uint<256>, ap_uint<184>*)'
+    DebugLoc:        { File: receiver.cpp, Line: 445, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: receiver.cpp, Line: 514, Column: 0 }
+Function:        _Z9CRC_check7ap_uintILi184EEPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'IsCrc16Good(ap_uint<8>*)'
+    DebugLoc:        { File: receiver.cpp, Line: 95, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'CRC_check(ap_uint<184>, bool*)'
+    DebugLoc:        { File: receiver.cpp, Line: 514, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: receiver.cpp, Line: 537, Column: 0 }
+Function:        _Z22Information_extraction7ap_uintILi168EEbRN3hls6streamI8ap_fixedILi32ELi9EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS2_IS3_ILi32ELi8ELS4_5ELS5_3ELi0EELi0EEERNS2_IS0_Li0EEEPS_ILi30EEb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'data_separated::data_separated()'
+    DebugLoc:        { File: ./FPGA_simulator.h, Line: 354, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'Information_extraction(ap_uint<168>, bool, hls::stream<ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_uint<168>, 0>&, ap_uint<30>*, bool)'
+    DebugLoc:        { File: receiver.cpp, Line: 537, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: piloting.cpp, Line: 353, Column: 35 }
+Function:        _Z8pilotingRN3hls6streamI9ap_ufixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_IiLi0EEERNS0_I24dynamic_information_initLi0EEERNS0_I25falsification_informationLi0EEERNS0_I18static_informationLi0EEERNS0_I7ap_uintILi178EELi0EEERNS0_IbLi0EEESN_SL_S6_S8_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            dynamic_information_strm
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '77'
+  - String:          '-bits'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: receiver.cpp, Line: 454, Column: 20 }
+Function:        _Z15Bits_unstuffing7ap_uintILi256EEPS_ILi184EE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_454_1
+  - String:          ' '
+  - LoopLoc:         'receiver.cpp:454:20'
+  - String:          ' '
+  - Function:        'Bits_unstuffing(ap_uint<256>, ap_uint<184>*)'
+    DebugLoc:        { File: receiver.cpp, Line: 445, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: emitter.cpp, Line: 92, Column: 19 }
+Function:        _Z11Compute_CRC7ap_uintILi168EEPS_ILi16EE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_92_4
+  - String:          '''('
+  - LoopLoc:         'emitter.cpp:92:19'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_597_3
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:597:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_628_7
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:628:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_653_8
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:653:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_495_1
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:495:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_522_1
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:522:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_98_1
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:98:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_425_1
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:425:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_454_1
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:454:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_475_2
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:475:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_400_1
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:400:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_231_1
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:231:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:111:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_114_1
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:114:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_122_2
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:122:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:363:39'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:364:39'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:367:29'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:368:29'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:139:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_142_1
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:142:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_150_2
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:150:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:262:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_267_1
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:267:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_279_3
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:279:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_315_1
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:315:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_335_2
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:335:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_71_1
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:71:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_14_1
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:14:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_45_2
+  - String:          '> at '
+  - LoopLoc:         'receiver.cpp:45:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_97_1
+  - String:          '> at '
+  - LoopLoc:         'channel.cpp:97:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_102_2
+  - String:          '> at '
+  - LoopLoc:         'channel.cpp:102:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_74_1
+  - String:          '> at '
+  - LoopLoc:         'channel.cpp:74:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_228_1
+  - String:          '> at '
+  - LoopLoc:         'channel.cpp:228:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_102_2
+  - String:          '> at '
+  - LoopLoc:         'channel.cpp:102:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_256_1
+  - String:          '> at '
+  - LoopLoc:         'channel.cpp:256:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         'channel.cpp:280:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         'channel.cpp:281:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_464_2
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:464:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_451_1
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:451:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_427_1
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:427:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_414_1
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:414:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_349_1
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:349:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_374_4
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:374:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_381_5
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:381:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_361_3
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:361:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_386_6
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:386:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_200_1
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:200:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_232_2
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:232:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_263_3
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:263:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_295_4
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:295:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_113_1
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:113:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_140_2
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:140:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_77_1
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:77:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_81_2
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:81:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_63_1
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:63:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_88_3
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:88:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_92_4
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:92:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_44_1
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:44:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_12_1
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:12:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_17_2
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:17:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_22_3
+  - String:          '> at '
+  - LoopLoc:         'emitter.cpp:22:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_324_1
+  - String:          '> at '
+  - LoopLoc:         'piloting.cpp:324:20'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: receiver.cpp, Line: 153, Column: 21 }
+Function:        _Z17GMSK_demodulationP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_P7ap_uintILi256EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_153_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: receiver.cpp, Line: 125, Column: 21 }
+Function:        _Z13filtered_listP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_125_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: receiver.cpp, Line: 359, Column: 0 }
+Function:        _Z17GMSK_demodulationP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_P7ap_uintILi256EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_153_3
+  - String:          ''' ('
+  - LoopLoc:         'receiver.cpp:153:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          GMSK_demodulation
+  - String:          ''' completely with a factor of '
+  - Factor:          '61'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: receiver.cpp, Line: 108, Column: 0 }
+Function:        _Z13filtered_listP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_125_3
+  - String:          ''' ('
+  - LoopLoc:         'receiver.cpp:125:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          filtered_list
+  - String:          ''' completely with a factor of '
+  - Factor:          '61'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: receiver.cpp, Line: 111, Column: 12 }
+Function:        _Z13filtered_listP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=hcorr'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  filtered_list
+  - String:          ' '
+  - varLoc:          'receiver.cpp:111:12'
+  - String:          ' '
+  - VarName:         hcorr
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: receiver.cpp, Line: 111, Column: 12 }
+Function:        _Z13filtered_listP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            hcorr
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: receiver.cpp, Line: 139, Column: 10 }
+Function:        _Z17GMSK_demodulationP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_P7ap_uintILi256EE
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=hcorr.i'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  GMSK_demodulation
+  - String:          ' '
+  - varLoc:          'receiver.cpp:139:10'
+  - String:          ' '
+  - VarName:         hcorr.i
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: receiver.cpp, Line: 139, Column: 10 }
+Function:        _Z17GMSK_demodulationP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_P7ap_uintILi256EE
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            hcorr.i
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: receiver.cpp, Line: 262, Column: 10 }
+Function:        _Z17GMSK_demodulationP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_P7ap_uintILi256EE
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=hcorr.i3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  GMSK_demodulation
+  - String:          ' '
+  - varLoc:          'receiver.cpp:262:10'
+  - String:          ' '
+  - VarName:         hcorr.i3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: receiver.cpp, Line: 262, Column: 10 }
+Function:        _Z17GMSK_demodulationP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_P7ap_uintILi256EE
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            hcorr.i3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: receiver.cpp, Line: 111, Column: 12 }
+Function:        _Z13filtered_listP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          hcorr
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: receiver.cpp, Line: 262, Column: 10 }
+Function:        _Z17GMSK_demodulationP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_P7ap_uintILi256EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          hcorr.i3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: receiver.cpp, Line: 139, Column: 10 }
+Function:        _Z17GMSK_demodulationP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_P7ap_uintILi256EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          hcorr.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            pasta-interface-builder
+Name:            UnsupportArrayToStream
+Function:        _Z7channelP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_S3_RN3hls6streamIS2_Li0EEES7_7ap_uintILi27EES8_ILi28EERNS5_I9ap_ufixedILi32ELi24ELS0_5ELS1_3ELi0EELi0EEERNS5_IiLi0EEE
+Args:            
+  - String:          'Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port '''
+  - Name:            I_1
+  - String:          ''''
+...
+--- !Missed
+Pass:            pasta-interface-builder
+Name:            UnsupportArrayToStream
+Function:        _Z7channelP8ap_fixedILi32ELi5EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_S3_S3_RN3hls6streamIS2_Li0EEES7_7ap_uintILi27EES8_ILi28EERNS5_I9ap_ufixedILi32ELi24ELS0_5ELS1_3ELi0EELi0EEERNS5_IiLi0EEE
+Args:            
+  - String:          'Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port '''
+  - Name:            Q_1
+  - String:          ''''
+...

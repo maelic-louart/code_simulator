@@ -1,0 +1,4 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="receiver.cpp:454:20" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="receiver.cpp:454:20" LoopName="VITIS_LOOP_454_1" ParentFunc="Bits_unstuffing(ap_uint&lt;256&gt;, ap_uint&lt;184&gt;*)"/>
+</VitisHLS:BurstInfo>
+

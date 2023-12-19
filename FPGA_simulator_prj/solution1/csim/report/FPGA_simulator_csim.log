@@ -1,0 +1,31 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../FPGA_simulator_tb.cpp in debug mode
+   Compiling ../../../../CPS.cpp in debug mode
+   Compiling ../../../../FPGA_simulator.cpp in debug mode
+   Compiling ../../../../channel.cpp in debug mode
+   Compiling ../../../../emitter.cpp in debug mode
+   Compiling ../../../../piloting.cpp in debug mode
+   Compiling ../../../../receiver.cpp in debug mode
+   Generating csim.exe
+
+snr=  125.891
+ELSE
+ELSE
+ELSE
+ELSE
+ELSE
+err =0
+WARNING [HLS SIM]: hls::stream 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>0' contains leftover data, which may result in RTL simulation hanging.
+WARNING [HLS SIM]: hls::stream 'hls::stream<ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>0' contains leftover data, which may result in RTL simulation hanging.
+WARNING [HLS SIM]: hls::stream 'Q_obs_strm_c' contains leftover data, which may result in RTL simulation hanging.
+WARNING [HLS SIM]: hls::stream 'I_obs_strm_c' contains leftover data, which may result in RTL simulation hanging.
+WARNING [HLS SIM]: hls::stream 'Q_obs_strm_e' contains leftover data, which may result in RTL simulation hanging.
+WARNING [HLS SIM]: hls::stream 'I_obs_strm_e' contains leftover data, which may result in RTL simulation hanging.
+WARNING [HLS SIM]: hls::stream 'longitude_strm_init' contains leftover data, which may result in RTL simulation hanging.
+WARNING [HLS SIM]: hls::stream 'latitude_strm_init' contains leftover data, which may result in RTL simulation hanging.
+WARNING [HLS SIM]: hls::stream 'sog_strm_init' contains leftover data, which may result in RTL simulation hanging.
+WARNING [HLS SIM]: hls::stream 'cog_strm_init' contains leftover data, which may result in RTL simulation hanging.
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 25600
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

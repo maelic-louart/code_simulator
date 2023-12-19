@@ -1,0 +1,945 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "74 56",
+    "file": "FPGA_simulator.cpp",
+    "fileloc": 4,
+    "instructions": 67,
+    "name": "FPGA_simulator",
+    "total_instructions": 87312
+  },
+  "1": {
+    "basicblocks": 100,
+    "calls": "25",
+    "file": "receiver.cpp",
+    "fileloc": 536,
+    "instructions": 1304,
+    "loads": {
+      "L": 41
+    },
+    "name": "Information_extraction",
+    "stores": {
+      "L": 37
+    },
+    "total_instructions": 11249
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "7",
+    "file": "FPGA_simulator.h",
+    "fileloc": 333,
+    "instructions": 5,
+    "name": "message_trame",
+    "total_instructions": 92
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "22 25 24 27 28 29 33 34 31 1",
+    "file": "receiver.cpp",
+    "fileloc": 721,
+    "instructions": 206,
+    "loads": {
+      "L": 8
+    },
+    "name": "receiver",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 33466
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 219,
+    "instructions": 257,
+    "name": "__cxx_global_var_init.10",
+    "total_instructions": 4609
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 218,
+    "instructions": 257,
+    "name": "__cxx_global_var_init.9",
+    "total_instructions": 95802
+  },
+  "14": {
+    "basicblocks": 9,
+    "calls": "43 71 43 71",
+    "file": "channel.cpp",
+    "fileloc": 3,
+    "instructions": 146,
+    "loads": {
+      "L": 5
+    },
+    "name": "Shift_frequency",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 3089
+  },
+  "15": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 217,
+    "instructions": 257,
+    "name": "__cxx_global_var_init.8",
+    "total_instructions": 98817
+  },
+  "16": {
+    "basicblocks": 7,
+    "calls": "30",
+    "file": "channel.cpp",
+    "fileloc": 242,
+    "instructions": 111,
+    "loads": {
+      "L": 7
+    },
+    "name": "Fading",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 10649
+  },
+  "17": {
+    "basicblocks": 45,
+    "calls": "",
+    "file": "emitter.cpp",
+    "fileloc": 345,
+    "instructions": 201,
+    "loads": {
+      "L": 4
+    },
+    "name": "modulation_gmsk_body",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 1308
+  },
+  "18": {
+    "basicblocks": 7,
+    "calls": "32",
+    "file": "channel.cpp",
+    "fileloc": 56,
+    "instructions": 219,
+    "loads": {
+      "L": 10
+    },
+    "name": "Noise_adding",
+    "stores": {
+      "G": 2,
+      "L": 8
+    },
+    "total_instructions": 2232
+  },
+  "19": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 215,
+    "instructions": 66,
+    "name": "__cxx_global_var_init.6",
+    "total_instructions": 24230
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "45 38 39 41 42",
+    "file": "receiver.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 6,
+    "name": "",
+    "total_instructions": 236434
+  },
+  "20": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "channel.cpp",
+    "fileloc": 220,
+    "instructions": 102,
+    "loads": {
+      "L": 6
+    },
+    "name": "sum",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 642
+  },
+  "21": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 214,
+    "instructions": 66,
+    "name": "__cxx_global_var_init.5",
+    "total_instructions": 24563
+  },
+  "22": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 348,
+    "instructions": 5,
+    "name": "data_crc",
+    "total_instructions": 39
+  },
+  "23": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 303,
+    "instructions": 7,
+    "name": "message_data",
+    "total_instructions": 24
+  },
+  "24": {
+    "basicblocks": 22,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 4,
+    "instructions": 218,
+    "loads": {
+      "L": 5
+    },
+    "name": "change_dynamic",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 2926
+  },
+  "25": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 354,
+    "instructions": 33,
+    "name": "data_separated",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 237
+  },
+  "26": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 419,
+    "instructions": 82,
+    "loads": {
+      "L": 3
+    },
+    "name": "find_start",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 444
+  },
+  "27": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 68,
+    "instructions": 50,
+    "loads": {
+      "L": 2
+    },
+    "name": "DAC",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 272
+  },
+  "28": {
+    "basicblocks": 13,
+    "calls": "72 72 68 69 58 57",
+    "file": "receiver.cpp",
+    "fileloc": 358,
+    "instructions": 127,
+    "loads": {
+      "L": 1
+    },
+    "name": "GMSK_demodulation",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 13905
+  },
+  "29": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 395,
+    "instructions": 52,
+    "loads": {
+      "L": 1
+    },
+    "name": "NRZI_decoding",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 246
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "21 19 15 13 12 6 5 64 65",
+    "file": "piloting.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 10,
+    "name": "",
+    "total_instructions": 258017
+  },
+  "30": {
+    "basicblocks": 20,
+    "calls": "43 32",
+    "file": "channel.cpp",
+    "fileloc": 118,
+    "instructions": 693,
+    "loads": {
+      "L": 33
+    },
+    "name": "compute_distance",
+    "stores": {
+      "L": 33
+    },
+    "total_instructions": 9559
+  },
+  "31": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 488,
+    "instructions": 141,
+    "loads": {
+      "L": 1
+    },
+    "name": "Bytes_flipping_r",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 558
+  },
+  "32": {
+    "basicblocks": 20,
+    "calls": "",
+    "file": "channel.cpp",
+    "fileloc": 92,
+    "instructions": 71,
+    "name": "isqrt",
+    "total_instructions": 243
+  },
+  "33": {
+    "basicblocks": 18,
+    "calls": "26",
+    "file": "receiver.cpp",
+    "fileloc": 444,
+    "instructions": 155,
+    "loads": {
+      "L": 5
+    },
+    "name": "Bits_unstuffing",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 1168
+  },
+  "34": {
+    "basicblocks": 7,
+    "calls": "67",
+    "file": "receiver.cpp",
+    "fileloc": 513,
+    "instructions": 242,
+    "loads": {
+      "L": 2
+    },
+    "name": "CRC_check",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 2490
+  },
+  "35": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "piloting.cpp",
+    "fileloc": 320,
+    "instructions": 68,
+    "loads": {
+      "G": 2,
+      "L": 5
+    },
+    "name": "NMEA_frame_building",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 283
+  },
+  "36": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "piloting.cpp",
+    "fileloc": 265,
+    "instructions": 113,
+    "loads": {
+      "G": 1,
+      "L": 4
+    },
+    "name": "read_data_e_p_c",
+    "stores": {
+      "G": 1,
+      "L": 20
+    },
+    "total_instructions": 205
+  },
+  "37": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "emitter.cpp",
+    "fileloc": 59,
+    "instructions": 51,
+    "loads": {
+      "L": 1
+    },
+    "name": "GetCrc16",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 342
+  },
+  "38": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 211,
+    "instructions": 481,
+    "name": "__cxx_global_var_init.3",
+    "total_instructions": 183508
+  },
+  "39": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 222,
+    "instructions": 62,
+    "name": "__cxx_global_var_init.13",
+    "total_instructions": 23364
+  },
+  "4": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 163,
+    "instructions": 153,
+    "loads": {
+      "G": 1,
+      "L": 8
+    },
+    "name": "atan2_maelic",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 2388
+  },
+  "40": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "emitter.cpp",
+    "fileloc": 444,
+    "instructions": 126,
+    "loads": {
+      "L": 8
+    },
+    "name": "amplifier",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 1126
+  },
+  "41": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 227,
+    "instructions": 66,
+    "name": "__cxx_global_var_init.16",
+    "total_instructions": 24563
+  },
+  "42": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 236,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.23",
+    "total_instructions": 384
+  },
+  "43": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "piloting.cpp",
+    "fileloc": 42,
+    "instructions": 54,
+    "loads": {
+      "G": 1
+    },
+    "name": "cos_lookup",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 158
+  },
+  "44": {
+    "basicblocks": 9,
+    "calls": "43 71",
+    "file": "emitter.cpp",
+    "fileloc": 424,
+    "instructions": 65,
+    "loads": {
+      "L": 2
+    },
+    "name": "I_Q_coding",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1172
+  },
+  "45": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 207,
+    "instructions": 257,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 4609
+  },
+  "46": {
+    "basicblocks": 1,
+    "calls": "54 53",
+    "file": "emitter.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 3,
+    "name": "",
+    "total_instructions": 35303
+  },
+  "47": {
+    "basicblocks": 1,
+    "calls": "36 35",
+    "file": "piloting.cpp",
+    "fileloc": 341,
+    "instructions": 10,
+    "name": "frame_building_e_p_c",
+    "total_instructions": 498
+  },
+  "48": {
+    "basicblocks": 7,
+    "calls": "17",
+    "file": "emitter.cpp",
+    "fileloc": 396,
+    "instructions": 171,
+    "loads": {
+      "L": 9
+    },
+    "name": "GMSK_modulation",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 2483
+  },
+  "49": {
+    "basicblocks": 1,
+    "calls": "10",
+    "file": "emitter.cpp",
+    "fileloc": 185,
+    "instructions": 12,
+    "loads": {
+      "L": 2
+    },
+    "name": "Trainning_sequence_adding",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 104
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 221,
+    "instructions": 257,
+    "name": "__cxx_global_var_init.12",
+    "total_instructions": 4609
+  },
+  "50": {
+    "basicblocks": 68,
+    "calls": "9",
+    "file": "emitter.cpp",
+    "fileloc": 193,
+    "instructions": 494,
+    "loads": {
+      "L": 25
+    },
+    "name": "NRZI_coding",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 2231
+  },
+  "51": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 226,
+    "instructions": 1025,
+    "name": "__cxx_global_var_init.15",
+    "total_instructions": 392193
+  },
+  "52": {
+    "basicblocks": 1,
+    "calls": "7",
+    "file": "emitter.cpp",
+    "fileloc": 176,
+    "instructions": 17,
+    "loads": {
+      "L": 3
+    },
+    "name": "HDLC_trame_construction",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 87
+  },
+  "53": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 210,
+    "instructions": 82,
+    "name": "__cxx_global_var_init.2",
+    "total_instructions": 30691
+  },
+  "54": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 207,
+    "instructions": 257,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 4609
+  },
+  "55": {
+    "basicblocks": 5,
+    "calls": "14 16 20 18",
+    "file": "channel.cpp",
+    "fileloc": 267,
+    "instructions": 126,
+    "loads": {
+      "L": 3
+    },
+    "name": "channel",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 16885
+  },
+  "56": {
+    "basicblocks": 1,
+    "calls": "63 55 11",
+    "file": "CPS.cpp",
+    "fileloc": 3,
+    "instructions": 66,
+    "loads": {
+      "L": 2
+    },
+    "name": "CPS",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 66666
+  },
+  "57": {
+    "basicblocks": 24,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 300,
+    "instructions": 252,
+    "loads": {
+      "L": 12
+    },
+    "name": "bits_decoding",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 1857
+  },
+  "58": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 259,
+    "instructions": 210,
+    "loads": {
+      "L": 6
+    },
+    "name": "correlation_computation",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 1966
+  },
+  "59": {
+    "basicblocks": 29,
+    "calls": "8",
+    "file": "emitter.cpp",
+    "fileloc": 100,
+    "instructions": 280,
+    "loads": {
+      "L": 7
+    },
+    "name": "Bits_stuffing",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 1559
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 220,
+    "instructions": 257,
+    "name": "__cxx_global_var_init.11",
+    "total_instructions": 4609
+  },
+  "60": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "emitter.cpp",
+    "fileloc": 38,
+    "instructions": 144,
+    "loads": {
+      "L": 2
+    },
+    "name": "Bytes_flipping",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 561
+  },
+  "61": {
+    "basicblocks": 25,
+    "calls": "37",
+    "file": "emitter.cpp",
+    "fileloc": 70,
+    "instructions": 522,
+    "loads": {
+      "L": 3
+    },
+    "name": "Compute_CRC",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 5057
+  },
+  "62": {
+    "basicblocks": 19,
+    "calls": "23",
+    "file": "emitter.cpp",
+    "fileloc": 3,
+    "instructions": 197,
+    "loads": {
+      "L": 8
+    },
+    "name": "Read_data",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 1247
+  },
+  "63": {
+    "basicblocks": 1,
+    "calls": "23 8 7 10 9 62 60 61 59 52 49 50 48 44 40",
+    "file": "emitter.cpp",
+    "fileloc": 473,
+    "instructions": 197,
+    "loads": {
+      "L": 8
+    },
+    "name": "emitter",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 16249
+  },
+  "64": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 237,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.24",
+    "total_instructions": 384
+  },
+  "65": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 239,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.25",
+    "total_instructions": 384
+  },
+  "66": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "FPGA_simulator.h",
+    "fileloc": 312,
+    "instructions": 4,
+    "name": "message_crc",
+    "total_instructions": 21
+  },
+  "67": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 94,
+    "instructions": 51,
+    "loads": {
+      "L": 1
+    },
+    "name": "IsCrc16Good",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 336
+  },
+  "68": {
+    "basicblocks": 12,
+    "calls": "4",
+    "file": "receiver.cpp",
+    "fileloc": 217,
+    "instructions": 129,
+    "loads": {
+      "L": 9
+    },
+    "name": "angle_computation",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 4485
+  },
+  "69": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 135,
+    "instructions": 174,
+    "loads": {
+      "L": 4
+    },
+    "name": "filtered_list_p",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 1687
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "23 66",
+    "file": "FPGA_simulator.h",
+    "fileloc": 324,
+    "instructions": 8,
+    "name": "message_hdlc",
+    "total_instructions": 70
+  },
+  "70": {
+    "basicblocks": 1,
+    "calls": "51",
+    "file": "channel.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "name": "",
+    "total_instructions": 392195
+  },
+  "71": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "piloting.cpp",
+    "fileloc": 4,
+    "instructions": 53,
+    "loads": {
+      "G": 1
+    },
+    "name": "sin_lookup",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 157
+  },
+  "72": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 107,
+    "instructions": 174,
+    "loads": {
+      "L": 4
+    },
+    "name": "filtered_list",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 1687
+  },
+  "73": {
+    "basicblocks": 30,
+    "calls": "43 71 43 43 71 43",
+    "file": "piloting.cpp",
+    "fileloc": 78,
+    "instructions": 1192,
+    "loads": {
+      "G": 17,
+      "L": 44
+    },
+    "name": "dynamic_data_generation_e_p_c",
+    "stores": {
+      "G": 13,
+      "L": 46
+    },
+    "total_instructions": 19977
+  },
+  "74": {
+    "basicblocks": 1,
+    "calls": "73 47",
+    "file": "piloting.cpp",
+    "fileloc": 350,
+    "instructions": 51,
+    "loads": {
+      "L": 1
+    },
+    "name": "piloting",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 20575
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "23 66",
+    "file": "FPGA_simulator.h",
+    "fileloc": 318,
+    "instructions": 5,
+    "name": "message_data_crc",
+    "total_instructions": 50
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "23 66",
+    "file": "FPGA_simulator.h",
+    "fileloc": 339,
+    "instructions": 11,
+    "name": "message_nrzi",
+    "total_instructions": 107
+  }
+}

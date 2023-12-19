@@ -1,0 +1,512 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "13 17",
+    "file": "FPGA_simulator.cpp",
+    "fileloc": 4,
+    "instructions": 37,
+    "name": "FPGA_simulator",
+    "total_instructions": 4491
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "9",
+    "file": "channel.cpp",
+    "fileloc": 242,
+    "instructions": 32,
+    "loads": {
+      "L": 2
+    },
+    "name": "Fading",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 178
+  },
+  "10": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "emitter.cpp",
+    "fileloc": 3,
+    "instructions": 57,
+    "name": "Read_data",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 57
+  },
+  "11": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 68,
+    "instructions": 22,
+    "loads": {
+      "L": 2
+    },
+    "name": "DAC",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 22
+  },
+  "12": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 395,
+    "instructions": 21,
+    "loads": {
+      "L": 1
+    },
+    "name": "NRZI_decoding",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 21
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "18 15",
+    "file": "piloting.cpp",
+    "fileloc": 350,
+    "instructions": 29,
+    "name": "piloting",
+    "total_instructions": 918
+  },
+  "14": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "emitter.cpp",
+    "fileloc": 100,
+    "instructions": 97,
+    "loads": {
+      "L": 2
+    },
+    "name": "Bits_stuffing",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 97
+  },
+  "15": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "piloting.cpp",
+    "fileloc": 341,
+    "instructions": 153,
+    "loads": {
+      "G": 15,
+      "L": 2
+    },
+    "name": "frame_building_e_p_c",
+    "stores": {
+      "G": 13,
+      "L": 16
+    },
+    "total_instructions": 153
+  },
+  "16": {
+    "basicblocks": 42,
+    "calls": "",
+    "file": "emitter.cpp",
+    "fileloc": 193,
+    "instructions": 175,
+    "loads": {
+      "L": 6
+    },
+    "name": "NRZI_coding",
+    "stores": {
+      "L": 21
+    },
+    "total_instructions": 175
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "2 27 8",
+    "file": "CPS.cpp",
+    "fileloc": 3,
+    "instructions": 38,
+    "loads": {
+      "L": 2
+    },
+    "name": "CPS",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 3536
+  },
+  "18": {
+    "basicblocks": 74,
+    "calls": "31 31 31 31",
+    "file": "piloting.cpp",
+    "fileloc": 78,
+    "instructions": 580,
+    "loads": {
+      "G": 28,
+      "L": 3
+    },
+    "name": "dynamic_data_generation_e_p_c",
+    "stores": {
+      "G": 20,
+      "L": 4
+    },
+    "total_instructions": 736
+  },
+  "19": {
+    "basicblocks": 41,
+    "calls": "6 6 32",
+    "file": "receiver.cpp",
+    "fileloc": 358,
+    "instructions": 321,
+    "loads": {
+      "G": 4,
+      "L": 14
+    },
+    "name": "GMSK_demodulation",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 718
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "10 28 7 14 21 24 16 29 25 26",
+    "file": "emitter.cpp",
+    "fileloc": 473,
+    "instructions": 259,
+    "loads": {
+      "L": 37
+    },
+    "name": "emitter",
+    "stores": {
+      "L": 53
+    },
+    "total_instructions": 1258
+  },
+  "20": {
+    "basicblocks": 39,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 536,
+    "instructions": 357,
+    "loads": {
+      "L": 1
+    },
+    "name": "Information_extraction",
+    "stores": {
+      "L": 31
+    },
+    "total_instructions": 357
+  },
+  "21": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "emitter.cpp",
+    "fileloc": 176,
+    "instructions": 30,
+    "loads": {
+      "L": 8
+    },
+    "name": "HDLC_trame_construction",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 30
+  },
+  "22": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 444,
+    "instructions": 82,
+    "loads": {
+      "L": 4
+    },
+    "name": "Bits_unstuffing",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 82
+  },
+  "23": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 488,
+    "instructions": 67,
+    "loads": {
+      "L": 1
+    },
+    "name": "Bytes_flipping_r",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 67
+  },
+  "24": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "emitter.cpp",
+    "fileloc": 185,
+    "instructions": 35,
+    "loads": {
+      "L": 10
+    },
+    "name": "Trainning_sequence_adding",
+    "stores": {
+      "L": 14
+    },
+    "total_instructions": 35
+  },
+  "25": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "emitter.cpp",
+    "fileloc": 424,
+    "instructions": 117,
+    "loads": {
+      "G": 4,
+      "L": 3
+    },
+    "name": "I_Q_coding",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 117
+  },
+  "26": {
+    "basicblocks": 8,
+    "calls": "",
+    "file": "emitter.cpp",
+    "fileloc": 444,
+    "instructions": 38,
+    "loads": {
+      "L": 2
+    },
+    "name": "amplifier",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 38
+  },
+  "27": {
+    "basicblocks": 5,
+    "calls": "33 1 4 3",
+    "file": "channel.cpp",
+    "fileloc": 267,
+    "instructions": 92,
+    "loads": {
+      "L": 3
+    },
+    "name": "channel",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 677
+  },
+  "28": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "emitter.cpp",
+    "fileloc": 38,
+    "instructions": 57,
+    "loads": {
+      "L": 1
+    },
+    "name": "Bytes_flipping",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 57
+  },
+  "29": {
+    "basicblocks": 27,
+    "calls": "",
+    "file": "emitter.cpp",
+    "fileloc": 396,
+    "instructions": 166,
+    "loads": {
+      "G": 2,
+      "L": 14
+    },
+    "name": "GMSK_modulation",
+    "stores": {
+      "L": 13
+    },
+    "total_instructions": 166
+  },
+  "3": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "channel.cpp",
+    "fileloc": 56,
+    "instructions": 103,
+    "loads": {
+      "G": 4,
+      "L": 3
+    },
+    "name": "Noise_adding",
+    "stores": {
+      "G": 2,
+      "L": 2
+    },
+    "total_instructions": 103
+  },
+  "30": {
+    "basicblocks": 14,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 4,
+    "instructions": 78,
+    "loads": {
+      "L": 4
+    },
+    "name": "change_dynamic",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 78
+  },
+  "31": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "piloting.cpp",
+    "fileloc": 42,
+    "instructions": 39,
+    "loads": {
+      "G": 2
+    },
+    "name": "cos_lookup",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 39
+  },
+  "32": {
+    "basicblocks": 37,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 217,
+    "instructions": 235,
+    "loads": {
+      "G": 1,
+      "L": 7
+    },
+    "name": "angle_computation",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 235
+  },
+  "33": {
+    "basicblocks": 61,
+    "calls": "",
+    "file": "channel.cpp",
+    "fileloc": 3,
+    "instructions": 278,
+    "loads": {
+      "G": 8,
+      "L": 7
+    },
+    "name": "Shift_frequency",
+    "stores": {
+      "L": 15
+    },
+    "total_instructions": 278
+  },
+  "4": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "channel.cpp",
+    "fileloc": 220,
+    "instructions": 26,
+    "loads": {
+      "L": 4
+    },
+    "name": "sum",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 26
+  },
+  "5": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 513,
+    "instructions": 110,
+    "loads": {
+      "G": 1,
+      "L": 2
+    },
+    "name": "CRC_check",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 110
+  },
+  "6": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "receiver.cpp",
+    "fileloc": 107,
+    "instructions": 81,
+    "loads": {
+      "G": 2,
+      "L": 4
+    },
+    "name": "filtered_list",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 81
+  },
+  "7": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "emitter.cpp",
+    "fileloc": 70,
+    "instructions": 227,
+    "loads": {
+      "G": 1,
+      "L": 3
+    },
+    "name": "Compute_CRC",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 227
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "30 11 19 12 22 5 23 20",
+    "file": "receiver.cpp",
+    "fileloc": 721,
+    "instructions": 108,
+    "loads": {
+      "L": 6
+    },
+    "name": "receiver",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 1563
+  },
+  "9": {
+    "basicblocks": 23,
+    "calls": "",
+    "file": "channel.cpp",
+    "fileloc": 118,
+    "instructions": 146,
+    "loads": {
+      "G": 2,
+      "L": 1
+    },
+    "name": "compute_distance",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 146
+  }
+}

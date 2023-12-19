@@ -1,0 +1,164 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 87312, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,  8312, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  4645, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  4491, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  3834, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,  3553, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  3551, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,  3557, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  3658, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  3694, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,  3629, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  5527, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,  6509, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  6301, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,  6301, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  6602, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="FPGA_simulator" col1="FPGA_simulator.cpp:4" col2="87312" col3="3834" col4="3694" col5="6301" col6="6602">
+                    <row id="67" col0="piloting" col1="piloting.cpp:350" col2="20575" col3="841" col4="940" col5="938" col6="947">
+                        <row id="66" col0="dynamic_data_generation_e_p_c" col1="piloting.cpp:78" col2="19977" col3="660" col4="747" col5="747" col6="732">
+                            <row id="36" col0="cos_lookup" col1="piloting.cpp:42" col2="632" col2_disp="  632 (4 calls)" col3="136" col3_disp=" 136 (4 calls)" col4="144" col4_disp=" 144 (4 calls)" col5="144" col5_disp=" 144 (4 calls)" col6="144" col6_disp=" 144 (4 calls)"/>
+                            <row id="64" col0="sin_lookup" col1="piloting.cpp:4" col2="314" col2_disp="  314 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="39" col0="frame_building_e_p_c" col1="piloting.cpp:341" col2="498" col3="152" col4="182" col5="180" col6="188">
+                            <row id="28" col0="read_data_e_p_c" col1="piloting.cpp:265" col2="205" col3="" col4="" col5="" col6=""/>
+                            <row id="27" col0="NMEA_frame_building" col1="piloting.cpp:320" col2="283" col3="" col4="" col5="" col6=""/>
+                        </row>
+                    </row>
+                    <row id="48" col0="CPS" col1="CPS.cpp:3" col2="66666" col3="2956" col4="2729" col5="5338" col6="5609">
+                        <row id="56" col0="emitter" col1="emitter.cpp:473" col2="16249" col3="1107" col4="1038" col5="1014" col6="1127">
+                            <row id="15" col0="message_data" col1="FPGA_simulator.h:303" col2="24" col3="" col4="" col5="" col6=""/>
+                            <row id="68" col0="message_data_crc" col1="FPGA_simulator.h:318" col2="50" col3="" col4="" col5="" col6="">
+                                <row id="15" col0="message_data" col1="FPGA_simulator.h:303" col2="24" col3="" col4="" col5="" col6=""/>
+                                <row id="59" col0="message_crc" col1="FPGA_simulator.h:312" col2="21" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="63" col0="message_hdlc" col1="FPGA_simulator.h:324" col2="70" col3="" col4="" col5="" col6="">
+                                <row id="15" col0="message_data" col1="FPGA_simulator.h:303" col2="24" col3="" col4="" col5="" col6=""/>
+                                <row id="59" col0="message_crc" col1="FPGA_simulator.h:312" col2="21" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="2" col0="message_trame" col1="FPGA_simulator.h:333" col2="92" col3="" col4="" col5="" col6="">
+                                <row id="63" col0="message_hdlc" col1="FPGA_simulator.h:324" col2="70" col3="" col4="" col5="" col6="">
+                                    <row id="15" col0="message_data" col1="FPGA_simulator.h:303" col2="24" col3="" col4="" col5="" col6=""/>
+                                    <row id="59" col0="message_crc" col1="FPGA_simulator.h:312" col2="21" col3="" col4="" col5="" col6=""/>
+                                </row>
+                            </row>
+                            <row id="69" col0="message_nrzi" col1="FPGA_simulator.h:339" col2="107" col3="" col4="" col5="" col6="">
+                                <row id="15" col0="message_data" col1="FPGA_simulator.h:303" col2="24" col3="" col4="" col5="" col6=""/>
+                                <row id="59" col0="message_crc" col1="FPGA_simulator.h:312" col2="21" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="55" col0="Read_data" col1="emitter.cpp:3" col2="1247" col3="57" col4="60" col5="57" col6="71">
+                                <row id="15" col0="message_data" col1="FPGA_simulator.h:303" col2="24" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="53" col0="Bytes_flipping" col1="emitter.cpp:38" col2="561" col3="57" col4="58" col5="57" col6="61"/>
+                            <row id="54" col0="Compute_CRC" col1="emitter.cpp:70" col2="5057" col3="220" col4="224" col5="220" col6="239">
+                                <row id="29" col0="GetCrc16" col1="emitter.cpp:59" col2="342" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="51" col0="Bits_stuffing" col1="emitter.cpp:100" col2="1559" col3="86" col4="91" col5="86" col6="94">
+                                <row id="68" col0="message_data_crc" col1="FPGA_simulator.h:318" col2="50" col3="" col4="" col5="" col6="">
+                                    <row id="15" col0="message_data" col1="FPGA_simulator.h:303" col2="24" col3="" col4="" col5="" col6=""/>
+                                    <row id="59" col0="message_crc" col1="FPGA_simulator.h:312" col2="21" col3="" col4="" col5="" col6=""/>
+                                </row>
+                            </row>
+                            <row id="45" col0="HDLC_trame_construction" col1="emitter.cpp:176" col2="87" col3="17" col4="17" col5="17" col6="17">
+                                <row id="63" col0="message_hdlc" col1="FPGA_simulator.h:324" col2="70" col3="" col4="" col5="" col6="">
+                                    <row id="15" col0="message_data" col1="FPGA_simulator.h:303" col2="24" col3="" col4="" col5="" col6=""/>
+                                    <row id="59" col0="message_crc" col1="FPGA_simulator.h:312" col2="21" col3="" col4="" col5="" col6=""/>
+                                </row>
+                            </row>
+                            <row id="41" col0="Trainning_sequence_adding" col1="emitter.cpp:185" col2="104" col3="20" col4="20" col5="20" col6="20">
+                                <row id="2" col0="message_trame" col1="FPGA_simulator.h:333" col2="92" col3="" col4="" col5="" col6="">
+                                    <row id="63" col0="message_hdlc" col1="FPGA_simulator.h:324" col2="70" col3="" col4="" col5="" col6="">
+                                        <row id="15" col0="message_data" col1="FPGA_simulator.h:303" col2="24" col3="" col4="" col5="" col6=""/>
+                                        <row id="59" col0="message_crc" col1="FPGA_simulator.h:312" col2="21" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="43" col0="NRZI_coding" col1="emitter.cpp:193" col2="2231" col3="118" col4="125" col5="118" col6="134">
+                                <row id="69" col0="message_nrzi" col1="FPGA_simulator.h:339" col2="107" col3="" col4="" col5="" col6="">
+                                    <row id="15" col0="message_data" col1="FPGA_simulator.h:303" col2="24" col3="" col4="" col5="" col6=""/>
+                                    <row id="59" col0="message_crc" col1="FPGA_simulator.h:312" col2="21" col3="" col4="" col5="" col6=""/>
+                                </row>
+                            </row>
+                            <row id="40" col0="GMSK_modulation" col1="emitter.cpp:396" col2="2483" col3="146" col4="146" col5="144" col6="170">
+                                <row id="9" col0="modulation_gmsk_body" col1="emitter.cpp:345" col2="1308" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="37" col0="I_Q_coding" col1="emitter.cpp:424" col2="1172" col3="89" col4="100" col5="100" col6="104">
+                                <row id="36" col0="cos_lookup" col1="piloting.cpp:42" col2="158" col3="" col4="" col5="" col6=""/>
+                                <row id="64" col0="sin_lookup" col1="piloting.cpp:4" col2="157" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="33" col0="amplifier" col1="emitter.cpp:444" col2="1126" col3="38" col4="38" col5="36" col6="54"/>
+                        </row>
+                        <row id="47" col0="channel" col1="channel.cpp:267" col2="16885" col3="507" col4="449" col5="446" col6="486">
+                            <row id="6" col0="Shift_frequency" col1="channel.cpp:3" col2="3089" col3="216" col4="236" col5="236" col6="244">
+                                <row id="36" col0="cos_lookup" col1="piloting.cpp:42" col2="316" col2_disp="  316 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="64" col0="sin_lookup" col1="piloting.cpp:4" col2="314" col2_disp="  314 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="8" col0="Fading" col1="channel.cpp:242" col2="10649" col3="70" col4="56" col5="55" col6="65">
+                                <row id="22" col0="compute_distance" col1="channel.cpp:118" col2="9559" col3="38" col4="30" col5="29" col6="33">
+                                    <row id="36" col0="cos_lookup" col1="piloting.cpp:42" col2="158" col3="" col4="" col5="" col6=""/>
+                                    <row id="24" col0="isqrt" col1="channel.cpp:92" col2="243" col3="" col4="" col5="" col6=""/>
+                                </row>
+                            </row>
+                            <row id="12" col0="sum" col1="channel.cpp:220" col2="642" col3="26" col4="26" col5="26" col6="30"/>
+                            <row id="10" col0="Noise_adding" col1="channel.cpp:56" col2="2232" col3="103" col4="81" col5="79" col6="97">
+                                <row id="24" col0="isqrt" col1="channel.cpp:92" col2="243" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="3" col0="receiver" col1="receiver.cpp:721" col2="33466" col3="1304" col4="1232" col5="3868" col6="3984">
+                            <row id="14" col0="data_crc" col1="FPGA_simulator.h:348" col2="39" col3="" col4="" col5="" col6=""/>
+                            <row id="17" col0="data_separated" col1="FPGA_simulator.h:354" col2="237" col3="" col4="" col5="" col6=""/>
+                            <row id="16" col0="change_dynamic" col1="receiver.cpp:4" col2="2926" col3="68" col4="70" col5="68" col6="76"/>
+                            <row id="19" col0="DAC" col1="receiver.cpp:68" col2="272" col3="22" col4="22" col5="22" col6="26"/>
+                            <row id="20" col0="GMSK_demodulation" col1="receiver.cpp:358" col2="13905" col3="643" col4="672" col5="3320" col6="3369">
+                                <row id="65" col0="filtered_list" col1="receiver.cpp:107" col2="3374" col2_disp="3,374 (2 calls)" col3="154" col3_disp=" 154 (2 calls)" col4="168" col4_disp=" 168 (2 calls)" col5="1902" col5_disp="1,902 (2 calls)" col6="1922" col6_disp="1,922 (2 calls)"/>
+                                <row id="61" col0="angle_computation" col1="receiver.cpp:217" col2="4485" col3="198" col4="198" col5="198" col6="202">
+                                    <row id="32" col0="atan2_maelic" col1="receiver.cpp:163" col2="2388" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="62" col0="filtered_list_p" col1="receiver.cpp:135" col2="1687" col3="" col4="" col5="" col6=""/>
+                                <row id="50" col0="correlation_computation" col1="receiver.cpp:259" col2="1966" col3="" col4="" col5="" col6=""/>
+                                <row id="49" col0="bits_decoding" col1="receiver.cpp:300" col2="1857" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="21" col0="NRZI_decoding" col1="receiver.cpp:395" col2="246" col3="21" col4="22" col5="21" col6="25"/>
+                            <row id="25" col0="Bits_unstuffing" col1="receiver.cpp:444" col2="1168" col3="68" col4="71" col5="68" col6="79">
+                                <row id="18" col0="find_start" col1="receiver.cpp:419" col2="444" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="26" col0="CRC_check" col1="receiver.cpp:513" col2="2490" col3="109" col4="111" col5="109" col6="117">
+                                <row id="60" col0="IsCrc16Good" col1="receiver.cpp:94" col2="336" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="23" col0="Bytes_flipping_r" col1="receiver.cpp:488" col2="558" col3="67" col4="68" col5="67" col6="71"/>
+                            <row id="1" col0="Information_extraction" col1="receiver.cpp:536" col2="11249" col3="198" col4="156" col5="153" col6="179">
+                                <row id="17" col0="data_separated" col1="FPGA_simulator.h:354" col2="237" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

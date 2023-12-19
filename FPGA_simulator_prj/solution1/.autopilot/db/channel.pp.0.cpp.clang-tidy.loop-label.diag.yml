@@ -1,0 +1,103 @@
+---
+MainSourceFile:  /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/channel.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        /opt/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/channel.pp.0.cpp
+        Offset:          55323
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /opt/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/channel.pp.0.cpp
+        Offset:          282479
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /opt/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/channel.pp.0.cpp
+        Offset:          282943
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /opt/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/channel.pp.0.cpp
+        Offset:          283408
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /opt/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/channel.pp.0.cpp
+        Offset:          566114
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_13_1:  '
+    FileOffset:      13
+    FilePath:        channel.cpp
+    Replacements:    
+      - FilePath:        /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/channel.pp.0.cpp
+        Offset:          2230310
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_13_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_74_1:  '
+    FileOffset:      74
+    FilePath:        channel.cpp
+    Replacements:    
+      - FilePath:        /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/channel.pp.0.cpp
+        Offset:          2231268
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_74_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_97_1:  '
+    FileOffset:      97
+    FilePath:        channel.cpp
+    Replacements:    
+      - FilePath:        /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/channel.pp.0.cpp
+        Offset:          2231713
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_97_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_102_2:  '
+    FileOffset:      102
+    FilePath:        channel.cpp
+    Replacements:    
+      - FilePath:        /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/channel.pp.0.cpp
+        Offset:          2231782
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_102_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_228_1:  '
+    FileOffset:      228
+    FilePath:        channel.cpp
+    Replacements:    
+      - FilePath:        /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/channel.pp.0.cpp
+        Offset:          2234539
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_228_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_256_1:  '
+    FileOffset:      256
+    FilePath:        channel.cpp
+    Replacements:    
+      - FilePath:        /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/channel.pp.0.cpp
+        Offset:          2235242
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_256_1: '
+...

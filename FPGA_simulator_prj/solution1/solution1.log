@@ -1,0 +1,679 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7vx485tffg1157-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 37.75 seconds. CPU system time: 1.29 seconds. Elapsed time: 39.12 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7vx485tffg1157-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 221.211 MB.
+INFO: [HLS 200-10] Analyzing design file 'CPS.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'FPGA_simulator.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'channel.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'emitter.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'piloting.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'receiver.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 45.87 seconds. CPU system time: 2.62 seconds. Elapsed time: 48.49 seconds; current allocated memory: 224.266 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 87,312 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,312 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 4,645 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 4,491 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,834 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,553 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,551 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,557 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,658 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,694 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,629 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,527 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,509 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,301 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,301 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,602 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-398] Updating loop lower bound from 0 to 184 for loop 'VITIS_LOOP_475_2' (receiver.cpp:475:20) in function 'Bits_unstuffing'. (receiver.cpp:445:0)
+INFO: [HLS 214-178] Inlining function 'sin_lookup(int)' into 'dynamic_data_generation_e_p_c(bool, hls::stream<dynamic_information, 0>&, hls::stream<dynamic_information_init, 0>&, hls::stream<falsification_information, 0>&)' (piloting.cpp:79:0)
+INFO: [HLS 214-178] Inlining function 'read_data_e_p_c(hls::stream<static_information, 0>&, hls::stream<dynamic_information, 0>&, int*)' into 'frame_building_e_p_c(hls::stream<static_information, 0>&, hls::stream<dynamic_information, 0>&, hls::stream<ap_uint<178>, 0>&, hls::stream<ap_uint<178>, 0>&)' (piloting.cpp:342:0)
+INFO: [HLS 214-178] Inlining function 'NMEA_frame_building(int*, hls::stream<ap_uint<178>, 0>&, hls::stream<ap_uint<178>, 0>&)' into 'frame_building_e_p_c(hls::stream<static_information, 0>&, hls::stream<dynamic_information, 0>&, hls::stream<ap_uint<178>, 0>&, hls::stream<ap_uint<178>, 0>&)' (piloting.cpp:342:0)
+INFO: [HLS 214-178] Inlining function 'message_data::message_data() (.165)' into 'message_data_crc::message_data_crc()' (./FPGA_simulator.h:318:0)
+INFO: [HLS 214-178] Inlining function 'message_crc::message_crc() (.191.197.203)' into 'message_data_crc::message_data_crc()' (./FPGA_simulator.h:318:0)
+INFO: [HLS 214-178] Inlining function 'message_data::message_data() (.165)' into 'message_hdlc::message_hdlc() (.224)' (./FPGA_simulator.h:324:0)
+INFO: [HLS 214-178] Inlining function 'message_crc::message_crc() (.191.197.203)' into 'message_hdlc::message_hdlc() (.224)' (./FPGA_simulator.h:324:0)
+INFO: [HLS 214-178] Inlining function 'message_hdlc::message_hdlc() (.224)' into 'message_trame::message_trame()' (./FPGA_simulator.h:333:0)
+INFO: [HLS 214-178] Inlining function 'message_data::message_data() (.165)' into 'message_nrzi::message_nrzi()' (./FPGA_simulator.h:339:0)
+INFO: [HLS 214-178] Inlining function 'message_crc::message_crc() (.191.197.203)' into 'message_nrzi::message_nrzi()' (./FPGA_simulator.h:339:0)
+INFO: [HLS 214-178] Inlining function 'GetCrc16(ap_uint<8>*)' into 'Compute_CRC(ap_uint<168>, ap_uint<16>*)' (emitter.cpp:71:0)
+INFO: [HLS 214-178] Inlining function 'message_data_crc::message_data_crc()' into 'Bits_stuffing(ap_uint<168>, ap_uint<16>, message_data_crc*)' (emitter.cpp:101:0)
+INFO: [HLS 214-178] Inlining function 'message_hdlc::message_hdlc() (.224)' into 'HDLC_trame_construction(message_data_crc, message_hdlc*)' (emitter.cpp:177:0)
+INFO: [HLS 214-178] Inlining function 'message_trame::message_trame()' into 'Trainning_sequence_adding(message_hdlc, message_trame*)' (emitter.cpp:186:0)
+INFO: [HLS 214-178] Inlining function 'message_nrzi::message_nrzi()' into 'NRZI_coding(message_trame, message_nrzi*)' (emitter.cpp:194:0)
+INFO: [HLS 214-178] Inlining function 'modulation_gmsk_body(ap_uint<232>, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_uint<8>)' into 'GMSK_modulation(message_nrzi, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (emitter.cpp:397:0)
+INFO: [HLS 214-178] Inlining function 'cos_lookup(int)' into 'I_Q_coding(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (emitter.cpp:425:0)
+INFO: [HLS 214-178] Inlining function 'sin_lookup(int)' into 'I_Q_coding(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (emitter.cpp:425:0)
+INFO: [HLS 214-178] Inlining function 'message_data::message_data() (.165)' into 'emitter(hls::stream<bool, 0>&, hls::stream<ap_uint<178>, 0>&, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_uint<27>*, ap_uint<28>*)' (emitter.cpp:474:0)
+INFO: [HLS 214-178] Inlining function 'message_data_crc::message_data_crc()' into 'emitter(hls::stream<bool, 0>&, hls::stream<ap_uint<178>, 0>&, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_uint<27>*, ap_uint<28>*)' (emitter.cpp:474:0)
+INFO: [HLS 214-178] Inlining function 'message_hdlc::message_hdlc() (.224)' into 'emitter(hls::stream<bool, 0>&, hls::stream<ap_uint<178>, 0>&, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_uint<27>*, ap_uint<28>*)' (emitter.cpp:474:0)
+INFO: [HLS 214-178] Inlining function 'message_trame::message_trame()' into 'emitter(hls::stream<bool, 0>&, hls::stream<ap_uint<178>, 0>&, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_uint<27>*, ap_uint<28>*)' (emitter.cpp:474:0)
+INFO: [HLS 214-178] Inlining function 'message_nrzi::message_nrzi()' into 'emitter(hls::stream<bool, 0>&, hls::stream<ap_uint<178>, 0>&, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_uint<27>*, ap_uint<28>*)' (emitter.cpp:474:0)
+INFO: [HLS 214-178] Inlining function 'cos_lookup(int)' into 'Shift_frequency(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<int, 0>&)' (channel.cpp:4:0)
+INFO: [HLS 214-178] Inlining function 'sin_lookup(int)' into 'Shift_frequency(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<int, 0>&)' (channel.cpp:4:0)
+INFO: [HLS 214-178] Inlining function 'cos_lookup(int)' into 'compute_distance(ap_uint<27>, ap_uint<28>)' (channel.cpp:119:0)
+INFO: [HLS 214-178] Inlining function 'isqrt(int)' into 'compute_distance(ap_uint<27>, ap_uint<28>)' (channel.cpp:119:0)
+INFO: [HLS 214-178] Inlining function 'isqrt(int)' into 'Noise_adding(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_ufixed<32, 24, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)' (channel.cpp:57:0)
+INFO: [HLS 214-178] Inlining function 'atan2_maelic(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'angle_computation(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (receiver.cpp:218:0)
+INFO: [HLS 214-178] Inlining function 'filtered_list_p(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'GMSK_demodulation(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_uint<256>*)' (receiver.cpp:359:0)
+INFO: [HLS 214-178] Inlining function 'correlation_computation(ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_uint<13>*)' into 'GMSK_demodulation(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_uint<256>*)' (receiver.cpp:359:0)
+INFO: [HLS 214-178] Inlining function 'bits_decoding(ap_uint<13>, ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_uint<256>*)' into 'GMSK_demodulation(ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 5, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_uint<256>*)' (receiver.cpp:359:0)
+INFO: [HLS 214-178] Inlining function 'find_start(ap_uint<256>, ap_uint<9>*)' into 'Bits_unstuffing(ap_uint<256>, ap_uint<184>*)' (receiver.cpp:445:0)
+INFO: [HLS 214-178] Inlining function 'IsCrc16Good(ap_uint<8>*)' into 'CRC_check(ap_uint<184>, bool*)' (receiver.cpp:514:0)
+INFO: [HLS 214-178] Inlining function 'data_separated::data_separated()' into 'Information_extraction(ap_uint<168>, bool, hls::stream<ap_fixed<32, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_uint<168>, 0>&, ap_uint<30>*, bool)' (receiver.cpp:537:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'dynamic_information_strm' with compact=bit mode in 77-bits (piloting.cpp:353:35)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_597_3> at receiver.cpp:597:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_628_7> at receiver.cpp:628:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_653_8> at receiver.cpp:653:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_495_1> at receiver.cpp:495:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_522_1> at receiver.cpp:522:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_98_1> at receiver.cpp:98:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_425_1> at receiver.cpp:425:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_454_1> at receiver.cpp:454:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_475_2> at receiver.cpp:475:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_400_1> at receiver.cpp:400:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_231_1> at receiver.cpp:231:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< unknown> at receiver.cpp:111:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_114_1> at receiver.cpp:114:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_122_2> at receiver.cpp:122:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< unknown> at receiver.cpp:363:39 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< unknown> at receiver.cpp:364:39 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< unknown> at receiver.cpp:367:29 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< unknown> at receiver.cpp:368:29 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< unknown> at receiver.cpp:139:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_142_1> at receiver.cpp:142:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_150_2> at receiver.cpp:150:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< unknown> at receiver.cpp:262:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_267_1> at receiver.cpp:267:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_279_3> at receiver.cpp:279:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_315_1> at receiver.cpp:315:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_335_2> at receiver.cpp:335:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_71_1> at receiver.cpp:71:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_14_1> at receiver.cpp:14:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_45_2> at receiver.cpp:45:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_97_1> at channel.cpp:97:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_102_2> at channel.cpp:102:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_74_1> at channel.cpp:74:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_228_1> at channel.cpp:228:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_256_1> at channel.cpp:256:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< unknown> at channel.cpp:280:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< unknown> at channel.cpp:281:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_464_2> at emitter.cpp:464:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_451_1> at emitter.cpp:451:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_427_1> at emitter.cpp:427:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_414_1> at emitter.cpp:414:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_349_1> at emitter.cpp:349:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_374_4> at emitter.cpp:374:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_381_5> at emitter.cpp:381:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_361_3> at emitter.cpp:361:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_386_6> at emitter.cpp:386:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_200_1> at emitter.cpp:200:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_232_2> at emitter.cpp:232:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_263_3> at emitter.cpp:263:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_295_4> at emitter.cpp:295:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_113_1> at emitter.cpp:113:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_140_2> at emitter.cpp:140:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_77_1> at emitter.cpp:77:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_81_2> at emitter.cpp:81:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_63_1> at emitter.cpp:63:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_88_3> at emitter.cpp:88:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_92_4> at emitter.cpp:92:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_44_1> at emitter.cpp:44:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_12_1> at emitter.cpp:12:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_17_2> at emitter.cpp:17:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_22_3> at emitter.cpp:22:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_324_1> at piloting.cpp:324:20 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_153_3' is marked as complete unroll implied by the pipeline pragma (receiver.cpp:153:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_125_3' is marked as complete unroll implied by the pipeline pragma (receiver.cpp:125:21)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_153_3' (receiver.cpp:153:21) in function 'GMSK_demodulation' completely with a factor of 61 (receiver.cpp:359:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_125_3' (receiver.cpp:125:21) in function 'filtered_list' completely with a factor of 61 (receiver.cpp:108:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'hcorr' due to pipeline pragma (receiver.cpp:111:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'hcorr.i' due to pipeline pragma (receiver.cpp:139:10)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'hcorr.i3' due to pipeline pragma (receiver.cpp:262:10)
+INFO: [HLS 214-248] Applying array_partition to 'hcorr': Complete partitioning on dimension 1. (receiver.cpp:111:12)
+INFO: [HLS 214-248] Applying array_partition to 'hcorr.i3': Cyclic partitioning with factor 2 on dimension 1. (receiver.cpp:262:10)
+INFO: [HLS 214-248] Applying array_partition to 'hcorr.i': Complete partitioning on dimension 1. (receiver.cpp:139:10)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'I_1'
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'Q_1'
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 7.84 seconds. CPU system time: 0.67 seconds. Elapsed time: 9.17 seconds; current allocated memory: 228.215 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 228.215 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.39 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.4 seconds; current allocated memory: 241.238 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'compute_distance' into 'Fading' (channel.cpp:249) automatically.
+WARNING: [SYNCHK 200-23] receiver.cpp:244: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.49 seconds. CPU system time: 0 seconds. Elapsed time: 0.49 seconds; current allocated memory: 252.652 MB.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 31 for loop 'VITIS_LOOP_102_2' (channel.cpp:102:36) in function 'compute_distance'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 31 for loop 'VITIS_LOOP_97_1' (channel.cpp:97:35) in function 'Noise_adding'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 31 for loop 'VITIS_LOOP_102_2' (channel.cpp:102:36) in function 'Noise_adding'.
+INFO: [XFORM 203-602] Inlining function 'compute_distance' into 'Fading' (channel.cpp:249) automatically.
+WARNING: [HLS 200-805] An internal stream 'dynamic_information_strm' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'data_strm_1' (FPGA_simulator.cpp:24) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'start_e_cps' (FPGA_simulator.cpp:25) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'snr_strm_1' (FPGA_simulator.cpp:26) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'f_shift_strm_1' (FPGA_simulator.cpp:27) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-712] Applying dataflow to function 'piloting' (piloting.cpp:352:1), detected/extracted 3 process function(s): 
+	 'piloting_Block_entry1_proc18'
+	 'dynamic_data_generation_e_p_c'
+	 'frame_building_e_p_c'.
+INFO: [XFORM 203-712] Applying dataflow to function 'emitter' (emitter.cpp:475:1), detected/extracted 12 process function(s): 
+	 'emitter_Block_entry31_proc19'
+	 'Read_data'
+	 'Bytes_flipping'
+	 'Compute_CRC'
+	 'Bits_stuffing'
+	 'HDLC_trame_construction16'
+	 'emitter_Block_entry3149_proc'
+	 'Trainning_sequence_adding17'
+	 'NRZI_coding'
+	 'GMSK_modulation'
+	 'I_Q_coding'
+	 'amplifier'.
+INFO: [XFORM 203-712] Applying dataflow to function 'channel' (channel.cpp:274:1), detected/extracted 7 process function(s): 
+	 'channel_Block_entry4_proc'
+	 'channel_Block_arrayinit.end_proc'
+	 'channel_Block_arrayinit.end7_proc'
+	 'Shift_frequency'
+	 'Fading'
+	 'sum'
+	 'Noise_adding'.
+INFO: [XFORM 203-712] Applying dataflow to function 'receiver' (receiver.cpp:723:1), detected/extracted 9 process function(s): 
+	 'receiver_Block_entry6_proc'
+	 'change_dynamic'
+	 'DAC'
+	 'GMSK_demodulation'
+	 'NRZI_decoding'
+	 'Bits_unstuffing'
+	 'CRC_check'
+	 'Bytes_flipping_r'
+	 'Information_extraction'.
+INFO: [XFORM 203-712] Applying dataflow to function 'CPS' (CPS.cpp:6:1), detected/extracted 3 process function(s): 
+	 'emitter'
+	 'channel'
+	 'receiver'.
+INFO: [XFORM 203-712] Applying dataflow to function 'FPGA_simulator' (FPGA_simulator.cpp:4:1), detected/extracted 2 process function(s): 
+	 'piloting'
+	 'CPS'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (piloting.cpp:228:33) in function 'dynamic_data_generation_e_p_c'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (piloting.cpp:172:34) in function 'dynamic_data_generation_e_p_c'... converting 22 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (piloting.cpp:121:28) to (piloting.cpp:169:3) in function 'dynamic_data_generation_e_p_c'... converting 11 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (piloting.cpp:42:27) to (piloting.cpp:74:1) in function 'cos_lookup'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (receiver.cpp:222:10) to (receiver.cpp:231:20) in function 'angle_computation'... converting 20 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (receiver.cpp:197:28) in function 'angle_computation'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (channel.cpp:15:9) to (channel.cpp:13:19) in function 'Shift_frequency'... converting 35 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (channel.cpp:13:19) in function 'Shift_frequency'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (channel.cpp:102:36) to (channel.cpp:102:20) in function 'Noise_adding'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (receiver.cpp:400:37) to (receiver.cpp:400:20) in function 'NRZI_decoding'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (emitter.cpp:200:35) to (emitter.cpp:200:20) in function 'NRZI_coding'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (emitter.cpp:232:35) to (emitter.cpp:232:20) in function 'NRZI_coding'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (emitter.cpp:198:13) to (emitter.cpp:263:20) in function 'NRZI_coding'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (emitter.cpp:198:13) to (emitter.cpp:295:20) in function 'NRZI_coding'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (receiver.cpp:628:42) to (receiver.cpp:653:21) in function 'Information_extraction'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (receiver.cpp:658:38) in function 'Information_extraction'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (emitter.cpp:427:37) to (piloting.cpp:50:16) in function 'I_Q_coding'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (piloting.cpp:12:16) to (emitter.cpp:427:20) in function 'I_Q_coding'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (emitter.cpp:361:30) to (emitter.cpp:361:22) in function 'GMSK_modulation'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (receiver.cpp:308:10) to (receiver.cpp:315:20) in function 'GMSK_demodulation'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (receiver.cpp:311:15) to (receiver.cpp:335:20) in function 'GMSK_demodulation'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (channel.cpp:102:36) to (channel.cpp:102:20) in function 'Fading'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (receiver.cpp:457:5) to (receiver.cpp:454:20) in function 'Bits_unstuffing'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (emitter.cpp:105:19) to (emitter.cpp:113:20) in function 'Bits_stuffing'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (emitter.cpp:106:17) to (emitter.cpp:140:20) in function 'Bits_stuffing'... converting 3 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'cos_lookup' into 'dynamic_data_generation_e_p_c' (piloting.cpp:208->piloting.cpp:360) automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 2.06 seconds; current allocated memory: 292.848 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_275_2'(receiver.cpp:275:20) and 'VITIS_LOOP_279_3'(receiver.cpp:279:21) in function 'GMSK_demodulation' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_275_2' (receiver.cpp:275:20) in function 'GMSK_demodulation'.
+WARNING: [HLS 200-1614] Cosimulation may deadlock if process dynamic_data_generation_e_p_c has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream
+WARNING: [HLS 200-1614] Cosimulation may deadlock if process frame_building_e_p_c has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream
+WARNING: [HLS 200-1614] Cosimulation may deadlock if process Noise_adding has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream
+WARNING: [HLS 200-1614] Cosimulation may deadlock if process channel has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream
+WARNING: [HLS 200-765] Process piloting is made part of the output synchronization in its dataflow region, because it has an external FIFO output and no PIPO output
+WARNING: [HLS 200-1450] Process piloting has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.5 seconds. CPU system time: 0.12 seconds. Elapsed time: 1.64 seconds; current allocated memory: 1.141 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FPGA_simulator' ...
+WARNING: [SYN 201-103] Legalizing function name 'channel_Block_arrayinit.end_proc_Pipeline_1' to 'channel_Block_arrayinit_end_proc_Pipeline_1'.
+WARNING: [SYN 201-103] Legalizing function name 'channel_Block_arrayinit.end_proc' to 'channel_Block_arrayinit_end_proc'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'piloting_Block_entry1_proc18' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.3 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.32 seconds; current allocated memory: 1.142 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.143 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dynamic_data_generation_e_p_c' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.33 seconds. CPU system time: 0 seconds. Elapsed time: 0.34 seconds; current allocated memory: 1.146 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.146 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'frame_building_e_p_c_Pipeline_VITIS_LOOP_324_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_324_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'VITIS_LOOP_324_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.147 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.147 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'frame_building_e_p_c' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.148 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.148 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'piloting' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.148 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.148 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'emitter_Block_entry31_proc19' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.148 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.148 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Read_data' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.149 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.149 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Bytes_flipping' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_44_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_44_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.150 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.150 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Compute_CRC_Pipeline_VITIS_LOOP_77_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_77_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_77_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.150 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.150 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Compute_CRC_Pipeline_VITIS_LOOP_81_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_81_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_81_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.151 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.151 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Compute_CRC_Pipeline_VITIS_LOOP_63_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_63_1'.
+WARNING: [HLS 200-880] The II Violation in module 'Compute_CRC_Pipeline_VITIS_LOOP_63_1' (loop 'VITIS_LOOP_63_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('fcs_write_ln61', emitter.cpp:61->emitter.cpp:86->emitter.cpp:502) of variable 'fcs', emitter.cpp:65->emitter.cpp:86->emitter.cpp:502 on local variable 'fcs', emitter.cpp:61->emitter.cpp:86->emitter.cpp:502 and 'load' operation 16 bit ('fcs_load', emitter.cpp:63->emitter.cpp:86->emitter.cpp:502) on local variable 'fcs', emitter.cpp:61->emitter.cpp:86->emitter.cpp:502.
+WARNING: [HLS 200-880] The II Violation in module 'Compute_CRC_Pipeline_VITIS_LOOP_63_1' (loop 'VITIS_LOOP_63_1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation 0 bit ('fcs_write_ln61', emitter.cpp:61->emitter.cpp:86->emitter.cpp:502) of variable 'fcs', emitter.cpp:65->emitter.cpp:86->emitter.cpp:502 on local variable 'fcs', emitter.cpp:61->emitter.cpp:86->emitter.cpp:502 and 'load' operation 16 bit ('fcs_load', emitter.cpp:63->emitter.cpp:86->emitter.cpp:502) on local variable 'fcs', emitter.cpp:61->emitter.cpp:86->emitter.cpp:502.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 5, loop 'VITIS_LOOP_63_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.151 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.151 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Compute_CRC_Pipeline_VITIS_LOOP_88_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_88_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_88_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.151 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.151 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Compute_CRC_Pipeline_VITIS_LOOP_92_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_92_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_92_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.152 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.152 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Compute_CRC' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.152 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.152 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Bits_stuffing_Pipeline_VITIS_LOOP_113_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_113_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_113_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.153 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.153 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Bits_stuffing_Pipeline_VITIS_LOOP_140_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_140_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_140_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.153 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.153 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Bits_stuffing' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.154 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.154 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'HDLC_trame_construction16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.154 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.154 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Trainning_sequence_adding17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.154 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.154 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'NRZI_coding_Pipeline_VITIS_LOOP_200_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_200_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_200_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.155 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.155 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'NRZI_coding_Pipeline_VITIS_LOOP_232_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_232_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_232_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.155 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.155 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'NRZI_coding_Pipeline_VITIS_LOOP_263_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_263_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_263_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.156 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.156 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'NRZI_coding_Pipeline_VITIS_LOOP_295_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_295_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.157 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.157 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'NRZI_coding' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.157 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.157 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GMSK_modulation_Pipeline_VITIS_LOOP_414_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_414_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_414_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.158 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.158 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GMSK_modulation_Pipeline_VITIS_LOOP_349_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_349_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_349_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.158 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.158 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GMSK_modulation_Pipeline_VITIS_LOOP_361_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_361_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_361_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.158 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.158 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GMSK_modulation_Pipeline_VITIS_LOOP_381_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_381_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_381_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.159 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.159 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GMSK_modulation_Pipeline_VITIS_LOOP_374_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_374_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_374_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.159 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.159 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GMSK_modulation_Pipeline_VITIS_LOOP_386_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_386_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_386_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.159 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.159 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GMSK_modulation' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.160 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.

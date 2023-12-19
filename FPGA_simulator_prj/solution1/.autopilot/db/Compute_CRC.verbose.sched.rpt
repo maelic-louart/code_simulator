@@ -1,0 +1,199 @@
+
+
+================================================================
+== Vitis HLS Report for 'Compute_CRC'
+================================================================
+* Date:           Tue Dec 19 07:23:47 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        FPGA_simulator_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtex7
+* Target device:  xc7vx485t-ffg1157-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.864 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      290|      290|  2.900 us|  2.900 us|  290|  290|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.86>
+ST_1 : Operation 11 [1/1] (2.93ns)   --->   "%p_read25 = read i168 @_ssdm_op_Read.ap_auto.i168, i168 %p_read"   --->   Operation 11 'read' 'p_read25' <Predicate = true> <Delay = 2.93> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%crc_tmp_reversed_loc = alloca i64 1"   --->   Operation 12 'alloca' 'crc_tmp_reversed_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%fcs_loc = alloca i64 1"   --->   Operation 13 'alloca' 'fcs_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%data_reversed_loc = alloca i64 1"   --->   Operation 14 'alloca' 'data_reversed_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (2.93ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i168P0A, i168 %data_c, i168 %p_read25"   --->   Operation 15 'write' 'write_ln0' <Predicate = true> <Delay = 2.93> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 168> <Depth = 2> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%list_bytes = alloca i64 1" [emitter.cpp:72->emitter.cpp:502]   --->   Operation 16 'alloca' 'list_bytes' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [2/2] (0.00ns)   --->   "%call_ln0 = call void @Compute_CRC_Pipeline_VITIS_LOOP_77_1, i168 %p_read25, i168 %data_reversed_loc"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 2.43>
+ST_2 : Operation 18 [1/2] (2.43ns)   --->   "%call_ln0 = call void @Compute_CRC_Pipeline_VITIS_LOOP_77_1, i168 %p_read25, i168 %data_reversed_loc"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 2.43> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 1.42>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%data_reversed_loc_load = load i168 %data_reversed_loc"   --->   Operation 19 'load' 'data_reversed_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 20 [2/2] (1.42ns)   --->   "%call_ln0 = call void @Compute_CRC_Pipeline_VITIS_LOOP_81_2, i168 %data_reversed_loc_load, i8 %list_bytes"   --->   Operation 20 'call' 'call_ln0' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 21 [1/2] (0.00ns)   --->   "%call_ln0 = call void @Compute_CRC_Pipeline_VITIS_LOOP_81_2, i168 %data_reversed_loc_load, i8 %list_bytes"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 22 [2/2] (0.00ns)   --->   "%call_ln0 = call void @Compute_CRC_Pipeline_VITIS_LOOP_63_1, i8 %list_bytes, i16 %fcs_loc, i16 %crctab16_1"   --->   Operation 22 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 23 [1/2] (0.00ns)   --->   "%call_ln0 = call void @Compute_CRC_Pipeline_VITIS_LOOP_63_1, i8 %list_bytes, i16 %fcs_loc, i16 %crctab16_1"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 1.72>
+ST_7 : Operation 24 [1/1] (0.00ns)   --->   "%fcs_loc_load = load i16 %fcs_loc"   --->   Operation 24 'load' 'fcs_loc_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 25 [1/1] (0.68ns)   --->   "%crc_tmp = xor i16 %fcs_loc_load, i16 65535" [emitter.cpp:67->emitter.cpp:86->emitter.cpp:502]   --->   Operation 25 'xor' 'crc_tmp' <Predicate = true> <Delay = 0.68> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 26 [2/2] (1.03ns)   --->   "%call_ln67 = call void @Compute_CRC_Pipeline_VITIS_LOOP_88_3, i16 %crc_tmp, i16 %crc_tmp_reversed_loc" [emitter.cpp:67->emitter.cpp:86->emitter.cpp:502]   --->   Operation 26 'call' 'call_ln67' <Predicate = true> <Delay = 1.03> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 2.40>
+ST_8 : Operation 27 [1/2] (2.40ns)   --->   "%call_ln67 = call void @Compute_CRC_Pipeline_VITIS_LOOP_88_3, i16 %crc_tmp, i16 %crc_tmp_reversed_loc" [emitter.cpp:67->emitter.cpp:86->emitter.cpp:502]   --->   Operation 27 'call' 'call_ln67' <Predicate = true> <Delay = 2.40> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 1.42>
+ST_9 : Operation 28 [1/1] (0.00ns)   --->   "%crc_tmp_reversed_loc_load = load i16 %crc_tmp_reversed_loc"   --->   Operation 28 'load' 'crc_tmp_reversed_loc_load' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 29 [2/2] (1.42ns)   --->   "%call_ln0 = call void @Compute_CRC_Pipeline_VITIS_LOOP_92_4, i16 %crc_tmp_reversed_loc_load, i8 %list_bytes"   --->   Operation 29 'call' 'call_ln0' <Predicate = true> <Delay = 1.42> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i168 %data_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 31 [1/2] (0.00ns)   --->   "%call_ln0 = call void @Compute_CRC_Pipeline_VITIS_LOOP_92_4, i16 %crc_tmp_reversed_loc_load, i8 %list_bytes"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 32 [1/1] (0.00ns)   --->   "%ret_ln502 = ret i16 %crc_tmp_reversed_loc_load" [emitter.cpp:502]   --->   Operation 32 'ret' 'ret_ln502' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.864ns
+The critical path consists of the following:
+	wire read operation ('p_read25') on port 'p_read' [4]  (2.932 ns)
+	fifo write operation ('write_ln0') on port 'data_c' [9]  (2.932 ns)
+
+ <State 2>: 2.431ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'Compute_CRC_Pipeline_VITIS_LOOP_77_1' [11]  (2.431 ns)
+
+ <State 3>: 1.425ns
+The critical path consists of the following:
+	'load' operation 168 bit ('data_reversed_loc_load') on local variable 'data_reversed_loc' [12]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'Compute_CRC_Pipeline_VITIS_LOOP_81_2' [13]  (1.425 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 1.726ns
+The critical path consists of the following:
+	'load' operation 16 bit ('fcs_loc_load') on local variable 'fcs_loc' [15]  (0.000 ns)
+	'xor' operation 16 bit ('crc_tmp', emitter.cpp:67->emitter.cpp:86->emitter.cpp:502) [16]  (0.688 ns)
+	'call' operation 0 bit ('call_ln67', emitter.cpp:67->emitter.cpp:86->emitter.cpp:502) to 'Compute_CRC_Pipeline_VITIS_LOOP_88_3' [17]  (1.038 ns)
+
+ <State 8>: 2.408ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln67', emitter.cpp:67->emitter.cpp:86->emitter.cpp:502) to 'Compute_CRC_Pipeline_VITIS_LOOP_88_3' [17]  (2.408 ns)
+
+ <State 9>: 1.425ns
+The critical path consists of the following:
+	'load' operation 16 bit ('crc_tmp_reversed_loc_load') on local variable 'crc_tmp_reversed_loc' [18]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'Compute_CRC_Pipeline_VITIS_LOOP_92_4' [19]  (1.425 ns)
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

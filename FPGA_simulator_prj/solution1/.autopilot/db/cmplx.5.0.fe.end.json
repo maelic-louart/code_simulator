@@ -1,0 +1,1418 @@
+{
+    "1": {
+        "name": "channel",
+        "file": "channel.cpp",
+        "fileloc": "267",
+        "instructions": "24",
+        "total_instructions": "445",
+        "calls": "11 15 60 42 38 46",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "GMSK_modulation_Pipeline_VITIS_LOOP_349_1",
+        "file": "emitter.cpp",
+        "fileloc": "507",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "GMSK_modulation_Pipeline_VITIS_LOOP_386_6",
+        "file": "emitter.cpp",
+        "fileloc": "507",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "GMSK_demodulation_Pipeline_VITIS_LOOP_335_2",
+        "file": "receiver.cpp",
+        "fileloc": "389",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "GMSK_demodulation",
+        "file": "receiver.cpp",
+        "fileloc": "358",
+        "instructions": "297",
+        "total_instructions": "5592",
+        "calls": "18 29 35 67 68 68 63 37 45 84 14 59 9 58 4",
+        "basicblocks": "1",
+        "loads": {
+            "L": "127"
+        },
+        "stores": {
+            "L": "6"
+        }
+    },
+    "6": {
+        "name": "CPS",
+        "file": "CPS.cpp",
+        "fileloc": "3",
+        "instructions": "20",
+        "total_instructions": "7646",
+        "calls": "24 1 57",
+        "basicblocks": "1"
+    },
+    "7": {
+        "name": "NRZI_coding_Pipeline_VITIS_LOOP_263_3",
+        "file": "emitter.cpp",
+        "fileloc": "506",
+        "instructions": "47",
+        "total_instructions": "47",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "Information_extraction",
+        "file": "receiver.cpp",
+        "fileloc": "766",
+        "instructions": "138",
+        "total_instructions": "191",
+        "calls": "87 83",
+        "basicblocks": "6",
+        "loads": {
+            "L": "2"
+        }
+    },
+    "9": {
+        "name": "GMSK_demodulation_Pipeline_VITIS_LOOP_275_2_VITIS_LOOP_279_3",
+        "file": "receiver.cpp",
+        "fileloc": "386",
+        "instructions": "99",
+        "total_instructions": "99",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "G": "1",
+            "L": "14"
+        },
+        "stores": {
+            "L": "18"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "channel_Block_entry4_proc_Pipeline_1",
+        "file": "channel.cpp",
+        "fileloc": "280",
+        "instructions": "14",
+        "total_instructions": "14",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "channel_Block_entry4_proc",
+        "file": "channel.cpp",
+        "fileloc": "280",
+        "instructions": "4",
+        "total_instructions": "18",
+        "calls": "10",
+        "basicblocks": "1",
+        "stores": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "filtered_list_Pipeline_1",
+        "file": "receiver.cpp",
+        "fileloc": "111",
+        "instructions": "312",
+        "total_instructions": "312",
+        "calls": "",
+        "basicblocks": "64",
+        "loads": {
+            "L": "61"
+        },
+        "stores": {
+            "L": "62"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "Noise_adding_Pipeline_VITIS_LOOP_102_2",
+        "file": "channel.cpp",
+        "fileloc": "293",
+        "instructions": "45",
+        "total_instructions": "45",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "GMSK_demodulation_Pipeline_8",
+        "file": "receiver.cpp",
+        "fileloc": "386",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "channel_Block_arrayinit.end_proc",
+        "file": "channel.cpp",
+        "fileloc": "281",
+        "instructions": "4",
+        "total_instructions": "18",
+        "calls": "25",
+        "basicblocks": "1",
+        "stores": {
+            "L": "1"
+        }
+    },
+    "16": {
+        "name": "I_Q_coding",
+        "file": "emitter.cpp",
+        "fileloc": "424",
+        "instructions": "86",
+        "total_instructions": "86",
+        "calls": "",
+        "basicblocks": "11",
+        "loads": {
+            "G": "4",
+            "L": "2"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "17": {
+        "name": "Shift_frequency_Pipeline_VITIS_LOOP_13_1",
+        "file": "channel.cpp",
+        "fileloc": "3",
+        "instructions": "90",
+        "total_instructions": "90",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "4",
+            "L": "4"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "18": {
+        "name": "GMSK_demodulation_Pipeline_1",
+        "file": "receiver.cpp",
+        "fileloc": "363",
+        "instructions": "14",
+        "total_instructions": "14",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "Bytes_flipping",
+        "file": "emitter.cpp",
+        "fileloc": "501",
+        "instructions": "51",
+        "total_instructions": "51",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "20": {
+        "name": "NRZI_coding",
+        "file": "emitter.cpp",
+        "fileloc": "506",
+        "instructions": "29",
+        "total_instructions": "198",
+        "calls": "75 28 7 70",
+        "basicblocks": "1",
+        "loads": {
+            "L": "7"
+        }
+    },
+    "21": {
+        "name": "piloting",
+        "file": "piloting.cpp",
+        "fileloc": "350",
+        "instructions": "19",
+        "total_instructions": "562",
+        "calls": "44 62 53",
+        "basicblocks": "1"
+    },
+    "22": {
+        "name": "frame_building_e_p_c_Pipeline_VITIS_LOOP_324_1",
+        "file": "piloting.cpp",
+        "fileloc": "346",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "4"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "23": {
+        "name": "filtered_list_Pipeline_VITIS_LOOP_114_1",
+        "file": "receiver.cpp",
+        "fileloc": "110",
+        "instructions": "453",
+        "total_instructions": "453",
+        "calls": "",
+        "basicblocks": "65",
+        "loads": {
+            "G": "1",
+            "L": "64"
+        },
+        "stores": {
+            "L": "124"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "24": {
+        "name": "emitter",
+        "file": "emitter.cpp",
+        "fileloc": "473",
+        "instructions": "39",
+        "total_instructions": "965",
+        "calls": "27 49 19 66 79 85 36 20 86 16 47",
+        "basicblocks": "1"
+    },
+    "25": {
+        "name": "channel_Block_arrayinit.end_proc_Pipeline_1",
+        "file": "channel.cpp",
+        "fileloc": "281",
+        "instructions": "14",
+        "total_instructions": "14",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "26": {
+        "name": "GMSK_modulation_Pipeline_VITIS_LOOP_374_4",
+        "file": "emitter.cpp",
+        "fileloc": "507",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "27": {
+        "name": "emitter_Block_entry31_proc19",
+        "file": "emitter.cpp",
+        "fileloc": "498",
+        "instructions": "3",
+        "total_instructions": "3",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "28": {
+        "name": "NRZI_coding_Pipeline_VITIS_LOOP_232_2",
+        "file": "emitter.cpp",
+        "fileloc": "506",
+        "instructions": "39",
+        "total_instructions": "39",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "29": {
+        "name": "GMSK_demodulation_Pipeline_2",
+        "file": "receiver.cpp",
+        "fileloc": "364",
+        "instructions": "14",
+        "total_instructions": "14",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "30": {
+        "name": "CRC_check_Pipeline_VITIS_LOOP_522_1",
+        "file": "receiver.cpp",
+        "fileloc": "762",
+        "instructions": "42",
+        "total_instructions": "42",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "31": {
+        "name": "amplifier_Pipeline_VITIS_LOOP_464_2",
+        "file": "emitter.cpp",
+        "fileloc": "509",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "32": {
+        "name": "Noise_adding_Pipeline_VITIS_LOOP_97_1",
+        "file": "channel.cpp",
+        "fileloc": "293",
+        "instructions": "25",
+        "total_instructions": "25",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "33": {
+        "name": "Bits_unstuffing",
+        "file": "receiver.cpp",
+        "fileloc": "760",
+        "instructions": "11",
+        "total_instructions": "110",
+        "calls": "43 56 41",
+        "basicblocks": "1",
+        "loads": {
+            "L": "3"
+        }
+    },
+    "34": {
+        "name": "CRC_check",
+        "file": "receiver.cpp",
+        "fileloc": "762",
+        "instructions": "10",
+        "total_instructions": "82",
+        "calls": "30 72",
+        "basicblocks": "1",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "35": {
+        "name": "GMSK_demodulation_Pipeline_3",
+        "file": "receiver.cpp",
+        "fileloc": "367",
+        "instructions": "14",
+        "total_instructions": "14",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "36": {
+        "name": "Trainning_sequence_adding17",
+        "file": "emitter.cpp",
+        "fileloc": "505",
+        "instructions": "9",
+        "total_instructions": "9",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "37": {
+        "name": "GMSK_demodulation_Pipeline_5",
+        "file": "receiver.cpp",
+        "fileloc": "383",
+        "instructions": "312",
+        "total_instructions": "312",
+        "calls": "",
+        "basicblocks": "64",
+        "loads": {
+            "L": "61"
+        },
+        "stores": {
+            "L": "62"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "38": {
+        "name": "sum",
+        "file": "channel.cpp",
+        "fileloc": "220",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "39": {
+        "name": "change_dynamic",
+        "file": "receiver.cpp",
+        "fileloc": "4",
+        "instructions": "15",
+        "total_instructions": "87",
+        "calls": "54 76",
+        "basicblocks": "1",
+        "loads": {
+            "L": "2"
+        }
+    },
+    "40": {
+        "name": "Bytes_flipping_r",
+        "file": "receiver.cpp",
+        "fileloc": "762",
+        "instructions": "12",
+        "total_instructions": "80",
+        "calls": "69",
+        "basicblocks": "3",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "41": {
+        "name": "Bits_unstuffing_Pipeline_VITIS_LOOP_475_2",
+        "file": "receiver.cpp",
+        "fileloc": "760",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "42": {
+        "name": "Fading",
+        "file": "channel.cpp",
+        "fileloc": "249",
+        "instructions": "13",
+        "total_instructions": "86",
+        "calls": "64 71",
+        "basicblocks": "1",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "43": {
+        "name": "Bits_unstuffing_Pipeline_VITIS_LOOP_425_1",
+        "file": "receiver.cpp",
+        "fileloc": "760",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "44": {
+        "name": "piloting_Block_entry1_proc18",
+        "file": "piloting.cpp",
+        "fileloc": "354",
+        "instructions": "14",
+        "total_instructions": "14",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "45": {
+        "name": "GMSK_demodulation_Pipeline_VITIS_LOOP_142_1",
+        "file": "receiver.cpp",
+        "fileloc": "383",
+        "instructions": "453",
+        "total_instructions": "453",
+        "calls": "",
+        "basicblocks": "65",
+        "loads": {
+            "G": "1",
+            "L": "64"
+        },
+        "stores": {
+            "L": "124"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "46": {
+        "name": "Noise_adding",
+        "file": "channel.cpp",
+        "fileloc": "293",
+        "instructions": "21",
+        "total_instructions": "132",
+        "calls": "32 13 74",
+        "basicblocks": "1",
+        "loads": {
+            "L": "2"
+        }
+    },
+    "47": {
+        "name": "amplifier",
+        "file": "emitter.cpp",
+        "fileloc": "509",
+        "instructions": "10",
+        "total_instructions": "70",
+        "calls": "82 31",
+        "basicblocks": "4"
+    },
+    "48": {
+        "name": "GMSK_modulation_Pipeline_VITIS_LOOP_414_1",
+        "file": "emitter.cpp",
+        "fileloc": "507",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "49": {
+        "name": "Read_data",
+        "file": "emitter.cpp",
+        "fileloc": "3",
+        "instructions": "3",
+        "total_instructions": "3",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "50": {
+        "name": "Compute_CRC_Pipeline_VITIS_LOOP_77_1",
+        "file": "emitter.cpp",
+        "fileloc": "502",
+        "instructions": "24",
+        "total_instructions": "24",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "51": {
+        "name": "GMSK_modulation_Pipeline_VITIS_LOOP_361_3",
+        "file": "emitter.cpp",
+        "fileloc": "507",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "52": {
+        "name": "DAC",
+        "file": "receiver.cpp",
+        "fileloc": "68",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "53": {
+        "name": "frame_building_e_p_c",
+        "file": "piloting.cpp",
+        "fileloc": "341",
+        "instructions": "105",
+        "total_instructions": "135",
+        "calls": "22",
+        "basicblocks": "3",
+        "loads": {
+            "G": "13",
+            "L": "1"
+        },
+        "stores": {
+            "G": "13",
+            "L": "16"
+        }
+    },
+    "54": {
+        "name": "change_dynamic_Pipeline_VITIS_LOOP_14_1",
+        "file": "receiver.cpp",
+        "fileloc": "8",
+        "instructions": "42",
+        "total_instructions": "42",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "55": {
+        "name": "GMSK_modulation_Pipeline_VITIS_LOOP_381_5",
+        "file": "emitter.cpp",
+        "fileloc": "507",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "56": {
+        "name": "Bits_unstuffing_Pipeline_VITIS_LOOP_454_1",
+        "file": "receiver.cpp",
+        "fileloc": "760",
+        "instructions": "44",
+        "total_instructions": "44",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "57": {
+        "name": "receiver",
+        "file": "receiver.cpp",
+        "fileloc": "721",
+        "instructions": "23",
+        "total_instructions": "6216",
+        "calls": "39 52 5 78 33 34 40 8",
+        "basicblocks": "1"
+    },
+    "58": {
+        "name": "GMSK_demodulation_Pipeline_VITIS_LOOP_315_1",
+        "file": "receiver.cpp",
+        "fileloc": "389",
+        "instructions": "47",
+        "total_instructions": "47",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "59": {
+        "name": "GMSK_demodulation_Pipeline_VITIS_LOOP_267_1",
+        "file": "receiver.cpp",
+        "fileloc": "386",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "7",
+        "loads": {
+            "G": "1",
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "60": {
+        "name": "Shift_frequency",
+        "file": "channel.cpp",
+        "fileloc": "3",
+        "instructions": "47",
+        "total_instructions": "137",
+        "calls": "17",
+        "basicblocks": "1"
+    },
+    "61": {
+        "name": "filtered_list_Pipeline_VITIS_LOOP_122_2",
+        "file": "receiver.cpp",
+        "fileloc": "111",
+        "instructions": "690",
+        "total_instructions": "690",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "62"
+        },
+        "stores": {
+            "L": "123"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "62": {
+        "name": "dynamic_data_generation_e_p_c",
+        "file": "piloting.cpp",
+        "fileloc": "360",
+        "instructions": "394",
+        "total_instructions": "394",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "G": "26"
+        },
+        "stores": {
+            "G": "20"
+        }
+    },
+    "63": {
+        "name": "angle_computation",
+        "file": "receiver.cpp",
+        "fileloc": "217",
+        "instructions": "127",
+        "total_instructions": "127",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "G": "1",
+            "L": "5"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "64": {
+        "name": "Fading_Pipeline_VITIS_LOOP_102_2",
+        "file": "channel.cpp",
+        "fileloc": "249",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "65": {
+        "name": "Compute_CRC_Pipeline_VITIS_LOOP_88_3",
+        "file": "emitter.cpp",
+        "fileloc": "502",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "66": {
+        "name": "Compute_CRC",
+        "file": "emitter.cpp",
+        "fileloc": "502",
+        "instructions": "17",
+        "total_instructions": "182",
+        "calls": "50 88 77 65 80",
+        "basicblocks": "1",
+        "loads": {
+            "L": "3"
+        }
+    },
+    "67": {
+        "name": "GMSK_demodulation_Pipeline_4",
+        "file": "receiver.cpp",
+        "fileloc": "368",
+        "instructions": "14",
+        "total_instructions": "14",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "FPGA_simulator",
+        "file": "FPGA_simulator.cpp",
+        "fileloc": "4",
+        "instructions": "45",
+        "total_instructions": "8253",
+        "calls": "21 6",
+        "basicblocks": "1"
+    },
+    "68": {
+        "name": "filtered_list",
+        "file": "receiver.cpp",
+        "fileloc": "107",
+        "instructions": "248",
+        "total_instructions": "1703",
+        "calls": "12 23 61",
+        "basicblocks": "1",
+        "loads": {
+            "L": "121"
+        },
+        "stores": {
+            "L": "1"
+        }
+    },
+    "69": {
+        "name": "Bytes_flipping_r_Pipeline_VITIS_LOOP_495_1",
+        "file": "receiver.cpp",
+        "fileloc": "764",
+        "instructions": "68",
+        "total_instructions": "68",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "70": {
+        "name": "NRZI_coding_Pipeline_VITIS_LOOP_295_4",
+        "file": "emitter.cpp",
+        "fileloc": "506",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "71": {
+        "name": "Fading_Pipeline_VITIS_LOOP_256_1",
+        "file": "channel.cpp",
+        "fileloc": "254",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "72": {
+        "name": "CRC_check_Pipeline_VITIS_LOOP_98_1",
+        "file": "receiver.cpp",
+        "fileloc": "762",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "4"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "73": {
+        "name": "Bits_stuffing_Pipeline_VITIS_LOOP_140_2",
+        "file": "emitter.cpp",
+        "fileloc": "503",
+        "instructions": "50",
+        "total_instructions": "50",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "74": {
+        "name": "Noise_adding_Pipeline_VITIS_LOOP_74_1",
+        "file": "channel.cpp",
+        "fileloc": "293",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "75": {
+        "name": "NRZI_coding_Pipeline_VITIS_LOOP_200_1",
+        "file": "emitter.cpp",
+        "fileloc": "506",
+        "instructions": "45",
+        "total_instructions": "45",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "76": {
+        "name": "change_dynamic_Pipeline_VITIS_LOOP_45_2",
+        "file": "receiver.cpp",
+        "fileloc": "45",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "77": {
+        "name": "Compute_CRC_Pipeline_VITIS_LOOP_63_1",
+        "file": "emitter.cpp",
+        "fileloc": "502",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "4"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "78": {
+        "name": "NRZI_decoding",
+        "file": "receiver.cpp",
+        "fileloc": "758",
+        "instructions": "25",
+        "total_instructions": "25",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "79": {
+        "name": "Bits_stuffing",
+        "file": "emitter.cpp",
+        "fileloc": "502",
+        "instructions": "28",
+        "total_instructions": "128",
+        "calls": "81 73",
+        "basicblocks": "1",
+        "loads": {
+            "L": "5"
+        }
+    },
+    "80": {
+        "name": "Compute_CRC_Pipeline_VITIS_LOOP_92_4",
+        "file": "emitter.cpp",
+        "fileloc": "502",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "81": {
+        "name": "Bits_stuffing_Pipeline_VITIS_LOOP_113_1",
+        "file": "emitter.cpp",
+        "fileloc": "503",
+        "instructions": "50",
+        "total_instructions": "50",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "82": {
+        "name": "amplifier_Pipeline_VITIS_LOOP_451_1",
+        "file": "emitter.cpp",
+        "fileloc": "509",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "83": {
+        "name": "Information_extraction_Pipeline_VITIS_LOOP_653_8",
+        "file": "receiver.cpp",
+        "fileloc": "766",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "84": {
+        "name": "GMSK_demodulation_Pipeline_VITIS_LOOP_150_2",
+        "file": "receiver.cpp",
+        "fileloc": "383",
+        "instructions": "690",
+        "total_instructions": "690",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "62"
+        },
+        "stores": {
+            "L": "123"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "85": {
+        "name": "HDLC_trame_construction16",
+        "file": "emitter.cpp",
+        "fileloc": "504",
+        "instructions": "9",
+        "total_instructions": "9",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "86": {
+        "name": "GMSK_modulation",
+        "file": "emitter.cpp",
+        "fileloc": "507",
+        "instructions": "54",
+        "total_instructions": "187",
+        "calls": "48 2 51 26 55 3",
+        "basicblocks": "9",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "87": {
+        "name": "Information_extraction_Pipeline_VITIS_LOOP_628_7",
+        "file": "receiver.cpp",
+        "fileloc": "766",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "88": {
+        "name": "Compute_CRC_Pipeline_VITIS_LOOP_81_2",
+        "file": "emitter.cpp",
+        "fileloc": "502",
+        "instructions": "42",
+        "total_instructions": "42",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

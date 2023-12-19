@@ -1,0 +1,79 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="FPGA_simulator" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="r" src_name="snr_strm" src_type="stream&lt;ap_ufixed&lt;32, 24, AP_TRN, AP_WRAP, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="snr_strm" hw_bitwidth="32" hw_size_or_depth="0" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+      <arg id="1" access_type="r" src_name="f_shift_strm" src_type="stream&lt;int, 0&gt;&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="f_shift_strm" hw_bitwidth="32" hw_size_or_depth="0" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+      <arg id="2" access_type="r" src_name="dynamic_information_init_strm" src_type="stream&lt;dynamic_information_init, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="dynamic_information_init_strm" hw_bitwidth="96" hw_size_or_depth="0" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+      <arg id="3" access_type="r" src_name="falsification_information_strm" src_type="stream&lt;falsification_information, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="falsification_information_strm" hw_bitwidth="96" hw_size_or_depth="0" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+      <arg id="4" access_type="r" src_name="static_information_strm" src_type="stream&lt;static_information, 0&gt;&amp;" src_isptr="1" src_bitwidth="192" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="static_information_strm" hw_bitwidth="192" hw_size_or_depth="0" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+      <arg id="5" access_type="r" src_name="start_e" src_type="stream&lt;bool, 0&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="start_e" hw_bitwidth="8" hw_size_or_depth="0" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+      <arg id="6" access_type="w" src_name="data_obs_strm" src_type="stream&lt;ap_uint&lt;178&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="256" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="data_obs_strm" hw_bitwidth="184" hw_size_or_depth="0" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+      <arg id="7" access_type="w" src_name="I_obs_strm_e" src_type="stream&lt;ap_fixed&lt;32, 5, AP_TRN, AP_WRAP, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="I_obs_strm_e" hw_bitwidth="32" hw_size_or_depth="0" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+      <arg id="8" access_type="w" src_name="Q_obs_strm_e" src_type="stream&lt;ap_fixed&lt;32, 5, AP_TRN, AP_WRAP, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="Q_obs_strm_e" hw_bitwidth="32" hw_size_or_depth="0" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+      <arg id="9" access_type="w" src_name="I_obs_strm_c" src_type="stream&lt;ap_fixed&lt;32, 5, AP_TRN, AP_WRAP, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="I_obs_strm_c" hw_bitwidth="32" hw_size_or_depth="0" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+      <arg id="10" access_type="w" src_name="Q_obs_strm_c" src_type="stream&lt;ap_fixed&lt;32, 5, AP_TRN, AP_WRAP, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="Q_obs_strm_c" hw_bitwidth="32" hw_size_or_depth="0" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+      <arg id="11" access_type="w" src_name="longitude_strm_out" src_type="stream&lt;ap_fixed&lt;32, 9, AP_TRN, AP_WRAP, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="longitude_strm_out" hw_bitwidth="32" hw_size_or_depth="0" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+      <arg id="12" access_type="w" src_name="latitude_strm_out" src_type="stream&lt;ap_fixed&lt;32, 8, AP_TRN, AP_WRAP, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="latitude_strm_out" hw_bitwidth="32" hw_size_or_depth="0" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+      <arg id="13" access_type="w" src_name="data_out_strm" src_type="stream&lt;ap_uint&lt;168&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="256" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="data_out_strm" hw_bitwidth="168" hw_size_or_depth="0" hw_kernel_support="true">
+          <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both"/>
+        </hw>
+      </arg>
+    </args>
+    <return src_type="void" src_bitwidth="0" offset="0x0">
+      <hw hw_usage="data" hw_interface="" hw_name="" hw_bitwidth="0" hw_kernel_support="true"/>
+    </return>
+  </kernel>
+</root>

@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "FPGA_simulator",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "FPGA_simulator"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/csynth.tcl",
+    "sourceLine": 22,
+    "success": true
+  }
+]

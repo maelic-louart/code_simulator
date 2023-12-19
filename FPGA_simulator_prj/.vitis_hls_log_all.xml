@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'Compute_CRC_Pipeline_VITIS_LOOP_63_1' (loop 'VITIS_LOOP_63_1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation 0 bit ('fcs_write_ln61', emitter.cpp:61->emitter.cpp:86->emitter.cpp:502) of variable 'fcs', emitter.cpp:65->emitter.cpp:86->emitter.cpp:502 on local variable 'fcs', emitter.cpp:61->emitter.cpp:86->emitter.cpp:502 and 'load' operation 16 bit ('fcs_load', emitter.cpp:63->emitter.cpp:86->emitter.cpp:502) on local variable 'fcs', emitter.cpp:61->emitter.cpp:86->emitter.cpp:502.&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="FPGA_simulator_prj" solutionName="solution1" date="2023-12-19T07:23:47.013+0100" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'Compute_CRC_Pipeline_VITIS_LOOP_63_1' (loop 'VITIS_LOOP_63_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('fcs_write_ln61', emitter.cpp:61->emitter.cpp:86->emitter.cpp:502) of variable 'fcs', emitter.cpp:65->emitter.cpp:86->emitter.cpp:502 on local variable 'fcs', emitter.cpp:61->emitter.cpp:86->emitter.cpp:502 and 'load' operation 16 bit ('fcs_load', emitter.cpp:63->emitter.cpp:86->emitter.cpp:502) on local variable 'fcs', emitter.cpp:61->emitter.cpp:86->emitter.cpp:502.&#xA;Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-880.html" projectName="FPGA_simulator_prj" solutionName="solution1" date="2023-12-19T07:23:47.007+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'channel_Block_arrayinit.end_proc' to 'channel_Block_arrayinit_end_proc'." projectName="FPGA_simulator_prj" solutionName="solution1" date="2023-12-19T07:23:46.150+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'channel_Block_arrayinit.end_proc_Pipeline_1' to 'channel_Block_arrayinit_end_proc_Pipeline_1'." projectName="FPGA_simulator_prj" solutionName="solution1" date="2023-12-19T07:23:45.892+0100" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1450] Process piloting has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.&#xA;Resolution: For help on HLS 200-1450 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-1450.html" projectName="FPGA_simulator_prj" solutionName="solution1" date="2023-12-19T07:23:45.839+0100" type="Warning"/>
+        <logs message="WARNING: [HLS 200-765] Process piloting is made part of the output synchronization in its dataflow region, because it has an external FIFO output and no PIPO output&#xA;Resolution: For help on HLS 200-765 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-765.html" projectName="FPGA_simulator_prj" solutionName="solution1" date="2023-12-19T07:23:45.833+0100" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1614] Cosimulation may deadlock if process channel has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream" projectName="FPGA_simulator_prj" solutionName="solution1" date="2023-12-19T07:23:45.828+0100" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

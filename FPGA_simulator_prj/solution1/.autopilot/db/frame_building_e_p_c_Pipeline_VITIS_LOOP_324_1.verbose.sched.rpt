@@ -1,0 +1,175 @@
+
+
+================================================================
+== Vitis HLS Report for 'frame_building_e_p_c_Pipeline_VITIS_LOOP_324_1'
+================================================================
+* Date:           Tue Dec 19 07:23:46 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        FPGA_simulator_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtex7
+* Target device:  xc7vx485t-ffg1157-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.616 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       19|       19|  0.190 us|  0.190 us|   19|   19|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_324_1  |       17|       17|         4|          1|          1|    15|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 4, States = { 1 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.44>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%data_tmp = alloca i32 1" [piloting.cpp:322->piloting.cpp:346]   --->   Operation 7 'alloca' 'data_tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [piloting.cpp:324->piloting.cpp:346]   --->   Operation 8 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%zext_ln323_read = read i6 @_ssdm_op_Read.ap_auto.i6, i6 %zext_ln323"   --->   Operation 9 'read' 'zext_ln323_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%zext_ln323_cast = zext i6 %zext_ln323_read"   --->   Operation 10 'zext' 'zext_ln323_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (1.03ns)   --->   "%store_ln324 = store i5 1, i5 %j" [piloting.cpp:324->piloting.cpp:346]   --->   Operation 11 'store' 'store_ln324' <Predicate = true> <Delay = 1.03>
+ST_1 : Operation 12 [1/1] (1.03ns)   --->   "%store_ln322 = store i178 %zext_ln323_cast, i178 %data_tmp" [piloting.cpp:322->piloting.cpp:346]   --->   Operation 12 'store' 'store_ln322' <Predicate = true> <Delay = 1.03>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body.i"   --->   Operation 13 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%j_1 = load i5 %j" [piloting.cpp:324->piloting.cpp:346]   --->   Operation 14 'load' 'j_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.36ns)   --->   "%icmp_ln324 = icmp_eq  i5 %j_1, i5 16" [piloting.cpp:324->piloting.cpp:346]   --->   Operation 15 'icmp' 'icmp_ln324' <Predicate = true> <Delay = 1.36> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln324 = br i1 %icmp_ln324, void %for.body.i.split, void %_Z19NMEA_frame_buildingPiRN3hls6streamI7ap_uintILi178EELi0EEES5_.exit.exitStub" [piloting.cpp:324->piloting.cpp:346]   --->   Operation 16 'br' 'br_ln324' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln324 = zext i5 %j_1" [piloting.cpp:324->piloting.cpp:346]   --->   Operation 17 'zext' 'zext_ln324' <Predicate = (!icmp_ln324)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%list_nb_bits_addr = getelementptr i5 %list_nb_bits, i64 0, i64 %zext_ln324" [piloting.cpp:327->piloting.cpp:346]   --->   Operation 18 'getelementptr' 'list_nb_bits_addr' <Predicate = (!icmp_ln324)> <Delay = 0.00>
+ST_1 : Operation 19 [2/2] (1.42ns)   --->   "%tmp_list_nb_bits = load i4 %list_nb_bits_addr" [piloting.cpp:327->piloting.cpp:346]   --->   Operation 19 'load' 'tmp_list_nb_bits' <Predicate = (!icmp_ln324)> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 5> <Depth = 16> <ROM>
+ST_1 : Operation 20 [1/1] (1.36ns)   --->   "%add_ln324 = add i5 %j_1, i5 1" [piloting.cpp:324->piloting.cpp:346]   --->   Operation 20 'add' 'add_ln324' <Predicate = (!icmp_ln324)> <Delay = 1.36> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (1.03ns)   --->   "%store_ln324 = store i5 %add_ln324, i5 %j" [piloting.cpp:324->piloting.cpp:346]   --->   Operation 21 'store' 'store_ln324' <Predicate = (!icmp_ln324)> <Delay = 1.03>
+
+State 2 <SV = 1> <Delay = 1.42>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%mes_l_addr = getelementptr i30 %mes_l, i64 0, i64 %zext_ln324" [piloting.cpp:326->piloting.cpp:346]   --->   Operation 22 'getelementptr' 'mes_l_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [2/2] (1.42ns)   --->   "%tmp = load i4 %mes_l_addr" [piloting.cpp:326->piloting.cpp:346]   --->   Operation 23 'load' 'tmp' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+ST_2 : Operation 24 [1/2] (1.42ns)   --->   "%tmp_list_nb_bits = load i4 %list_nb_bits_addr" [piloting.cpp:327->piloting.cpp:346]   --->   Operation 24 'load' 'tmp_list_nb_bits' <Predicate = true> <Delay = 1.42> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 5> <Depth = 16> <ROM>
+
+State 3 <SV = 2> <Delay = 6.61>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%data_tmp_load_1 = load i178 %data_tmp" [piloting.cpp:334->piloting.cpp:346]   --->   Operation 25 'load' 'data_tmp_load_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/2] (1.42ns)   --->   "%tmp = load i4 %mes_l_addr" [piloting.cpp:326->piloting.cpp:346]   --->   Operation 26 'load' 'tmp' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%zext_ln334 = zext i5 %tmp_list_nb_bits" [piloting.cpp:334->piloting.cpp:346]   --->   Operation 27 'zext' 'zext_ln334' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (2.93ns)   --->   "%data_tmp_1 = shl i178 %data_tmp_load_1, i178 %zext_ln334" [piloting.cpp:334->piloting.cpp:346]   --->   Operation 28 'shl' 'data_tmp_1' <Predicate = true> <Delay = 2.93> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 2.93> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln335 = zext i30 %tmp" [piloting.cpp:335->piloting.cpp:346]   --->   Operation 29 'zext' 'zext_ln335' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (3.67ns)   --->   "%data_tmp_2 = add i178 %data_tmp_1, i178 %zext_ln335" [piloting.cpp:335->piloting.cpp:346]   --->   Operation 30 'add' 'data_tmp_2' <Predicate = true> <Delay = 3.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%data_tmp_load = load i178 %data_tmp"   --->   Operation 36 'load' 'data_tmp_load' <Predicate = (icmp_ln324)> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i178P0A, i178 %data_tmp_1_out, i178 %data_tmp_load"   --->   Operation 37 'write' 'write_ln0' <Predicate = (icmp_ln324)> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 38 'ret' 'ret_ln0' <Predicate = (icmp_ln324)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 1.03>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%specpipeline_ln322 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_8" [piloting.cpp:322->piloting.cpp:346]   --->   Operation 31 'specpipeline' 'specpipeline_ln322' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%speclooptripcount_ln322 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 15, i64 15, i64 15" [piloting.cpp:322->piloting.cpp:346]   --->   Operation 32 'speclooptripcount' 'speclooptripcount_ln322' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%specloopname_ln324 = specloopname void @_ssdm_op_SpecLoopName, void @empty_40" [piloting.cpp:324->piloting.cpp:346]   --->   Operation 33 'specloopname' 'specloopname_ln324' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (1.03ns)   --->   "%store_ln322 = store i178 %data_tmp_2, i178 %data_tmp" [piloting.cpp:322->piloting.cpp:346]   --->   Operation 34 'store' 'store_ln322' <Predicate = true> <Delay = 1.03>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%br_ln324 = br void %for.body.i" [piloting.cpp:324->piloting.cpp:346]   --->   Operation 35 'br' 'br_ln324' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.446ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln324', piloting.cpp:324->piloting.cpp:346) of constant 1 on local variable 'j', piloting.cpp:324->piloting.cpp:346 [9]  (1.038 ns)
+	'load' operation 5 bit ('j', piloting.cpp:324->piloting.cpp:346) on local variable 'j', piloting.cpp:324->piloting.cpp:346 [13]  (0.000 ns)
+	'add' operation 5 bit ('add_ln324', piloting.cpp:324->piloting.cpp:346) [30]  (1.370 ns)
+	'store' operation 0 bit ('store_ln324', piloting.cpp:324->piloting.cpp:346) of variable 'add_ln324', piloting.cpp:324->piloting.cpp:346 on local variable 'j', piloting.cpp:324->piloting.cpp:346 [31]  (1.038 ns)
+
+ <State 2>: 1.425ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('mes_l_addr', piloting.cpp:326->piloting.cpp:346) [22]  (0.000 ns)
+	'load' operation 30 bit ('tmp', piloting.cpp:326->piloting.cpp:346) on array 'mes_l' [23]  (1.425 ns)
+
+ <State 3>: 6.616ns
+The critical path consists of the following:
+	'load' operation 178 bit ('data_tmp_load_1', piloting.cpp:334->piloting.cpp:346) on local variable 'data_tmp', piloting.cpp:322->piloting.cpp:346 [17]  (0.000 ns)
+	'shl' operation 178 bit ('data_tmp', piloting.cpp:334->piloting.cpp:346) [27]  (2.939 ns)
+	'add' operation 178 bit ('data_tmp', piloting.cpp:335->piloting.cpp:346) [29]  (3.677 ns)
+
+ <State 4>: 1.038ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln322', piloting.cpp:322->piloting.cpp:346) of variable 'data_tmp', piloting.cpp:335->piloting.cpp:346 on local variable 'data_tmp', piloting.cpp:322->piloting.cpp:346 [32]  (1.038 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

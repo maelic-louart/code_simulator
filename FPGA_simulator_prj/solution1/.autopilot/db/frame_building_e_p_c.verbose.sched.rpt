@@ -1,0 +1,305 @@
+
+
+================================================================
+== Vitis HLS Report for 'frame_building_e_p_c'
+================================================================
+* Date:           Tue Dec 19 07:23:46 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        FPGA_simulator_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtex7
+* Target device:  xc7vx485t-ffg1157-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.616 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       30|       30|  0.300 us|  0.300 us|   30|   30|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 12
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.93>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%data_tmp_1_loc = alloca i64 1"   --->   Operation 13 'alloca' 'data_tmp_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i77 %dynamic_information_strm, void @empty_38, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i192 %static_information_strm, void @empty_13, i32 1, i32 1, void @empty_12, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i184 %data_obs_strm, void @empty_13, i32 1, i32 1, void @empty_12, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i178 %data_strm_1, void @empty_38, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%mes_l = alloca i64 1" [piloting.cpp:343]   --->   Operation 18 'alloca' 'mes_l' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%mes_l_1 = getelementptr i30 %mes_l, i64 0, i64 0" [piloting.cpp:345]   --->   Operation 19 'getelementptr' 'mes_l_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (2.93ns)   --->   "%dynamic_information_strm_read = read i77 @_ssdm_op_Read.ap_fifo.volatile.i77P0A, i77 %dynamic_information_strm" [piloting.cpp:268->piloting.cpp:345]   --->   Operation 20 'read' 'dynamic_information_strm_read' <Predicate = true> <Delay = 2.93> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 77> <Depth = 2> <FIFO>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%dynamic_information_tmp_longitude = trunc i77 %dynamic_information_strm_read" [piloting.cpp:268->piloting.cpp:345]   --->   Operation 21 'trunc' 'dynamic_information_tmp_longitude' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l = load i1 %guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp"   --->   Operation 22 'load' 'guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln269 = br i1 %guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l, void %init.check.i, void %_Z15read_data_e_p_cRN3hls6streamI18static_informationLi0EEERNS0_I19dynamic_informationLi0EEEPi.exit" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 23 'br' 'br_ln269' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (1.00ns)   --->   "%static_information_strm_read = read i192 @_ssdm_op_Read.axis.volatile.i192P128A, i192 %static_information_strm" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 24 'read' 'static_information_strm_read' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 1.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%trunc_ln269 = trunc i192 %static_information_strm_read" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 25 'trunc' 'trunc_ln269' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%store_ln269 = store i6 %trunc_ln269, i6 %static_information_tmp_message_id" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 26 'store' 'store_ln269' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%tmp_s = partselect i2 @_ssdm_op_PartSelect.i2.i192.i32.i32, i192 %static_information_strm_read, i32 8, i32 9" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 27 'partselect' 'tmp_s' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%store_ln269 = store i2 %tmp_s, i2 %static_information_tmp_repeat_indicator" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 28 'store' 'store_ln269' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%tmp_1 = partselect i30 @_ssdm_op_PartSelect.i30.i192.i32.i32, i192 %static_information_strm_read, i32 32, i32 61" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 29 'partselect' 'tmp_1' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%store_ln269 = store i30 %tmp_1, i30 %static_information_tmp_user_id" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 30 'store' 'store_ln269' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_2 = partselect i4 @_ssdm_op_PartSelect.i4.i192.i32.i32, i192 %static_information_strm_read, i32 64, i32 67" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 31 'partselect' 'tmp_2' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%store_ln269 = store i4 %tmp_2, i4 %static_information_tmp_navigational_status" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 32 'store' 'store_ln269' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%tmp_3 = partselect i8 @_ssdm_op_PartSelect.i8.i192.i32.i32, i192 %static_information_strm_read, i32 72, i32 79" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 33 'partselect' 'tmp_3' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%store_ln269 = store i8 %tmp_3, i8 %static_information_tmp_rot" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 34 'store' 'store_ln269' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i192.i192, i192 %static_information_strm_read, i192 80" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 35 'bitselect' 'tmp' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%store_ln269 = store i1 %tmp, i1 %static_information_tmp_position_accuracy" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 36 'store' 'store_ln269' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%tmp_4 = partselect i9 @_ssdm_op_PartSelect.i9.i192.i32.i32, i192 %static_information_strm_read, i32 96, i32 104" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 37 'partselect' 'tmp_4' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%store_ln269 = store i9 %tmp_4, i9 %static_information_tmp_true_heading" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 38 'store' 'store_ln269' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_5 = partselect i6 @_ssdm_op_PartSelect.i6.i192.i32.i32, i192 %static_information_strm_read, i32 112, i32 117" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 39 'partselect' 'tmp_5' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%store_ln269 = store i6 %tmp_5, i6 %static_information_tmp_time_stamp" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 40 'store' 'store_ln269' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%tmp_6 = partselect i2 @_ssdm_op_PartSelect.i2.i192.i32.i32, i192 %static_information_strm_read, i32 120, i32 121" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 41 'partselect' 'tmp_6' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%store_ln269 = store i2 %tmp_6, i2 %static_information_tmp_special_manoeuvre_indicator" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 42 'store' 'store_ln269' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%tmp_7 = partselect i3 @_ssdm_op_PartSelect.i3.i192.i32.i32, i192 %static_information_strm_read, i32 128, i32 130" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 43 'partselect' 'tmp_7' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%store_ln269 = store i3 %tmp_7, i3 %static_information_tmp_spare" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 44 'store' 'store_ln269' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%tmp_8 = bitselect i1 @_ssdm_op_BitSelect.i1.i192.i192, i192 %static_information_strm_read, i192 136" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 45 'bitselect' 'tmp_8' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%store_ln269 = store i1 %tmp_8, i1 %static_information_tmp_raim_flag" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 46 'store' 'store_ln269' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%tmp_9 = partselect i19 @_ssdm_op_PartSelect.i19.i192.i32.i32, i192 %static_information_strm_read, i32 160, i32 178" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 47 'partselect' 'tmp_9' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%store_ln269 = store i19 %tmp_9, i19 %static_information_tmp_communication_state" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 48 'store' 'store_ln269' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%store_ln0 = store i1 1, i1 %guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp"   --->   Operation 49 'store' 'store_ln0' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln269 = br void %_Z15read_data_e_p_cRN3hls6streamI18static_informationLi0EEERNS0_I19dynamic_informationLi0EEEPi.exit" [piloting.cpp:269->piloting.cpp:345]   --->   Operation 50 'br' 'br_ln269' <Predicate = (!guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp_l)> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%message_id_tmp = load i6 %static_information_tmp_message_id" [piloting.cpp:270->piloting.cpp:345]   --->   Operation 51 'load' 'message_id_tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln270 = zext i6 %message_id_tmp" [piloting.cpp:270->piloting.cpp:345]   --->   Operation 52 'zext' 'zext_ln270' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (1.42ns)   --->   "%store_ln271 = store i30 %zext_ln270, i4 %mes_l_1" [piloting.cpp:271->piloting.cpp:345]   --->   Operation 53 'store' 'store_ln271' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%repeat_indicator_tmp = load i2 %static_information_tmp_repeat_indicator" [piloting.cpp:273->piloting.cpp:345]   --->   Operation 54 'load' 'repeat_indicator_tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%zext_ln273 = zext i2 %repeat_indicator_tmp" [piloting.cpp:273->piloting.cpp:345]   --->   Operation 55 'zext' 'zext_ln273' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%mes_l_addr = getelementptr i30 %mes_l, i64 0, i64 1" [piloting.cpp:274->piloting.cpp:345]   --->   Operation 56 'getelementptr' 'mes_l_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (1.42ns)   --->   "%store_ln274 = store i30 %zext_ln273, i4 %mes_l_addr" [piloting.cpp:274->piloting.cpp:345]   --->   Operation 57 'store' 'store_ln274' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%tmp_10 = partselect i10 @_ssdm_op_PartSelect.i10.i77.i32.i32, i77 %dynamic_information_strm_read, i32 67, i32 76" [piloting.cpp:286->piloting.cpp:345]   --->   Operation 58 'partselect' 'tmp_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%tmp_11 = partselect i27 @_ssdm_op_PartSelect.i27.i77.i32.i32, i77 %dynamic_information_strm_read, i32 28, i32 54" [piloting.cpp:295->piloting.cpp:345]   --->   Operation 59 'partselect' 'tmp_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_12 = partselect i12 @_ssdm_op_PartSelect.i12.i77.i32.i32, i77 %dynamic_information_strm_read, i32 55, i32 66" [piloting.cpp:298->piloting.cpp:345]   --->   Operation 60 'partselect' 'tmp_12' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.42>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%user_id_tmp = load i30 %static_information_tmp_user_id" [piloting.cpp:276->piloting.cpp:345]   --->   Operation 61 'load' 'user_id_tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%mes_l_addr_1 = getelementptr i30 %mes_l, i64 0, i64 2" [piloting.cpp:277->piloting.cpp:345]   --->   Operation 62 'getelementptr' 'mes_l_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (1.42ns)   --->   "%store_ln277 = store i30 %user_id_tmp, i4 %mes_l_addr_1" [piloting.cpp:277->piloting.cpp:345]   --->   Operation 63 'store' 'store_ln277' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%navigational_status_tmp = load i4 %static_information_tmp_navigational_status" [piloting.cpp:279->piloting.cpp:345]   --->   Operation 64 'load' 'navigational_status_tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%zext_ln279 = zext i4 %navigational_status_tmp" [piloting.cpp:279->piloting.cpp:345]   --->   Operation 65 'zext' 'zext_ln279' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%mes_l_addr_2 = getelementptr i30 %mes_l, i64 0, i64 3" [piloting.cpp:280->piloting.cpp:345]   --->   Operation 66 'getelementptr' 'mes_l_addr_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (1.42ns)   --->   "%store_ln280 = store i30 %zext_ln279, i4 %mes_l_addr_2" [piloting.cpp:280->piloting.cpp:345]   --->   Operation 67 'store' 'store_ln280' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+
+State 3 <SV = 2> <Delay = 1.42>
+ST_3 : Operation 68 [1/1] (0.00ns)   --->   "%rot_tmp = load i8 %static_information_tmp_rot" [piloting.cpp:282->piloting.cpp:345]   --->   Operation 68 'load' 'rot_tmp' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 69 [1/1] (0.00ns)   --->   "%zext_ln282 = zext i8 %rot_tmp" [piloting.cpp:282->piloting.cpp:345]   --->   Operation 69 'zext' 'zext_ln282' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 70 [1/1] (0.00ns)   --->   "%mes_l_addr_3 = getelementptr i30 %mes_l, i64 0, i64 4" [piloting.cpp:283->piloting.cpp:345]   --->   Operation 70 'getelementptr' 'mes_l_addr_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 71 [1/1] (1.42ns)   --->   "%store_ln283 = store i30 %zext_ln282, i4 %mes_l_addr_3" [piloting.cpp:283->piloting.cpp:345]   --->   Operation 71 'store' 'store_ln283' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+ST_3 : Operation 72 [1/1] (0.00ns)   --->   "%zext_ln286 = zext i10 %tmp_10" [piloting.cpp:286->piloting.cpp:345]   --->   Operation 72 'zext' 'zext_ln286' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 73 [1/1] (0.00ns)   --->   "%mes_l_addr_4 = getelementptr i30 %mes_l, i64 0, i64 5" [piloting.cpp:286->piloting.cpp:345]   --->   Operation 73 'getelementptr' 'mes_l_addr_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 74 [1/1] (1.42ns)   --->   "%store_ln286 = store i30 %zext_ln286, i4 %mes_l_addr_4" [piloting.cpp:286->piloting.cpp:345]   --->   Operation 74 'store' 'store_ln286' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+
+State 4 <SV = 3> <Delay = 1.42>
+ST_4 : Operation 75 [1/1] (0.00ns)   --->   "%position_accuracy_tmp = load i1 %static_information_tmp_position_accuracy" [piloting.cpp:288->piloting.cpp:345]   --->   Operation 75 'load' 'position_accuracy_tmp' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 76 [1/1] (0.00ns)   --->   "%zext_ln288 = zext i1 %position_accuracy_tmp" [piloting.cpp:288->piloting.cpp:345]   --->   Operation 76 'zext' 'zext_ln288' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 77 [1/1] (0.00ns)   --->   "%mes_l_addr_5 = getelementptr i30 %mes_l, i64 0, i64 6" [piloting.cpp:289->piloting.cpp:345]   --->   Operation 77 'getelementptr' 'mes_l_addr_5' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 78 [1/1] (1.42ns)   --->   "%store_ln289 = store i30 %zext_ln288, i4 %mes_l_addr_5" [piloting.cpp:289->piloting.cpp:345]   --->   Operation 78 'store' 'store_ln289' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+ST_4 : Operation 79 [1/1] (0.00ns)   --->   "%zext_ln292 = zext i28 %dynamic_information_tmp_longitude" [piloting.cpp:292->piloting.cpp:345]   --->   Operation 79 'zext' 'zext_ln292' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 80 [1/1] (0.00ns)   --->   "%mes_l_addr_6 = getelementptr i30 %mes_l, i64 0, i64 7" [piloting.cpp:292->piloting.cpp:345]   --->   Operation 80 'getelementptr' 'mes_l_addr_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 81 [1/1] (1.42ns)   --->   "%store_ln292 = store i30 %zext_ln292, i4 %mes_l_addr_6" [piloting.cpp:292->piloting.cpp:345]   --->   Operation 81 'store' 'store_ln292' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+
+State 5 <SV = 4> <Delay = 1.42>
+ST_5 : Operation 82 [1/1] (0.00ns)   --->   "%zext_ln295 = zext i27 %tmp_11" [piloting.cpp:295->piloting.cpp:345]   --->   Operation 82 'zext' 'zext_ln295' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 83 [1/1] (0.00ns)   --->   "%mes_l_addr_7 = getelementptr i30 %mes_l, i64 0, i64 8" [piloting.cpp:295->piloting.cpp:345]   --->   Operation 83 'getelementptr' 'mes_l_addr_7' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 84 [1/1] (1.42ns)   --->   "%store_ln295 = store i30 %zext_ln295, i4 %mes_l_addr_7" [piloting.cpp:295->piloting.cpp:345]   --->   Operation 84 'store' 'store_ln295' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+ST_5 : Operation 85 [1/1] (0.00ns)   --->   "%zext_ln298 = zext i12 %tmp_12" [piloting.cpp:298->piloting.cpp:345]   --->   Operation 85 'zext' 'zext_ln298' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 86 [1/1] (0.00ns)   --->   "%mes_l_addr_8 = getelementptr i30 %mes_l, i64 0, i64 9" [piloting.cpp:298->piloting.cpp:345]   --->   Operation 86 'getelementptr' 'mes_l_addr_8' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 87 [1/1] (1.42ns)   --->   "%store_ln298 = store i30 %zext_ln298, i4 %mes_l_addr_8" [piloting.cpp:298->piloting.cpp:345]   --->   Operation 87 'store' 'store_ln298' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+
+State 6 <SV = 5> <Delay = 1.42>
+ST_6 : Operation 88 [1/1] (0.00ns)   --->   "%true_heading_tmp = load i9 %static_information_tmp_true_heading" [piloting.cpp:300->piloting.cpp:345]   --->   Operation 88 'load' 'true_heading_tmp' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 89 [1/1] (0.00ns)   --->   "%zext_ln300 = zext i9 %true_heading_tmp" [piloting.cpp:300->piloting.cpp:345]   --->   Operation 89 'zext' 'zext_ln300' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 90 [1/1] (0.00ns)   --->   "%mes_l_addr_9 = getelementptr i30 %mes_l, i64 0, i64 10" [piloting.cpp:301->piloting.cpp:345]   --->   Operation 90 'getelementptr' 'mes_l_addr_9' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 91 [1/1] (1.42ns)   --->   "%store_ln301 = store i30 %zext_ln300, i4 %mes_l_addr_9" [piloting.cpp:301->piloting.cpp:345]   --->   Operation 91 'store' 'store_ln301' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+ST_6 : Operation 92 [1/1] (0.00ns)   --->   "%time_stamp_tmp = load i6 %static_information_tmp_time_stamp" [piloting.cpp:303->piloting.cpp:345]   --->   Operation 92 'load' 'time_stamp_tmp' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 93 [1/1] (0.00ns)   --->   "%zext_ln303 = zext i6 %time_stamp_tmp" [piloting.cpp:303->piloting.cpp:345]   --->   Operation 93 'zext' 'zext_ln303' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 94 [1/1] (0.00ns)   --->   "%mes_l_addr_10 = getelementptr i30 %mes_l, i64 0, i64 11" [piloting.cpp:304->piloting.cpp:345]   --->   Operation 94 'getelementptr' 'mes_l_addr_10' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 95 [1/1] (1.42ns)   --->   "%store_ln304 = store i30 %zext_ln303, i4 %mes_l_addr_10" [piloting.cpp:304->piloting.cpp:345]   --->   Operation 95 'store' 'store_ln304' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+
+State 7 <SV = 6> <Delay = 1.42>
+ST_7 : Operation 96 [1/1] (0.00ns)   --->   "%special_manoeuvre_indicator_tmp = load i2 %static_information_tmp_special_manoeuvre_indicator" [piloting.cpp:306->piloting.cpp:345]   --->   Operation 96 'load' 'special_manoeuvre_indicator_tmp' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 97 [1/1] (0.00ns)   --->   "%zext_ln306 = zext i2 %special_manoeuvre_indicator_tmp" [piloting.cpp:306->piloting.cpp:345]   --->   Operation 97 'zext' 'zext_ln306' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 98 [1/1] (0.00ns)   --->   "%mes_l_addr_11 = getelementptr i30 %mes_l, i64 0, i64 12" [piloting.cpp:307->piloting.cpp:345]   --->   Operation 98 'getelementptr' 'mes_l_addr_11' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 99 [1/1] (1.42ns)   --->   "%store_ln307 = store i30 %zext_ln306, i4 %mes_l_addr_11" [piloting.cpp:307->piloting.cpp:345]   --->   Operation 99 'store' 'store_ln307' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+ST_7 : Operation 100 [1/1] (0.00ns)   --->   "%spare_tmp = load i3 %static_information_tmp_spare" [piloting.cpp:309->piloting.cpp:345]   --->   Operation 100 'load' 'spare_tmp' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 101 [1/1] (0.00ns)   --->   "%zext_ln309 = zext i3 %spare_tmp" [piloting.cpp:309->piloting.cpp:345]   --->   Operation 101 'zext' 'zext_ln309' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 102 [1/1] (0.00ns)   --->   "%mes_l_addr_12 = getelementptr i30 %mes_l, i64 0, i64 13" [piloting.cpp:310->piloting.cpp:345]   --->   Operation 102 'getelementptr' 'mes_l_addr_12' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 103 [1/1] (1.42ns)   --->   "%store_ln310 = store i30 %zext_ln309, i4 %mes_l_addr_12" [piloting.cpp:310->piloting.cpp:345]   --->   Operation 103 'store' 'store_ln310' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+
+State 8 <SV = 7> <Delay = 1.42>
+ST_8 : Operation 104 [1/1] (0.00ns)   --->   "%raim_flag_tmp = load i1 %static_information_tmp_raim_flag" [piloting.cpp:312->piloting.cpp:345]   --->   Operation 104 'load' 'raim_flag_tmp' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 105 [1/1] (0.00ns)   --->   "%zext_ln312 = zext i1 %raim_flag_tmp" [piloting.cpp:312->piloting.cpp:345]   --->   Operation 105 'zext' 'zext_ln312' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 106 [1/1] (0.00ns)   --->   "%mes_l_addr_13 = getelementptr i30 %mes_l, i64 0, i64 14" [piloting.cpp:313->piloting.cpp:345]   --->   Operation 106 'getelementptr' 'mes_l_addr_13' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 107 [1/1] (1.42ns)   --->   "%store_ln313 = store i30 %zext_ln312, i4 %mes_l_addr_13" [piloting.cpp:313->piloting.cpp:345]   --->   Operation 107 'store' 'store_ln313' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+ST_8 : Operation 108 [1/1] (0.00ns)   --->   "%communication_state_tmp = load i19 %static_information_tmp_communication_state" [piloting.cpp:315->piloting.cpp:345]   --->   Operation 108 'load' 'communication_state_tmp' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 109 [1/1] (0.00ns)   --->   "%zext_ln315 = zext i19 %communication_state_tmp" [piloting.cpp:315->piloting.cpp:345]   --->   Operation 109 'zext' 'zext_ln315' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 110 [1/1] (0.00ns)   --->   "%mes_l_addr_14 = getelementptr i30 %mes_l, i64 0, i64 15" [piloting.cpp:316->piloting.cpp:345]   --->   Operation 110 'getelementptr' 'mes_l_addr_14' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 111 [1/1] (1.42ns)   --->   "%store_ln316 = store i30 %zext_ln315, i4 %mes_l_addr_14" [piloting.cpp:316->piloting.cpp:345]   --->   Operation 111 'store' 'store_ln316' <Predicate = true> <Delay = 1.42> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 30> <Depth = 16> <RAM>
+
+State 9 <SV = 8> <Delay = 1.03>
+ST_9 : Operation 112 [2/2] (1.03ns)   --->   "%call_ln270 = call void @frame_building_e_p_c_Pipeline_VITIS_LOOP_324_1, i6 %message_id_tmp, i30 %mes_l, i178 %data_tmp_1_loc, i5 %list_nb_bits" [piloting.cpp:270->piloting.cpp:345]   --->   Operation 112 'call' 'call_ln270' <Predicate = true> <Delay = 1.03> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 113 [1/2] (0.00ns)   --->   "%call_ln270 = call void @frame_building_e_p_c_Pipeline_VITIS_LOOP_324_1, i6 %message_id_tmp, i30 %mes_l, i178 %data_tmp_1_loc, i5 %list_nb_bits" [piloting.cpp:270->piloting.cpp:345]   --->   Operation 113 'call' 'call_ln270' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 2.93>
+ST_11 : Operation 114 [1/1] (0.00ns)   --->   "%data_tmp_1_loc_load = load i178 %data_tmp_1_loc"   --->   Operation 114 'load' 'data_tmp_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 115 [1/1] (2.93ns)   --->   "%write_ln337 = write void @_ssdm_op_Write.ap_fifo.volatile.i178P0A, i178 %data_strm_1, i178 %data_tmp_1_loc_load" [piloting.cpp:337->piloting.cpp:346]   --->   Operation 115 'write' 'write_ln337' <Predicate = true> <Delay = 2.93> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 178> <Depth = 2> <FIFO>
+ST_11 : Operation 116 [1/1] (0.00ns)   --->   "%zext_ln338 = zext i178 %data_tmp_1_loc_load" [piloting.cpp:338->piloting.cpp:346]   --->   Operation 116 'zext' 'zext_ln338' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 117 [2/2] (1.00ns)   --->   "%write_ln338 = write void @_ssdm_op_Write.axis.volatile.i184P128A, i184 %data_obs_strm, i184 %zext_ln338" [piloting.cpp:338->piloting.cpp:346]   --->   Operation 117 'write' 'write_ln338' <Predicate = true> <Delay = 1.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 12 <SV = 11> <Delay = 1.00>
+ST_12 : Operation 118 [1/2] (1.00ns)   --->   "%write_ln338 = write void @_ssdm_op_Write.axis.volatile.i184P128A, i184 %data_obs_strm, i184 %zext_ln338" [piloting.cpp:338->piloting.cpp:346]   --->   Operation 118 'write' 'write_ln338' <Predicate = true> <Delay = 1.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_12 : Operation 119 [1/1] (0.00ns)   --->   "%ret_ln347 = ret" [piloting.cpp:347]   --->   Operation 119 'ret' 'ret_ln347' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 2.932ns
+The critical path consists of the following:
+	fifo read operation ('dynamic_information_strm_read', piloting.cpp:268->piloting.cpp:345) on port 'dynamic_information_strm' (piloting.cpp:268->piloting.cpp:345) [26]  (2.932 ns)
+
+ <State 2>: 1.425ns
+The critical path consists of the following:
+	'load' operation 30 bit ('user_id_tmp', piloting.cpp:276->piloting.cpp:345) on static variable 'static_information_tmp_user_id' [66]  (0.000 ns)
+	'store' operation 0 bit ('store_ln277', piloting.cpp:277->piloting.cpp:345) of variable 'user_id_tmp', piloting.cpp:276->piloting.cpp:345 on array 'mes_l', piloting.cpp:343 [68]  (1.425 ns)
+
+ <State 3>: 1.425ns
+The critical path consists of the following:
+	'load' operation 8 bit ('rot_tmp', piloting.cpp:282->piloting.cpp:345) on static variable 'static_information_tmp_rot' [73]  (0.000 ns)
+	'store' operation 0 bit ('store_ln283', piloting.cpp:283->piloting.cpp:345) of variable 'zext_ln282', piloting.cpp:282->piloting.cpp:345 on array 'mes_l', piloting.cpp:343 [76]  (1.425 ns)
+
+ <State 4>: 1.425ns
+The critical path consists of the following:
+	'load' operation 1 bit ('position_accuracy_tmp', piloting.cpp:288->piloting.cpp:345) on static variable 'static_information_tmp_position_accuracy' [81]  (0.000 ns)
+	'store' operation 0 bit ('store_ln289', piloting.cpp:289->piloting.cpp:345) of variable 'zext_ln288', piloting.cpp:288->piloting.cpp:345 on array 'mes_l', piloting.cpp:343 [84]  (1.425 ns)
+
+ <State 5>: 1.425ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln295', piloting.cpp:295->piloting.cpp:345) of variable 'zext_ln295', piloting.cpp:295->piloting.cpp:345 on array 'mes_l', piloting.cpp:343 [91]  (1.425 ns)
+
+ <State 6>: 1.425ns
+The critical path consists of the following:
+	'load' operation 9 bit ('true_heading_tmp', piloting.cpp:300->piloting.cpp:345) on static variable 'static_information_tmp_true_heading' [96]  (0.000 ns)
+	'store' operation 0 bit ('store_ln301', piloting.cpp:301->piloting.cpp:345) of variable 'zext_ln300', piloting.cpp:300->piloting.cpp:345 on array 'mes_l', piloting.cpp:343 [99]  (1.425 ns)
+
+ <State 7>: 1.425ns
+The critical path consists of the following:
+	'load' operation 2 bit ('special_manoeuvre_indicator_tmp', piloting.cpp:306->piloting.cpp:345) on static variable 'static_information_tmp_special_manoeuvre_indicator' [104]  (0.000 ns)
+	'store' operation 0 bit ('store_ln307', piloting.cpp:307->piloting.cpp:345) of variable 'zext_ln306', piloting.cpp:306->piloting.cpp:345 on array 'mes_l', piloting.cpp:343 [107]  (1.425 ns)
+
+ <State 8>: 1.425ns
+The critical path consists of the following:
+	'load' operation 1 bit ('raim_flag_tmp', piloting.cpp:312->piloting.cpp:345) on static variable 'static_information_tmp_raim_flag' [112]  (0.000 ns)
+	'store' operation 0 bit ('store_ln313', piloting.cpp:313->piloting.cpp:345) of variable 'zext_ln312', piloting.cpp:312->piloting.cpp:345 on array 'mes_l', piloting.cpp:343 [115]  (1.425 ns)
+
+ <State 9>: 1.038ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln270', piloting.cpp:270->piloting.cpp:345) to 'frame_building_e_p_c_Pipeline_VITIS_LOOP_324_1' [120]  (1.038 ns)
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+ <State 11>: 2.932ns
+The critical path consists of the following:
+	'load' operation 178 bit ('data_tmp_1_loc_load') on local variable 'data_tmp_1_loc' [121]  (0.000 ns)
+	fifo write operation ('write_ln337', piloting.cpp:337->piloting.cpp:346) on port 'data_strm_1' (piloting.cpp:337->piloting.cpp:346) [122]  (2.932 ns)
+
+ <State 12>: 1.000ns
+The critical path consists of the following:
+	axis write operation ('write_ln338', piloting.cpp:338->piloting.cpp:346) on port 'data_obs_strm' (piloting.cpp:338->piloting.cpp:346) [124]  (1.000 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

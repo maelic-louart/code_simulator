@@ -1,0 +1,205 @@
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:1330:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:1330:7: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:2304:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:2304:5: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:2318:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:2318:5: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:2332:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:2332:5: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:3949:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:3949:7: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50049:2: warning: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
+ for (ap_uint<12> i = begin_index;i<begin_index+256;i++)
+ ^~~
+ VITIS_LOOP_14_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50049:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50080:2: warning: Added loop label VITIS_LOOP_45_2:   [xilinx-label-all-loops]
+ for (ap_uint<13> i = 0 ;i<5120;i++)
+ ^~~
+ VITIS_LOOP_45_2: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50080:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50106:2: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+ for(int i=0;i<5120;i++)
+ ^~~
+ VITIS_LOOP_71_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50106:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50133:2: warning: Added loop label VITIS_LOOP_98_1:   [xilinx-label-all-loops]
+ for(int i=0;i<nLength;i++)
+ ^~~
+ VITIS_LOOP_98_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50133:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50149:2: warning: Added loop label VITIS_LOOP_114_1:   [xilinx-label-all-loops]
+ for (ap_uint<13> k=0;k<61;k++)
+ ^~~
+ VITIS_LOOP_114_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50149:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50157:2: warning: Added loop label VITIS_LOOP_122_2:   [xilinx-label-all-loops]
+ for (ap_uint<13> i=1;i<5120 -61 -1;i++)
+ ^~~
+ VITIS_LOOP_122_2: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50157:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50160:3: warning: Added loop label VITIS_LOOP_125_3:   [xilinx-label-all-loops]
+  for (ap_uint<13> k=0;k<61;k++)
+  ^~~
+  VITIS_LOOP_125_3: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50160:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50177:2: warning: Added loop label VITIS_LOOP_142_1:   [xilinx-label-all-loops]
+ for (ap_uint<13> k=0;k<61;k++)
+ ^~~
+ VITIS_LOOP_142_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50177:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50185:2: warning: Added loop label VITIS_LOOP_150_2:   [xilinx-label-all-loops]
+ for (ap_uint<13> i=1;i<5120 -61 -1;i++)
+ ^~~
+ VITIS_LOOP_150_2: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50185:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50188:3: warning: Added loop label VITIS_LOOP_153_3:   [xilinx-label-all-loops]
+  for (ap_uint<13> k=0;k<61;k++)
+  ^~~
+  VITIS_LOOP_153_3: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50188:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50266:2: warning: Added loop label VITIS_LOOP_231_1:   [xilinx-label-all-loops]
+ for (ap_uint<13> i=1;i<5120;i++)
+ ^~~
+ VITIS_LOOP_231_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50266:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50302:2: warning: Added loop label VITIS_LOOP_267_1:   [xilinx-label-all-loops]
+ for (ap_uint<13> k=0;k<480;k++)
+ ^~~
+ VITIS_LOOP_267_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50302:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50310:2: warning: Added loop label VITIS_LOOP_275_2:   [xilinx-label-all-loops]
+ for (ap_uint<13> i=1;i<25*20 -1;i++)
+ ^~~
+ VITIS_LOOP_275_2: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50310:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50314:3: warning: Added loop label VITIS_LOOP_279_3:   [xilinx-label-all-loops]
+  for (ap_uint<13> k=0;k<480;k++)
+  ^~~
+  VITIS_LOOP_279_3: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50314:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50350:2: warning: Added loop label VITIS_LOOP_315_1:   [xilinx-label-all-loops]
+ for (ap_uint<13> i=0;i<200;i++)
+ ^~~
+ VITIS_LOOP_315_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50350:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50370:2: warning: Added loop label VITIS_LOOP_335_2:   [xilinx-label-all-loops]
+ for (ap_uint<13> i=0;i<256;i++)
+ ^~~
+ VITIS_LOOP_335_2: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50370:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50435:2: warning: Added loop label VITIS_LOOP_400_1:   [xilinx-label-all-loops]
+ for (ap_uint<13> i=0;i<256;i++)
+ ^~~
+ VITIS_LOOP_400_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50435:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50460:2: warning: Added loop label VITIS_LOOP_425_1:   [xilinx-label-all-loops]
+ for (ap_uint<9> i=0;i<56;i++)
+ ^~~
+ VITIS_LOOP_425_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50460:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50489:2: warning: Added loop label VITIS_LOOP_454_1:   [xilinx-label-all-loops]
+ for (ap_uint<9> i=idx;i<256;i++)
+ ^~~
+ VITIS_LOOP_454_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50489:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50510:2: warning: Added loop label VITIS_LOOP_475_2:   [xilinx-label-all-loops]
+ for (ap_uint<9> i=0;i<184;i++)
+ ^~~
+ VITIS_LOOP_475_2: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50510:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50530:3: warning: Added loop label VITIS_LOOP_495_1:   [xilinx-label-all-loops]
+  for (int i=0;i<21;i++)
+  ^~~
+  VITIS_LOOP_495_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50530:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50557:2: warning: Added loop label VITIS_LOOP_522_1:   [xilinx-label-all-loops]
+ for(ap_uint<8> i=0;i<23;i++)
+ ^~~
+ VITIS_LOOP_522_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50557:2: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50619:3: warning: Added loop label VITIS_LOOP_584_1:   [xilinx-label-all-loops]
+  for(ap_uint<8> i=0;i<6;i++)
+  ^~~
+  VITIS_LOOP_584_1: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50619:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50625:3: warning: Added loop label VITIS_LOOP_590_2:   [xilinx-label-all-loops]
+  for(ap_uint<8> i=6;i<8;i++)
+  ^~~
+  VITIS_LOOP_590_2: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50625:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50632:3: warning: Added loop label VITIS_LOOP_597_3:   [xilinx-label-all-loops]
+  for(ap_uint<8> i=8;i<38;i++)
+  ^~~
+  VITIS_LOOP_597_3: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50632:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50638:3: warning: Added loop label VITIS_LOOP_603_4:   [xilinx-label-all-loops]
+  for(ap_uint<8> i=38;i<42;i++)
+  ^~~
+  VITIS_LOOP_603_4: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50638:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50644:3: warning: Added loop label VITIS_LOOP_609_5:   [xilinx-label-all-loops]
+  for(ap_uint<8> i=42;i<50;i++)
+  ^~~
+  VITIS_LOOP_609_5: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50644:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50656:3: warning: Added loop label VITIS_LOOP_621_6:   [xilinx-label-all-loops]
+  for(ap_uint<8> i=60;i<61;i++)
+  ^~~
+  VITIS_LOOP_621_6: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50656:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50663:3: warning: Added loop label VITIS_LOOP_628_7:   [xilinx-label-all-loops]
+  for(ap_uint<8> i=61;i<89;i++)
+  ^~~
+  VITIS_LOOP_628_7: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50663:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50688:3: warning: Added loop label VITIS_LOOP_653_8:   [xilinx-label-all-loops]
+  for(ap_uint<8> i=89;i<116;i++)
+  ^~~
+  VITIS_LOOP_653_8: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50688:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50711:3: warning: Added loop label VITIS_LOOP_676_9:   [xilinx-label-all-loops]
+  for(ap_uint<8> i=128;i<137;i++)
+  ^~~
+  VITIS_LOOP_676_9: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50711:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50717:3: warning: Added loop label VITIS_LOOP_682_10:   [xilinx-label-all-loops]
+  for(ap_uint<8> i=137;i<143;i++)
+  ^~~
+  VITIS_LOOP_682_10: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50717:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50723:3: warning: Added loop label VITIS_LOOP_688_11:   [xilinx-label-all-loops]
+  for(ap_uint<8> i=143;i<145;i++)
+  ^~~
+  VITIS_LOOP_688_11: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50723:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50729:3: warning: Added loop label VITIS_LOOP_694_12:   [xilinx-label-all-loops]
+  for(ap_uint<8> i=145;i<148;i++)
+  ^~~
+  VITIS_LOOP_694_12: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50729:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50735:3: warning: Added loop label VITIS_LOOP_700_13:   [xilinx-label-all-loops]
+  for(ap_uint<8> i=148;i<149;i++)
+  ^~~
+  VITIS_LOOP_700_13: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50735:3: note: FIX-IT applied suggested code changes
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50741:3: warning: Added loop label VITIS_LOOP_706_14:   [xilinx-label-all-loops]
+  for(ap_uint<8> i=149;i<168;i++)
+  ^~~
+  VITIS_LOOP_706_14: 
+/home/louart/Bureau/these/code_pour_jcll/FPGA_simulator_prj/solution1/.autopilot/db/receiver.pp.0.cpp:50741:3: note: FIX-IT applied suggested code changes

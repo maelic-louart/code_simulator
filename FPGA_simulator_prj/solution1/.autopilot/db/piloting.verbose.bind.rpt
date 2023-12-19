@@ -1,0 +1,1139 @@
+
+
+================================================================
+== Vitis HLS Report for 'piloting'
+================================================================
+* Date:           Tue Dec 19 07:23:46 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        FPGA_simulator_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtex7
+* Target device:  xc7vx485t-ffg1157-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.233 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |      135|      135|  1.350 us|  1.350 us|   31|  105|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------------------+-------------------------------+---------+---------+-----------+----------+-----+-----+---------+
+        |                                                             |                               |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+        |                           Instance                          |             Module            |   min   |   max   |    min    |    max   | min | max |   Type  |
+        +-------------------------------------------------------------+-------------------------------+---------+---------+-----------+----------+-----+-----+---------+
+        |start_e_tmp_loc_channel_piloting_Block_entry1_proc18_fu_128  |piloting_Block_entry1_proc18   |        0|        0|       0 ns|      0 ns|    0|    0|       no|
+        |grp_dynamic_data_generation_e_p_c_fu_144                     |dynamic_data_generation_e_p_c  |        4|      104|  40.000 ns|  1.040 us|    4|  104|       no|
+        |grp_frame_building_e_p_c_fu_195                              |frame_building_e_p_c           |       30|       30|   0.300 us|  0.300 us|   30|   30|       no|
+        +-------------------------------------------------------------+-------------------------------+---------+---------+-----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 6, States = { 1 2 3 4 5 6 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%dynamic_information_strm = alloca i64 1"   --->   Operation 7 'alloca' 'dynamic_information_strm' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 77> <Depth = 2> <FIFO>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%start_e_tmp_loc_channel = call i1 @piloting_Block_entry1_proc18, i8 %start_e, i32 %snr_strm, i32 %f_shift_strm, i1 %start_e_cps, i32 %snr_strm_1, i32 %f_shift_strm_1"   --->   Operation 8 'call' 'start_e_tmp_loc_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+ST_2 : Operation 9 [2/2] (2.93ns)   --->   "%call_ln360 = call void @dynamic_data_generation_e_p_c, i1 %start_e_tmp_loc_channel, i77 %dynamic_information_strm, i96 %dynamic_information_init_strm, i96 %falsification_information_strm, i1 %guard_variable_for_dynamic_data_generation_e_p_c_bool_stream_stream_stream_dy, i28 %dynamic_information_init_tmp_longitude_init, i27 %dynamic_information_init_tmp_latitude_init, i12 %dynamic_information_init_tmp_cog_init, i10 %dynamic_information_init_tmp_sog_init, i32 %latitude, i8 %sog_noise_indice, i8 %cog_noise_indice, i8 %TS_noise_indice, i1 %init, i32 %longitude, i13 %sog_tmp, i15 %cog_tmp, i5 %noise_sog, i3 %noise_cog, i9 %noise_TS_10s, i7 %noise_TS_6s, i7 %noise_TS_2s, i28 %cos_table21, i28 %sin_table" [piloting.cpp:360]   --->   Operation 9 'call' 'call_ln360' <Predicate = true> <Delay = 2.93> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 10 [1/2] (0.00ns)   --->   "%call_ln360 = call void @dynamic_data_generation_e_p_c, i1 %start_e_tmp_loc_channel, i77 %dynamic_information_strm, i96 %dynamic_information_init_strm, i96 %falsification_information_strm, i1 %guard_variable_for_dynamic_data_generation_e_p_c_bool_stream_stream_stream_dy, i28 %dynamic_information_init_tmp_longitude_init, i27 %dynamic_information_init_tmp_latitude_init, i12 %dynamic_information_init_tmp_cog_init, i10 %dynamic_information_init_tmp_sog_init, i32 %latitude, i8 %sog_noise_indice, i8 %cog_noise_indice, i8 %TS_noise_indice, i1 %init, i32 %longitude, i13 %sog_tmp, i15 %cog_tmp, i5 %noise_sog, i3 %noise_cog, i9 %noise_TS_10s, i7 %noise_TS_6s, i7 %noise_TS_2s, i28 %cos_table21, i28 %sin_table" [piloting.cpp:360]   --->   Operation 10 'call' 'call_ln360' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 11 [2/2] (0.00ns)   --->   "%call_ln361 = call void @frame_building_e_p_c, i192 %static_information_strm, i77 %dynamic_information_strm, i178 %data_strm_1, i184 %data_obs_strm, i1 %guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp, i6 %static_information_tmp_message_id, i2 %static_information_tmp_repeat_indicator, i30 %static_information_tmp_user_id, i4 %static_information_tmp_navigational_status, i8 %static_information_tmp_rot, i1 %static_information_tmp_position_accuracy, i9 %static_information_tmp_true_heading, i6 %static_information_tmp_time_stamp, i2 %static_information_tmp_special_manoeuvre_indicator, i3 %static_information_tmp_spare, i1 %static_information_tmp_raim_flag, i19 %static_information_tmp_communication_state, i5 %list_nb_bits" [piloting.cpp:361]   --->   Operation 11 'call' 'call_ln361' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 12 [1/2] (0.00ns)   --->   "%call_ln361 = call void @frame_building_e_p_c, i192 %static_information_strm, i77 %dynamic_information_strm, i178 %data_strm_1, i184 %data_obs_strm, i1 %guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp, i6 %static_information_tmp_message_id, i2 %static_information_tmp_repeat_indicator, i30 %static_information_tmp_user_id, i4 %static_information_tmp_navigational_status, i8 %static_information_tmp_rot, i1 %static_information_tmp_position_accuracy, i9 %static_information_tmp_true_heading, i6 %static_information_tmp_time_stamp, i2 %static_information_tmp_special_manoeuvre_indicator, i3 %static_information_tmp_spare, i1 %static_information_tmp_raim_flag, i19 %static_information_tmp_communication_state, i5 %list_nb_bits" [piloting.cpp:361]   --->   Operation 12 'call' 'call_ln361' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 13 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln352 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_8" [piloting.cpp:352]   --->   Operation 13 'specdataflowpipeline' 'specdataflowpipeline_ln352' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %f_shift_strm_1, void @empty_38, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %snr_strm_1, void @empty_38, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %start_e_cps, void @empty_38, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i178 %data_strm_1, void @empty_38, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i184 %data_obs_strm, void @empty_13, i32 1, i32 1, void @empty_12, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %start_e, void @empty_13, i32 1, i32 1, void @empty_12, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i192 %static_information_strm, void @empty_13, i32 1, i32 1, void @empty_12, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i96 %falsification_information_strm, void @empty_13, i32 1, i32 1, void @empty_12, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i96 %dynamic_information_init_strm, void @empty_13, i32 1, i32 1, void @empty_12, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %f_shift_strm, void @empty_13, i32 1, i32 1, void @empty_12, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %snr_strm, void @empty_13, i32 1, i32 1, void @empty_12, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 25 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @dynamic_information_strm_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i77 %dynamic_information_strm, i77 %dynamic_information_strm"   --->   Operation 25 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i77 %dynamic_information_strm, void @empty_38, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 27 [1/1] (0.00ns)   --->   "%ret_ln362 = ret" [piloting.cpp:362]   --->   Operation 27 'ret' 'ret_ln362' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ snr_strm]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ f_shift_strm]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ dynamic_information_init_strm]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ falsification_information_strm]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ static_information_strm]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ data_strm_1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ start_e]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ start_e_cps]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ data_obs_strm]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ snr_strm_1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ f_shift_strm_1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ guard_variable_for_dynamic_data_generation_e_p_c_bool_stream_stream_stream_dy]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ dynamic_information_init_tmp_longitude_init]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ dynamic_information_init_tmp_latitude_init]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ dynamic_information_init_tmp_cog_init]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ dynamic_information_init_tmp_sog_init]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ latitude]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ sog_noise_indice]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ cog_noise_indice]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ TS_noise_indice]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ init]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ longitude]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ sog_tmp]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ cog_tmp]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ noise_sog]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ noise_cog]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ noise_TS_10s]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ noise_TS_6s]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ noise_TS_2s]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ cos_table21]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ sin_table]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ static_information_tmp_message_id]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ static_information_tmp_repeat_indicator]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ static_information_tmp_user_id]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ static_information_tmp_navigational_status]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ static_information_tmp_rot]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ static_information_tmp_position_accuracy]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ static_information_tmp_true_heading]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ static_information_tmp_time_stamp]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ static_information_tmp_special_manoeuvre_indicator]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ static_information_tmp_spare]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ static_information_tmp_raim_flag]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ static_information_tmp_communication_state]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ list_nb_bits]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+dynamic_information_strm   (alloca              ) [ 0011111]
+start_e_tmp_loc_channel    (call                ) [ 0001000]
+call_ln360                 (call                ) [ 0000000]
+call_ln361                 (call                ) [ 0000000]
+specdataflowpipeline_ln352 (specdataflowpipeline) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+empty                      (specchannel         ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+ret_ln362                  (ret                 ) [ 0000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="snr_strm">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="snr_strm"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="f_shift_strm">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="f_shift_strm"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="dynamic_information_init_strm">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dynamic_information_init_strm"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="falsification_information_strm">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="falsification_information_strm"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="static_information_strm">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="static_information_strm"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="data_strm_1">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="data_strm_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="start_e">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="start_e"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="start_e_cps">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="start_e_cps"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="data_obs_strm">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="data_obs_strm"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="snr_strm_1">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="snr_strm_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="f_shift_strm_1">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="f_shift_strm_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="guard_variable_for_dynamic_data_generation_e_p_c_bool_stream_stream_stream_dy">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="guard_variable_for_dynamic_data_generation_e_p_c_bool_stream_stream_stream_dy"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1000" name="dynamic_information_init_tmp_longitude_init">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dynamic_information_init_tmp_longitude_init"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1000" name="dynamic_information_init_tmp_latitude_init">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dynamic_information_init_tmp_latitude_init"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1000" name="dynamic_information_init_tmp_cog_init">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dynamic_information_init_tmp_cog_init"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1000" name="dynamic_information_init_tmp_sog_init">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dynamic_information_init_tmp_sog_init"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1000" name="latitude">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="latitude"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1000" name="sog_noise_indice">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sog_noise_indice"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1000" name="cog_noise_indice">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="cog_noise_indice"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1000" name="TS_noise_indice">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="TS_noise_indice"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1000" name="init">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="init"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1000" name="longitude">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="longitude"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1000" name="sog_tmp">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sog_tmp"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1000" name="cog_tmp">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="cog_tmp"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1000" name="noise_sog">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="noise_sog"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1000" name="noise_cog">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="noise_cog"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1000" name="noise_TS_10s">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="noise_TS_10s"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1000" name="noise_TS_6s">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="noise_TS_6s"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1000" name="noise_TS_2s">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="noise_TS_2s"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1000" name="cos_table21">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="cos_table21"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1000" name="sin_table">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sin_table"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1000" name="guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1000" name="static_information_tmp_message_id">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="static_information_tmp_message_id"/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1000" name="static_information_tmp_repeat_indicator">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="static_information_tmp_repeat_indicator"/></StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1000" name="static_information_tmp_user_id">
+<pin_list>
+<pin id="69" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="static_information_tmp_user_id"/></StgValue>
+</bind>
+</comp>
+
+<comp id="70" class="1000" name="static_information_tmp_navigational_status">
+<pin_list>
+<pin id="71" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="static_information_tmp_navigational_status"/></StgValue>
+</bind>
+</comp>
+
+<comp id="72" class="1000" name="static_information_tmp_rot">
+<pin_list>
+<pin id="73" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="static_information_tmp_rot"/></StgValue>
+</bind>
+</comp>
+
+<comp id="74" class="1000" name="static_information_tmp_position_accuracy">
+<pin_list>
+<pin id="75" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="static_information_tmp_position_accuracy"/></StgValue>
+</bind>
+</comp>
+
+<comp id="76" class="1000" name="static_information_tmp_true_heading">
+<pin_list>
+<pin id="77" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="static_information_tmp_true_heading"/></StgValue>
+</bind>
+</comp>
+
+<comp id="78" class="1000" name="static_information_tmp_time_stamp">
+<pin_list>
+<pin id="79" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="static_information_tmp_time_stamp"/></StgValue>
+</bind>
+</comp>
+
+<comp id="80" class="1000" name="static_information_tmp_special_manoeuvre_indicator">
+<pin_list>
+<pin id="81" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="static_information_tmp_special_manoeuvre_indicator"/></StgValue>
+</bind>
+</comp>
+
+<comp id="82" class="1000" name="static_information_tmp_spare">
+<pin_list>
+<pin id="83" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="static_information_tmp_spare"/></StgValue>
+</bind>
+</comp>
+
+<comp id="84" class="1000" name="static_information_tmp_raim_flag">
+<pin_list>
+<pin id="85" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="static_information_tmp_raim_flag"/></StgValue>
+</bind>
+</comp>
+
+<comp id="86" class="1000" name="static_information_tmp_communication_state">
+<pin_list>
+<pin id="87" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="static_information_tmp_communication_state"/></StgValue>
+</bind>
+</comp>
+
+<comp id="88" class="1000" name="list_nb_bits">
+<pin_list>
+<pin id="89" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="list_nb_bits"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="90" class="1001" name="const_90">
+<pin_list>
+<pin id="91" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="92" class="1001" name="const_92">
+<pin_list>
+<pin id="93" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="piloting_Block_entry1_proc18"/></StgValue>
+</bind>
+</comp>
+
+<comp id="94" class="1001" name="const_94">
+<pin_list>
+<pin id="95" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dynamic_data_generation_e_p_c"/></StgValue>
+</bind>
+</comp>
+
+<comp id="96" class="1001" name="const_96">
+<pin_list>
+<pin id="97" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="frame_building_e_p_c"/></StgValue>
+</bind>
+</comp>
+
+<comp id="98" class="1001" name="const_98">
+<pin_list>
+<pin id="99" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="100" class="1001" name="const_100">
+<pin_list>
+<pin id="101" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="102" class="1001" name="const_102">
+<pin_list>
+<pin id="103" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="104" class="1001" name="const_104">
+<pin_list>
+<pin id="105" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="106" class="1001" name="const_106">
+<pin_list>
+<pin id="107" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="108" class="1001" name="const_108">
+<pin_list>
+<pin id="109" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_38"/></StgValue>
+</bind>
+</comp>
+
+<comp id="110" class="1001" name="const_110">
+<pin_list>
+<pin id="111" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_13"/></StgValue>
+</bind>
+</comp>
+
+<comp id="112" class="1001" name="const_112">
+<pin_list>
+<pin id="113" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="114" class="1001" name="const_114">
+<pin_list>
+<pin id="115" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_12"/></StgValue>
+</bind>
+</comp>
+
+<comp id="116" class="1001" name="const_116">
+<pin_list>
+<pin id="117" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecChannel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="118" class="1001" name="const_118">
+<pin_list>
+<pin id="119" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dynamic_information_strm_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="120" class="1001" name="const_120">
+<pin_list>
+<pin id="121" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="122" class="1001" name="const_122">
+<pin_list>
+<pin id="123" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="124" class="1004" name="dynamic_information_strm_fu_124">
+<pin_list>
+<pin id="125" dir="0" index="0" bw="1" slack="0"/>
+<pin id="126" dir="1" index="1" bw="77" slack="1"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="dynamic_information_strm/1 "/>
+</bind>
+</comp>
+
+<comp id="128" class="1004" name="start_e_tmp_loc_channel_piloting_Block_entry1_proc18_fu_128">
+<pin_list>
+<pin id="129" dir="0" index="0" bw="1" slack="0"/>
+<pin id="130" dir="0" index="1" bw="8" slack="0"/>
+<pin id="131" dir="0" index="2" bw="32" slack="0"/>
+<pin id="132" dir="0" index="3" bw="32" slack="0"/>
+<pin id="133" dir="0" index="4" bw="1" slack="0"/>
+<pin id="134" dir="0" index="5" bw="32" slack="0"/>
+<pin id="135" dir="0" index="6" bw="32" slack="0"/>
+<pin id="136" dir="1" index="7" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="start_e_tmp_loc_channel/2 "/>
+</bind>
+</comp>
+
+<comp id="144" class="1004" name="grp_dynamic_data_generation_e_p_c_fu_144">
+<pin_list>
+<pin id="145" dir="0" index="0" bw="0" slack="0"/>
+<pin id="146" dir="0" index="1" bw="1" slack="0"/>
+<pin id="147" dir="0" index="2" bw="77" slack="1"/>
+<pin id="148" dir="0" index="3" bw="96" slack="0"/>
+<pin id="149" dir="0" index="4" bw="96" slack="0"/>
+<pin id="150" dir="0" index="5" bw="1" slack="0"/>
+<pin id="151" dir="0" index="6" bw="28" slack="0"/>
+<pin id="152" dir="0" index="7" bw="27" slack="0"/>
+<pin id="153" dir="0" index="8" bw="12" slack="0"/>
+<pin id="154" dir="0" index="9" bw="10" slack="0"/>
+<pin id="155" dir="0" index="10" bw="32" slack="0"/>
+<pin id="156" dir="0" index="11" bw="8" slack="0"/>
+<pin id="157" dir="0" index="12" bw="8" slack="0"/>
+<pin id="158" dir="0" index="13" bw="8" slack="0"/>
+<pin id="159" dir="0" index="14" bw="1" slack="0"/>
+<pin id="160" dir="0" index="15" bw="32" slack="0"/>
+<pin id="161" dir="0" index="16" bw="13" slack="0"/>
+<pin id="162" dir="0" index="17" bw="15" slack="0"/>
+<pin id="163" dir="0" index="18" bw="5" slack="0"/>
+<pin id="164" dir="0" index="19" bw="3" slack="0"/>
+<pin id="165" dir="0" index="20" bw="9" slack="0"/>
+<pin id="166" dir="0" index="21" bw="7" slack="0"/>
+<pin id="167" dir="0" index="22" bw="7" slack="0"/>
+<pin id="168" dir="0" index="23" bw="28" slack="0"/>
+<pin id="169" dir="0" index="24" bw="28" slack="0"/>
+<pin id="170" dir="1" index="25" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln360/2 "/>
+</bind>
+</comp>
+
+<comp id="195" class="1004" name="grp_frame_building_e_p_c_fu_195">
+<pin_list>
+<pin id="196" dir="0" index="0" bw="0" slack="0"/>
+<pin id="197" dir="0" index="1" bw="192" slack="0"/>
+<pin id="198" dir="0" index="2" bw="77" slack="3"/>
+<pin id="199" dir="0" index="3" bw="178" slack="0"/>
+<pin id="200" dir="0" index="4" bw="184" slack="0"/>
+<pin id="201" dir="0" index="5" bw="1" slack="0"/>
+<pin id="202" dir="0" index="6" bw="6" slack="0"/>
+<pin id="203" dir="0" index="7" bw="2" slack="0"/>
+<pin id="204" dir="0" index="8" bw="30" slack="0"/>
+<pin id="205" dir="0" index="9" bw="4" slack="0"/>
+<pin id="206" dir="0" index="10" bw="8" slack="0"/>
+<pin id="207" dir="0" index="11" bw="1" slack="0"/>
+<pin id="208" dir="0" index="12" bw="9" slack="0"/>
+<pin id="209" dir="0" index="13" bw="6" slack="0"/>
+<pin id="210" dir="0" index="14" bw="2" slack="0"/>
+<pin id="211" dir="0" index="15" bw="3" slack="0"/>
+<pin id="212" dir="0" index="16" bw="1" slack="0"/>
+<pin id="213" dir="0" index="17" bw="19" slack="0"/>
+<pin id="214" dir="0" index="18" bw="5" slack="0"/>
+<pin id="215" dir="1" index="19" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln361/4 "/>
+</bind>
+</comp>
+
+<comp id="234" class="1005" name="dynamic_information_strm_reg_234">
+<pin_list>
+<pin id="235" dir="0" index="0" bw="77" slack="1"/>
+<pin id="236" dir="1" index="1" bw="77" slack="1"/>
+</pin_list>
+<bind>
+<opset="dynamic_information_strm "/>
+</bind>
+</comp>
+
+<comp id="240" class="1005" name="start_e_tmp_loc_channel_reg_240">
+<pin_list>
+<pin id="241" dir="0" index="0" bw="1" slack="1"/>
+<pin id="242" dir="1" index="1" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opset="start_e_tmp_loc_channel "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="127"><net_src comp="90" pin="0"/><net_sink comp="124" pin=0"/></net>
+
+<net id="137"><net_src comp="92" pin="0"/><net_sink comp="128" pin=0"/></net>
+
+<net id="138"><net_src comp="12" pin="0"/><net_sink comp="128" pin=1"/></net>
+
+<net id="139"><net_src comp="0" pin="0"/><net_sink comp="128" pin=2"/></net>
+
+<net id="140"><net_src comp="2" pin="0"/><net_sink comp="128" pin=3"/></net>
+
+<net id="141"><net_src comp="14" pin="0"/><net_sink comp="128" pin=4"/></net>
+
+<net id="142"><net_src comp="18" pin="0"/><net_sink comp="128" pin=5"/></net>
+
+<net id="143"><net_src comp="20" pin="0"/><net_sink comp="128" pin=6"/></net>
+
+<net id="171"><net_src comp="94" pin="0"/><net_sink comp="144" pin=0"/></net>
+
+<net id="172"><net_src comp="128" pin="7"/><net_sink comp="144" pin=1"/></net>
+
+<net id="173"><net_src comp="4" pin="0"/><net_sink comp="144" pin=3"/></net>
+
+<net id="174"><net_src comp="6" pin="0"/><net_sink comp="144" pin=4"/></net>
+
+<net id="175"><net_src comp="22" pin="0"/><net_sink comp="144" pin=5"/></net>
+
+<net id="176"><net_src comp="24" pin="0"/><net_sink comp="144" pin=6"/></net>
+
+<net id="177"><net_src comp="26" pin="0"/><net_sink comp="144" pin=7"/></net>
+
+<net id="178"><net_src comp="28" pin="0"/><net_sink comp="144" pin=8"/></net>
+
+<net id="179"><net_src comp="30" pin="0"/><net_sink comp="144" pin=9"/></net>
+
+<net id="180"><net_src comp="32" pin="0"/><net_sink comp="144" pin=10"/></net>
+
+<net id="181"><net_src comp="34" pin="0"/><net_sink comp="144" pin=11"/></net>
+
+<net id="182"><net_src comp="36" pin="0"/><net_sink comp="144" pin=12"/></net>
+
+<net id="183"><net_src comp="38" pin="0"/><net_sink comp="144" pin=13"/></net>
+
+<net id="184"><net_src comp="40" pin="0"/><net_sink comp="144" pin=14"/></net>
+
+<net id="185"><net_src comp="42" pin="0"/><net_sink comp="144" pin=15"/></net>
+
+<net id="186"><net_src comp="44" pin="0"/><net_sink comp="144" pin=16"/></net>
+
+<net id="187"><net_src comp="46" pin="0"/><net_sink comp="144" pin=17"/></net>
+
+<net id="188"><net_src comp="48" pin="0"/><net_sink comp="144" pin=18"/></net>
+
+<net id="189"><net_src comp="50" pin="0"/><net_sink comp="144" pin=19"/></net>
+
+<net id="190"><net_src comp="52" pin="0"/><net_sink comp="144" pin=20"/></net>
+
+<net id="191"><net_src comp="54" pin="0"/><net_sink comp="144" pin=21"/></net>
+
+<net id="192"><net_src comp="56" pin="0"/><net_sink comp="144" pin=22"/></net>
+
+<net id="193"><net_src comp="58" pin="0"/><net_sink comp="144" pin=23"/></net>
+
+<net id="194"><net_src comp="60" pin="0"/><net_sink comp="144" pin=24"/></net>
+
+<net id="216"><net_src comp="96" pin="0"/><net_sink comp="195" pin=0"/></net>
+
+<net id="217"><net_src comp="8" pin="0"/><net_sink comp="195" pin=1"/></net>
+
+<net id="218"><net_src comp="10" pin="0"/><net_sink comp="195" pin=3"/></net>
+
+<net id="219"><net_src comp="16" pin="0"/><net_sink comp="195" pin=4"/></net>
+
+<net id="220"><net_src comp="62" pin="0"/><net_sink comp="195" pin=5"/></net>
+
+<net id="221"><net_src comp="64" pin="0"/><net_sink comp="195" pin=6"/></net>
+
+<net id="222"><net_src comp="66" pin="0"/><net_sink comp="195" pin=7"/></net>
+
+<net id="223"><net_src comp="68" pin="0"/><net_sink comp="195" pin=8"/></net>
+
+<net id="224"><net_src comp="70" pin="0"/><net_sink comp="195" pin=9"/></net>
+
+<net id="225"><net_src comp="72" pin="0"/><net_sink comp="195" pin=10"/></net>
+
+<net id="226"><net_src comp="74" pin="0"/><net_sink comp="195" pin=11"/></net>
+
+<net id="227"><net_src comp="76" pin="0"/><net_sink comp="195" pin=12"/></net>
+
+<net id="228"><net_src comp="78" pin="0"/><net_sink comp="195" pin=13"/></net>
+
+<net id="229"><net_src comp="80" pin="0"/><net_sink comp="195" pin=14"/></net>
+
+<net id="230"><net_src comp="82" pin="0"/><net_sink comp="195" pin=15"/></net>
+
+<net id="231"><net_src comp="84" pin="0"/><net_sink comp="195" pin=16"/></net>
+
+<net id="232"><net_src comp="86" pin="0"/><net_sink comp="195" pin=17"/></net>
+
+<net id="233"><net_src comp="88" pin="0"/><net_sink comp="195" pin=18"/></net>
+
+<net id="237"><net_src comp="124" pin="1"/><net_sink comp="234" pin=0"/></net>
+
+<net id="238"><net_src comp="234" pin="1"/><net_sink comp="144" pin=2"/></net>
+
+<net id="239"><net_src comp="234" pin="1"/><net_sink comp="195" pin=2"/></net>
+
+<net id="243"><net_src comp="128" pin="7"/><net_sink comp="240" pin=0"/></net>
+
+<net id="244"><net_src comp="240" pin="1"/><net_sink comp="144" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: data_strm_1 | {4 5 }
+	Port: start_e_cps | {2 }
+	Port: data_obs_strm | {4 5 }
+	Port: snr_strm_1 | {2 }
+	Port: f_shift_strm_1 | {2 }
+	Port: guard_variable_for_dynamic_data_generation_e_p_c_bool_stream_stream_stream_dy | {2 3 }
+	Port: dynamic_information_init_tmp_longitude_init | {2 3 }
+	Port: dynamic_information_init_tmp_latitude_init | {2 3 }
+	Port: dynamic_information_init_tmp_cog_init | {2 3 }
+	Port: dynamic_information_init_tmp_sog_init | {2 3 }
+	Port: latitude | {2 3 }
+	Port: sog_noise_indice | {2 3 }
+	Port: cog_noise_indice | {2 3 }
+	Port: TS_noise_indice | {2 3 }
+	Port: init | {2 3 }
+	Port: longitude | {2 3 }
+	Port: sog_tmp | {2 3 }
+	Port: cog_tmp | {2 3 }
+	Port: guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp | {4 5 }
+	Port: static_information_tmp_message_id | {4 5 }
+	Port: static_information_tmp_repeat_indicator | {4 5 }
+	Port: static_information_tmp_user_id | {4 5 }
+	Port: static_information_tmp_navigational_status | {4 5 }
+	Port: static_information_tmp_rot | {4 5 }
+	Port: static_information_tmp_position_accuracy | {4 5 }
+	Port: static_information_tmp_true_heading | {4 5 }
+	Port: static_information_tmp_time_stamp | {4 5 }
+	Port: static_information_tmp_special_manoeuvre_indicator | {4 5 }
+	Port: static_information_tmp_spare | {4 5 }
+	Port: static_information_tmp_raim_flag | {4 5 }
+	Port: static_information_tmp_communication_state | {4 5 }
+ - Input state : 
+	Port: piloting : snr_strm | {2 }
+	Port: piloting : f_shift_strm | {2 }
+	Port: piloting : dynamic_information_init_strm | {2 3 }
+	Port: piloting : falsification_information_strm | {2 3 }
+	Port: piloting : static_information_strm | {4 5 }
+	Port: piloting : start_e | {2 }
+	Port: piloting : guard_variable_for_dynamic_data_generation_e_p_c_bool_stream_stream_stream_dy | {2 3 }
+	Port: piloting : dynamic_information_init_tmp_longitude_init | {2 3 }
+	Port: piloting : dynamic_information_init_tmp_latitude_init | {2 3 }
+	Port: piloting : dynamic_information_init_tmp_cog_init | {2 3 }
+	Port: piloting : dynamic_information_init_tmp_sog_init | {2 3 }
+	Port: piloting : latitude | {2 3 }
+	Port: piloting : sog_noise_indice | {2 3 }
+	Port: piloting : cog_noise_indice | {2 3 }
+	Port: piloting : TS_noise_indice | {2 3 }
+	Port: piloting : init | {2 3 }
+	Port: piloting : longitude | {2 3 }
+	Port: piloting : sog_tmp | {2 3 }
+	Port: piloting : cog_tmp | {2 3 }
+	Port: piloting : noise_sog | {2 3 }
+	Port: piloting : noise_cog | {2 3 }
+	Port: piloting : noise_TS_10s | {2 3 }
+	Port: piloting : noise_TS_6s | {2 3 }
+	Port: piloting : noise_TS_2s | {2 3 }
+	Port: piloting : cos_table21 | {2 3 }
+	Port: piloting : sin_table | {2 3 }
+	Port: piloting : guard_variable_for_read_data_e_p_c_stream_stream_int_static_information_tmp | {4 5 }
+	Port: piloting : static_information_tmp_message_id | {4 5 }
+	Port: piloting : static_information_tmp_repeat_indicator | {4 5 }
+	Port: piloting : static_information_tmp_user_id | {4 5 }
+	Port: piloting : static_information_tmp_navigational_status | {4 5 }
+	Port: piloting : static_information_tmp_rot | {4 5 }
+	Port: piloting : static_information_tmp_position_accuracy | {4 5 }
+	Port: piloting : static_information_tmp_true_heading | {4 5 }
+	Port: piloting : static_information_tmp_time_stamp | {4 5 }
+	Port: piloting : static_information_tmp_special_manoeuvre_indicator | {4 5 }
+	Port: piloting : static_information_tmp_spare | {4 5 }
+	Port: piloting : static_information_tmp_raim_flag | {4 5 }
+	Port: piloting : static_information_tmp_communication_state | {4 5 }
+	Port: piloting : list_nb_bits | {4 5 }
+  - Chain level:
+	State 1
+	State 2
+		call_ln360 : 1
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+| Operation|                       Functional Unit                       |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |   URAM  |
+|----------|-------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|          | start_e_tmp_loc_channel_piloting_Block_entry1_proc18_fu_128 |    0    |    0    |    0    |    0    |    0    |    0    |
+|   call   |           grp_dynamic_data_generation_e_p_c_fu_144          |    0    |    51   | 15.7471 |   2789  |   3509  |    0    |
+|          |               grp_frame_building_e_p_c_fu_195               |    0    |    0    | 7.69114 |   944   |   1006  |    0    |
+|----------|-------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   Total  |                                                             |    0    |    51   | 23.4383 |   3733  |   4515  |    0    |
+|----------|-------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++--------------------------------+--------+
+|                                |   FF   |
++--------------------------------+--------+
+|dynamic_information_strm_reg_234|   77   |
+| start_e_tmp_loc_channel_reg_240|    1   |
++--------------------------------+--------+
+|              Total             |   78   |
++--------------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|------------------------------------------|------|------|------|--------||---------||---------|
+|                   Comp                   |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|------------------------------------------|------|------|------|--------||---------||---------|
+| grp_dynamic_data_generation_e_p_c_fu_144 |  p1  |   2  |   1  |    2   ||    9    |
+|------------------------------------------|------|------|------|--------||---------||---------|
+|                   Total                  |      |      |      |    2   ||  1.038  ||    9    |
+|------------------------------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+--------+
+|           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
++-----------+--------+--------+--------+--------+--------+--------+
+|  Function |    0   |   51   |   23   |  3733  |  4515  |    0   |
+|   Memory  |    -   |    -   |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    1   |    -   |    9   |    -   |
+|  Register |    -   |    -   |    -   |   78   |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+--------+
+|   Total   |    0   |   51   |   24   |  3811  |  4524  |    0   |
++-----------+--------+--------+--------+--------+--------+--------+

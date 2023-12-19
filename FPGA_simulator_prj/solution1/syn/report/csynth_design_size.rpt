@@ -1,0 +1,131 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 87,312       | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  |  8,312       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |  4,645       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |  4,491       | user inline pragmas are applied                                                        |
+|               | (4) simplification          |  3,834       | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |  3,553       | user array partition pragmas are applied                                               |
+|               | (2) simplification          |  3,551       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |  3,557       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |  3,658       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |  3,694       | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |  3,629       | loop and instruction simplification                                                    |
+|               | (2) parallelization         |  5,527       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |  6,509       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |  6,301       | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |  6,301       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |  6,602       | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++-------------------------------------+----------------------+-----------------+----------------+----------------+-----------------+-----------------+
+| Function                            | Location             | Compile/Link    | Unroll/Inline  | Array/Struct   | Performance     | HW Transforms   |
++-------------------------------------+----------------------+-----------------+----------------+----------------+-----------------+-----------------+
+| + FPGA_simulator                    | FPGA_simulator.cpp:4 | 87,312          | 3,834          | 3,694          | 6,301           | 6,602           |
+|  + piloting                         | piloting.cpp:350     | 20,575          |  841           |  940           |  938            |  947            |
+|   + dynamic_data_generation_e_p_... | piloting.cpp:78      | 19,977          |  660           |  747           |  747            |  732            |
+|      cos_lookup                     | piloting.cpp:42      |   632 (4 calls) |  136 (4 calls) |  144 (4 calls) |  144 (4 calls)  |  144 (4 calls)  |
+|      sin_lookup                     | piloting.cpp:4       |   314 (2 calls) |                |                |                 |                 |
+|   + frame_building_e_p_c            | piloting.cpp:341     |   498           |  152           |  182           |  180            |  188            |
+|      read_data_e_p_c                | piloting.cpp:265     |   205           |                |                |                 |                 |
+|      NMEA_frame_building            | piloting.cpp:320     |   283           |                |                |                 |                 |
+|  + CPS                              | CPS.cpp:3            | 66,666          | 2,956          | 2,729          | 5,338           | 5,609           |
+|   + emitter                         | emitter.cpp:473      | 16,249          | 1,107          | 1,038          | 1,014           | 1,127           |
+|      message_data                   | FPGA_simulator.h:303 |    24           |                |                |                 |                 |
+|    + message_data_crc               | FPGA_simulator.h:318 |    50           |                |                |                 |                 |
+|       message_data                  | FPGA_simulator.h:303 |    24           |                |                |                 |                 |
+|       message_crc                   | FPGA_simulator.h:312 |    21           |                |                |                 |                 |
+|    + message_hdlc                   | FPGA_simulator.h:324 |    70           |                |                |                 |                 |
+|       message_data                  | FPGA_simulator.h:303 |    24           |                |                |                 |                 |
+|       message_crc                   | FPGA_simulator.h:312 |    21           |                |                |                 |                 |
+|    + message_trame                  | FPGA_simulator.h:333 |    92           |                |                |                 |                 |
+|     + message_hdlc                  | FPGA_simulator.h:324 |    70           |                |                |                 |                 |
+|        message_data                 | FPGA_simulator.h:303 |    24           |                |                |                 |                 |
+|        message_crc                  | FPGA_simulator.h:312 |    21           |                |                |                 |                 |
+|    + message_nrzi                   | FPGA_simulator.h:339 |   107           |                |                |                 |                 |
+|       message_data                  | FPGA_simulator.h:303 |    24           |                |                |                 |                 |
+|       message_crc                   | FPGA_simulator.h:312 |    21           |                |                |                 |                 |
+|    + Read_data                      | emitter.cpp:3        | 1,247           |   57           |   60           |   57            |   71            |
+|       message_data                  | FPGA_simulator.h:303 |    24           |                |                |                 |                 |
+|      Bytes_flipping                 | emitter.cpp:38       |   561           |   57           |   58           |   57            |   61            |
+|    + Compute_CRC                    | emitter.cpp:70       | 5,057           |  220           |  224           |  220            |  239            |
+|       GetCrc16                      | emitter.cpp:59       |   342           |                |                |                 |                 |
+|    + Bits_stuffing                  | emitter.cpp:100      | 1,559           |   86           |   91           |   86            |   94            |
+|     + message_data_crc              | FPGA_simulator.h:318 |    50           |                |                |                 |                 |
+|        message_data                 | FPGA_simulator.h:303 |    24           |                |                |                 |                 |
+|        message_crc                  | FPGA_simulator.h:312 |    21           |                |                |                 |                 |
+|    + HDLC_trame_construction        | emitter.cpp:176      |    87           |   17           |   17           |   17            |   17            |
+|     + message_hdlc                  | FPGA_simulator.h:324 |    70           |                |                |                 |                 |
+|        message_data                 | FPGA_simulator.h:303 |    24           |                |                |                 |                 |
+|        message_crc                  | FPGA_simulator.h:312 |    21           |                |                |                 |                 |
+|    + Trainning_sequence_adding      | emitter.cpp:185      |   104           |   20           |   20           |   20            |   20            |
+|     + message_trame                 | FPGA_simulator.h:333 |    92           |                |                |                 |                 |
+|      + message_hdlc                 | FPGA_simulator.h:324 |    70           |                |                |                 |                 |
+|         message_data                | FPGA_simulator.h:303 |    24           |                |                |                 |                 |
+|         message_crc                 | FPGA_simulator.h:312 |    21           |                |                |                 |                 |
+|    + NRZI_coding                    | emitter.cpp:193      | 2,231           |  118           |  125           |  118            |  134            |
+|     + message_nrzi                  | FPGA_simulator.h:339 |   107           |                |                |                 |                 |
+|        message_data                 | FPGA_simulator.h:303 |    24           |                |                |                 |                 |
+|        message_crc                  | FPGA_simulator.h:312 |    21           |                |                |                 |                 |
+|    + GMSK_modulation                | emitter.cpp:396      | 2,483           |  146           |  146           |  144            |  170            |
+|       modulation_gmsk_body          | emitter.cpp:345      | 1,308           |                |                |                 |                 |
+|    + I_Q_coding                     | emitter.cpp:424      | 1,172           |   89           |  100           |  100            |  104            |
+|       cos_lookup                    | piloting.cpp:42      |   158           |                |                |                 |                 |
+|       sin_lookup                    | piloting.cpp:4       |   157           |                |                |                 |                 |
+|      amplifier                      | emitter.cpp:444      | 1,126           |   38           |   38           |   36            |   54            |
+|   + channel                         | channel.cpp:267      | 16,885          |  507           |  449           |  446            |  486            |
+|    + Shift_frequency                | channel.cpp:3        | 3,089           |  216           |  236           |  236            |  244            |
+|       cos_lookup                    | piloting.cpp:42      |   316 (2 calls) |                |                |                 |                 |
+|       sin_lookup                    | piloting.cpp:4       |   314 (2 calls) |                |                |                 |                 |
+|    + Fading                         | channel.cpp:242      | 10,649          |   70           |   56           |   55            |   65            |
+|     + compute_distance              | channel.cpp:118      | 9,559           |   38           |   30           |   29            |   33            |
+|        cos_lookup                   | piloting.cpp:42      |   158           |                |                |                 |                 |
+|        isqrt                        | channel.cpp:92       |   243           |                |                |                 |                 |
+|      sum                            | channel.cpp:220      |   642           |   26           |   26           |   26            |   30            |
+|    + Noise_adding                   | channel.cpp:56       | 2,232           |  103           |   81           |   79            |   97            |
+|       isqrt                         | channel.cpp:92       |   243           |                |                |                 |                 |
+|   + receiver                        | receiver.cpp:721     | 33,466          | 1,304          | 1,232          | 3,868           | 3,984           |
+|      data_crc                       | FPGA_simulator.h:348 |    39           |                |                |                 |                 |
+|      data_separated                 | FPGA_simulator.h:354 |   237           |                |                |                 |                 |
+|      change_dynamic                 | receiver.cpp:4       | 2,926           |   68           |   70           |   68            |   76            |
+|      DAC                            | receiver.cpp:68      |   272           |   22           |   22           |   22            |   26            |
+|    + GMSK_demodulation              | receiver.cpp:358     | 13,905          |  643           |  672           | 3,320           | 3,369           |
+|       filtered_list                 | receiver.cpp:107     | 3,374 (2 calls) |  154 (2 calls) |  168 (2 calls) | 1,902 (2 calls) | 1,922 (2 calls) |
+|     + angle_computation             | receiver.cpp:217     | 4,485           |  198           |  198           |  198            |  202            |
+|        atan2_maelic                 | receiver.cpp:163     | 2,388           |                |                |                 |                 |
+|       filtered_list_p               | receiver.cpp:135     | 1,687           |                |                |                 |                 |
+|       correlation_computation       | receiver.cpp:259     | 1,966           |                |                |                 |                 |
+|       bits_decoding                 | receiver.cpp:300     | 1,857           |                |                |                 |                 |
+|      NRZI_decoding                  | receiver.cpp:395     |   246           |   21           |   22           |   21            |   25            |
+|    + Bits_unstuffing                | receiver.cpp:444     | 1,168           |   68           |   71           |   68            |   79            |
+|       find_start                    | receiver.cpp:419     |   444           |                |                |                 |                 |
+|    + CRC_check                      | receiver.cpp:513     | 2,490           |  109           |  111           |  109            |  117            |
+|       IsCrc16Good                   | receiver.cpp:94      |   336           |                |                |                 |                 |
+|      Bytes_flipping_r               | receiver.cpp:488     |   558           |   67           |   68           |   67            |   71            |
+|    + Information_extraction         | receiver.cpp:536     | 11,249          |  198           |  156           |  153            |  179            |
+|       data_separated                | FPGA_simulator.h:354 |   237           |                |                |                 |                 |
++-------------------------------------+----------------------+-----------------+----------------+----------------+-----------------+-----------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

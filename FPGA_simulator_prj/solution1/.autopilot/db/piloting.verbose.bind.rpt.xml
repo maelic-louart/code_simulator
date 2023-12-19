@@ -1,0 +1,48 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'piloting'" level="0">
+<item name = "Date">Tue Dec 19 07:23:46 2023
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">FPGA_simulator_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtex7</item>
+<item name = "Target device">xc7vx485t-ffg1157-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.233 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">135, 135, 1.350 us, 1.350 us, 31, 105, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="start_e_tmp_loc_channel_piloting_Block_entry1_proc18_fu_128">piloting_Block_entry1_proc18, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_dynamic_data_generation_e_p_c_fu_144">dynamic_data_generation_e_p_c, 4, 104, 40.000 ns, 1.040 us, 4, 104, no</column>
+<column name="grp_frame_building_e_p_c_fu_195">frame_building_e_p_c, 30, 30, 0.300 us, 0.300 us, 30, 30, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
